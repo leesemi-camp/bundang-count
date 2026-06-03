@@ -129,7 +129,6 @@ function renderTopStatus(data) {
   const updated = parseDate(data.generatedAt);
   $("#updatedAt").textContent = updated ? `${timeFormatter.format(updated)} 갱신` : "갱신 시각 없음";
   $("#sourceLink").href = data.source?.documentUrl || $("#sourceLink").href;
-  $("#scopeCount").textContent = `${data.scopes.length}개`;
 
   const scopesById = new Map(data.scopes.map((scope) => [scope.id, scope]));
   const bundangScopes = [
@@ -143,47 +142,7 @@ function renderTopStatus(data) {
     ? bundangRates.reduce((sum, rate) => sum + Number(rate), 0) / bundangRates.length
     : null;
 
-  $("#bundangRate").textContent = formatPercent(averageBundangRate);
-  $("#bundangRateDetail").textContent = bundangRates.length
-    ? "도의원/시의원 평균"
-    : "분당구 개표율 대기";
-
-  const activeTypes = new Set();
-  data.scopes.forEach((scope) => {
-    (scope.signal?.activeTargetTypes || []).forEach((type) => activeTypes.add(type));
-  });
-  $("#activeSignal").textContent = activeTypes.size ? [...activeTypes].join(" · ") : "아직 없음";
-}
-
-function renderSignals(data) {
-  const totals = new Map(TARGET_TYPES.map((type) => [type, { votes: 0, scopes: 0, active: 0 }]));
-  data.scopes.forEach((scope) => {
-    scope.ballotTypes
-      .filter((item) => TARGET_TYPES.includes(item.type))
-      .forEach((item) => {
-        const total = totals.get(item.type);
-        total.votes += item.votes || 0;
-        total.scopes += 1;
-        if (item.started) total.active += 1;
-      });
-  });
-
-  const grid = $("#signalGrid");
-  grid.replaceChildren();
-  TARGET_TYPES.forEach((type) => {
-    const total = totals.get(type);
-    const card = makeElement("article", `signal-card ${total.active ? "signal-card--active" : ""}`);
-    card.append(makeElement("span", "label", type));
-    card.append(makeElement("strong", "", total.active ? "반영 중" : "미반영"));
-    card.append(
-      makeElement(
-        "p",
-        "muted",
-        `${formatNumber(total.votes)}표 · ${total.active}/${total.scopes}개 범위`
-      )
-    );
-    grid.append(card);
-  });
+  $("#bundangRateInline").textContent = averageBundangRate !== null ? `(${formatPercent(averageBundangRate)})` : "";
 }
 
 function renderSummaryItems(container, scope) {
@@ -838,7 +797,6 @@ async function boot() {
     return;
   }
   renderTopStatus(data);
-  renderSignals(data);
   renderRaces(data);
   renderNational(data);
 }

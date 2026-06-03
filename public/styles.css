@@ -118,14 +118,6 @@ footer {
   text-decoration: none;
 }
 
-.status-band {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-  margin-bottom: 18px;
-}
-
-.status-card,
 .race-card {
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -133,21 +125,11 @@ footer {
   box-shadow: var(--shadow);
 }
 
-.status-card {
-  display: grid;
-  gap: 6px;
-  min-height: 118px;
-  padding: 18px;
-}
-
-.status-card strong {
-  font-size: clamp(28px, 5vw, 44px);
-  line-height: 1;
-}
-
-.status-card span:last-child {
-  color: var(--muted);
-  font-size: 13px;
+.header-rate {
+  color: var(--green);
+  font-size: 0.8em;
+  font-weight: 800;
+  margin-left: 8px;
 }
 
 .label {
@@ -202,30 +184,7 @@ footer {
   background: var(--amber);
 }
 
-.signal-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-}
 
-.signal-card {
-  min-height: 132px;
-  padding: 16px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-}
-
-.signal-card strong {
-  display: block;
-  margin: 8px 0;
-  font-size: 24px;
-}
-
-.signal-card--active {
-  border-color: rgba(36, 122, 82, 0.45);
-  background: #f8fbf7;
-}
 
 .race-grid {
   display: grid;
