@@ -11,18 +11,18 @@ const FOCUS_SCOPE_IDS = [
 const PARTY_COLOR_RULES = [
   { keyword: "더불어민주당", color: "#3b82f6", soft: "rgba(59, 130, 246, 0.12)" },
   { keyword: "국민의힘", color: "#ef4444", soft: "rgba(239, 68, 68, 0.12)" },
-  { keyword: "조국혁신당", color: "#6366f1", soft: "rgba(99, 102, 241, 0.12)" },
+  { keyword: "조국혁신당", color: "#818cf8", soft: "rgba(129, 140, 248, 0.15)" },
   { keyword: "개혁신당", color: "#f97316", soft: "rgba(249, 115, 22, 0.12)" },
   { keyword: "진보당", color: "#f87171", soft: "rgba(248, 113, 113, 0.12)" },
   { keyword: "안민석", color: "#60a5fa", soft: "rgba(96, 165, 250, 0.12)" },
   { keyword: "임태희", color: "#f87171", soft: "rgba(248, 113, 113, 0.12)" },
 ];
 const NEUTRAL_CANDIDATE_COLORS = [
-  { color: "#64748b", soft: "rgba(100, 116, 139, 0.12)" },
-  { color: "#94a3b8", soft: "rgba(148, 163, 184, 0.12)" },
-  { color: "#475569", soft: "rgba(71, 85, 105, 0.12)" },
-  { color: "#cbd5e1", soft: "rgba(203, 213, 225, 0.12)" },
-  { color: "#334155", soft: "rgba(51, 65, 85, 0.12)" },
+  { color: "#8b949e", soft: "rgba(139, 148, 158, 0.15)" },
+  { color: "#768390", soft: "rgba(118, 131, 144, 0.15)" },
+  { color: "#9ca3af", soft: "rgba(156, 163, 175, 0.15)" },
+  { color: "#a1a1aa", soft: "rgba(161, 161, 170, 0.15)" },
+  { color: "#94a3b8", soft: "rgba(148, 163, 184, 0.15)" },
 ];
 
 const numberFormatter = new Intl.NumberFormat("ko-KR");
