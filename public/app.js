@@ -267,6 +267,23 @@ function calculatePRSeats(candidates, totalSeats, isMetropolitan) {
   return finalResult;
 }
 
+function checkConfirmedWinner(sortedCandidates, summaryOrProgress) {
+  if (!summaryOrProgress || !summaryOrProgress.progressRate || !summaryOrProgress.electors) return false;
+  if (sortedCandidates.length === 0) return false;
+  if (sortedCandidates.length === 1) return true;
+  
+  const leader = sortedCandidates[0];
+  const second = sortedCandidates[1];
+  
+  if (summaryOrProgress.progressRate >= 100) return true;
+  
+  const minRate = Math.max(0.0001, (summaryOrProgress.progressRate - 0.005) / 100);
+  const maxTotalElectors = summaryOrProgress.electors / minRate;
+  const maxUncountedElectors = maxTotalElectors - summaryOrProgress.electors;
+  
+  return leader.votes > (second.votes || 0) + maxUncountedElectors;
+}
+
 function renderCandidateRows(container, scope) {
   const summary = getProgressSummary(scope) || {};
   const totalVotes = summary.validVotes || summary.votes;
@@ -288,6 +305,7 @@ function renderCandidateRows(container, scope) {
 
   candidates.forEach((candidate, index) => {
     const isLeader = candidate === candidates[0];
+    const isConfirmed = isLeader && checkConfirmedWinner(candidates, summary);
     const row = makeElement("div", `candidate-row ${isLeader ? "candidate-row--leader" : ""}`);
     applyCandidateAccent(row, candidate, index);
     const track = makeElement("div", "bar-track");
@@ -303,11 +321,9 @@ function renderCandidateRows(container, scope) {
       }
     }
     
-    row.append(
-      makeElement("b", "", candidate.name),
-      track,
-      makeElement("span", "", text)
-    );
+    const nameEl = makeElement("b", "", candidate.name);
+    if (isConfirmed) nameEl.append(makeElement("span", "badge badge--winner", "당선확실"));
+    row.append(nameEl, track, makeElement("span", "", text));
     container.append(row);
   });
 }
@@ -354,22 +370,24 @@ function renderUnitBallotBreakdown(unit) {
   return wrapper;
 }
 
-function renderUnitCandidateBreakdown(unit) {
+function renderUnitCandidateBreakdown(unit, globalMaxCandidateVotes) {
   const candidates = getUnitCandidates(unit).slice(0, 3);
   const wrapper = makeElement("div", "district-candidates");
   if (!candidates.length) return wrapper;
   const totalVotes = getUnitTotalRow(unit)?.validVotes || getUnitTotalRow(unit)?.votes;
-  const maxVotes = Math.max(1, ...candidates.map((candidate) => candidate.votes || 0));
+  const maxVotes = globalMaxCandidateVotes || Math.max(1, ...candidates.map((candidate) => candidate.votes || 0));
   candidates.forEach((candidate, index) => {
-    const row = makeElement("div", `district-candidate ${candidate === candidates[0] ? "district-candidate--leader" : ""}`);
+    const isLeader = candidate === candidates[0];
+    const isConfirmed = isLeader && checkConfirmedWinner(candidates, unit.progress);
+    const row = makeElement("div", `district-candidate ${isLeader ? "district-candidate--leader" : ""}`);
     applyCandidateAccent(row, candidate, index);
     const track = makeElement("div", "bar-track");
     const fill = makeElement("span");
     fill.style.width = `${((candidate.votes || 0) / maxVotes) * 100}%`;
     track.append(fill);
-    row.append(
-      makeElement("b", "", candidate.name),
-      track,
+    const nameEl = makeElement("b", "", candidate.name);
+    if (typeof isConfirmed !== "undefined" && isConfirmed) nameEl.append(makeElement("span", "badge badge--winner", "당선확실"));
+    row.append(nameEl, track,
       makeElement(
         "span",
         "",
@@ -412,6 +430,9 @@ function renderDistrictBreakdown(scope) {
 
   const list = makeElement("div", "district-list");
   const maxVotes = Math.max(1, ...visibleUnits.map((unit) => unit.summary?.votes || 0));
+  const globalMaxCandidateVotes = Math.max(1, ...visibleUnits.map(unit => {
+    return Math.max(0, ...getUnitCandidates(unit).map(c => c.votes || 0));
+  }));
 
   visibleUnits.forEach((unit) => {
     const progress = getUnitProgress(scope, unit);
@@ -437,7 +458,7 @@ function renderDistrictBreakdown(scope) {
     fill.style.width = `${((votes || 0) / maxVotes) * 100}%`;
     track.append(fill);
 
-    summary.append(top, meta, track, renderUnitBallotBreakdown(unit), renderUnitCandidateBreakdown(unit));
+    summary.append(top, meta, track, renderUnitBallotBreakdown(unit), renderUnitCandidateBreakdown(unit, globalMaxCandidateVotes));
     summary.append(makeElement("p", "unit-group__hint muted", "▸ 선거구 내 동별 상세 보기"));
     row.append(summary);
 
@@ -549,15 +570,17 @@ function renderDetailCandidateBreakdown(detail) {
   const totalVotes = getDetailTotalVotes(detail);
   const maxVotes = Math.max(1, ...candidates.map((candidate) => candidate.votes || 0));
   candidates.forEach((candidate, index) => {
-    const row = makeElement("div", `local-candidate ${index === 0 ? "local-candidate--leader" : ""}`);
+    const isLeader = index === 0;
+    const isConfirmed = isLeader && checkConfirmedWinner(candidates, detail.progress);
+    const row = makeElement("div", `local-candidate ${isLeader ? "local-candidate--leader" : ""}`);
     applyCandidateAccent(row, candidate, index);
     const track = makeElement("div", "bar-track");
     const fill = makeElement("span");
     fill.style.width = `${((candidate.votes || 0) / maxVotes) * 100}%`;
     track.append(fill);
-    row.append(
-      makeElement("b", "", candidate.name),
-      track,
+    const nameEl = makeElement("b", "", candidate.name);
+    if (typeof isConfirmed !== "undefined" && isConfirmed) nameEl.append(makeElement("span", "badge badge--winner", "당선확실"));
+    row.append(nameEl, track,
       makeElement(
         "span",
         "",
@@ -569,7 +592,7 @@ function renderDetailCandidateBreakdown(detail) {
   return wrapper;
 }
 
-function renderLocalAreaCard(detail, extraClass = "") {
+function renderLocalAreaCard(detail, extraClass = "", globalMaxCandidateVotes = null) {
   const card = makeElement("article", `local-card ${extraClass}`.trim());
   const activeTypes = getDetailActiveTypes(detail);
   const rate = detail?.progress?.progressRate;
@@ -584,7 +607,7 @@ function renderLocalAreaCard(detail, extraClass = "") {
   meta.append(makeElement("span", "", activeTypes.length ? `반영 ${activeTypes.length}/${TARGET_TYPES.length}` : "투표구분 상세없음"));
   meta.append(makeElement("span", "", getDetailLeadingText(detail)));
 
-  card.append(top, meta, renderDetailBallotBreakdown(detail), renderDetailCandidateBreakdown(detail));
+  card.append(top, meta, renderDetailBallotBreakdown(detail), renderDetailCandidateBreakdown(detail, globalMaxCandidateVotes));
   return card;
 }
 
@@ -595,6 +618,14 @@ function renderLocalBreakdown(scope) {
   header.append(makeElement("strong", "", "수정·중원 전체 / 분당 동별"));
   header.append(makeElement("span", "muted", "후보 득표율과 투표 종류 반영 상태"));
   section.append(header);
+
+  const allDetails = [];
+  if (breakdown.summaryRegions) allDetails.push(...breakdown.summaryRegions);
+  if (breakdown.details) allDetails.push(...breakdown.details);
+  
+  const globalMaxCandidateVotes = Math.max(1, ...allDetails.map(detail => {
+    return Math.max(0, ...getDetailCandidates(detail).map(c => c.votes || 0));
+  }));
 
   // 수정/중원구 카드는 기존 그리드에 표시
   if (breakdown.summaryRegions?.length) {
@@ -741,15 +772,17 @@ function renderNationalUnitCard(unit, scope) {
     const maxV = candidates[0].votes || 1;
     const candList = makeElement("div", "unit-group__merged-candidates");
     candidates.forEach((c, i) => {
-      const row = makeElement("div", `candidate-row ${i === 0 ? "candidate-row--leader" : ""}`);
+      const isLeader = i === 0;
+      const isConfirmed = isLeader && checkConfirmedWinner(candidates, progress);
+      const row = makeElement("div", `candidate-row ${isLeader ? "candidate-row--leader" : ""}`);
       applyCandidateAccent(row, c, i);
       const track = makeElement("div", "bar-track");
       const fill = makeElement("span");
       fill.style.width = `${((c.votes || 0) / maxV) * 100}%`;
       track.append(fill);
-      row.append(
-        makeElement("b", "", c.name),
-        track,
+      const nameEl = makeElement("b", "", c.name);
+      if (typeof isConfirmed !== "undefined" && isConfirmed) nameEl.append(makeElement("span", "badge badge--winner", "당선확실"));
+      row.append(nameEl, track,
         makeElement("span", "", `${formatNumber(c.votes)}표 · ${formatPercent(getCandidateRate(c, totalValidVotes))}`)
       );
       candList.append(row);
