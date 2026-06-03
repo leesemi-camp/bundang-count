@@ -44,9 +44,14 @@ run_once() {
     fi
 
     TIMESTAMP="$(date '+%Y-%m-%d %H:%M:%S KST')"
-    git commit -m "chore: update NEC data at ${TIMESTAMP}"
-    git push origin main
-    log "✅ GitHub push 완료"
+    git commit -m "chore: update NEC data at ${TIMESTAMP}" || true
+    git pull --rebase origin main || { log "⚠️  git pull --rebase 실패"; git rebase --abort; return; }
+    
+    if git push origin main; then
+        log "✅ GitHub push 완료"
+    else
+        log "❌ GitHub push 실패 — 다음 주기에 재시도합니다."
+    fi
 }
 
 # 첫 실행은 즉시
