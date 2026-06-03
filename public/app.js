@@ -560,12 +560,20 @@ function renderRaceCard(scope) {
   renderChips(card.querySelector(".chips"), scope);
   renderBallotBars(card.querySelector(".ballot-bars"), scope);
   renderCandidateRows(card.querySelector(".candidate-list"), scope);
+  
+  const content = card.querySelector(".race-card__content");
   if (shouldShowLocalBreakdown(scope)) {
-    card.append(renderLocalBreakdown(scope));
+    content.append(renderLocalBreakdown(scope));
   }
   if (shouldShowDistrictBreakdown(scope)) {
-    card.append(renderDistrictBreakdown(scope));
+    content.append(renderDistrictBreakdown(scope));
   }
+  
+  // 모바일에선 접어놓고, 데스크탑(800px 초과)에서는 기본으로 열려있게 설정
+  if (window.innerWidth > 800) {
+    card.setAttribute("open", "");
+  }
+  
   return card;
 }
 

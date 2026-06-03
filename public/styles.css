@@ -234,9 +234,43 @@ footer {
 }
 
 .race-card {
+  padding: 16px;
+}
+
+.race-card__summary-header {
   display: grid;
   gap: 14px;
-  padding: 16px;
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+}
+
+.race-card__summary-header::-webkit-details-marker {
+  display: none;
+}
+
+.race-card__content {
+  display: grid;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.race-card__head-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.race-card__toggle-icon {
+  display: flex;
+  align-items: center;
+  color: var(--muted);
+  transition: transform 0.2s;
+}
+
+details[open] .race-card__toggle-icon {
+  transform: rotate(180deg);
 }
 
 .race-card__head {

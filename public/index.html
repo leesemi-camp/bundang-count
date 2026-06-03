@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>분당구 개표 흐름 대시보드</title>
     <link rel="icon" type="image/png" href="./favicon.png" />
-    <link rel="stylesheet" href="./styles.css?v=20260604d" />
+    <link rel="stylesheet" href="./styles.css?v=20260604e" />
   </head>
   <body>
     <header class="topbar">
@@ -81,22 +81,33 @@
     </footer>
 
     <template id="raceCardTemplate">
-      <article class="race-card">
-        <div class="race-card__head">
-          <div>
-            <span class="race-card__scope"></span>
-            <h3></h3>
+      <details class="race-card">
+        <summary class="race-card__summary-header">
+          <div class="race-card__head">
+            <div>
+              <span class="race-card__scope"></span>
+              <h3></h3>
+            </div>
+            <div class="race-card__head-right">
+              <span class="race-card__rate"></span>
+              <span class="race-card__toggle-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 9l6 6 6-6"/>
+                </svg>
+              </span>
+            </div>
           </div>
-          <span class="race-card__rate"></span>
+          <div class="progress"><span></span></div>
+        </summary>
+        <div class="race-card__content">
+          <div class="race-card__summary"></div>
+          <div class="chips"></div>
+          <div class="ballot-bars"></div>
+          <div class="candidate-list"></div>
         </div>
-        <div class="progress"><span></span></div>
-        <div class="race-card__summary"></div>
-        <div class="chips"></div>
-        <div class="ballot-bars"></div>
-        <div class="candidate-list"></div>
-      </article>
+      </details>
     </template>
 
-    <script src="./app.js?v=20260604d" type="module"></script>
+    <script src="./app.js?v=20260604e" type="module"></script>
   </body>
 </html>
