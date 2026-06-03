@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T08:28:25+09:00",
+  "generatedAt": "2026-06-04T08:30:55+09:00",
   "electionId": "0020260603",
   "source": {
     "name": "중앙선거관리위원회 선거통계시스템",
@@ -6316,7 +6316,7 @@
             "validVotes": 173939,
             "invalidVotes": 2620,
             "abstentions": 130851,
-            "progressRate": 99.99
+            "progressRate": 100.0
           },
           {
             "area": "부천시소사구",
@@ -15354,7 +15354,7 @@
             "validVotes": 171874,
             "invalidVotes": 4726,
             "abstentions": 130809,
-            "progressRate": 99.98
+            "progressRate": 100.0
           },
           {
             "area": "부천시소사구",
@@ -16504,7 +16504,12 @@
           "progress": null
         }
       ],
-      "errors": [],
+      "errors": [
+        {
+          "unit": "성남시수정구",
+          "message": "IncompleteRead(0 bytes read)"
+        }
+      ],
       "localBreakdown": {
         "summaryRegions": [
           {
@@ -16547,101 +16552,68 @@
             "candidateVotes": [
               {
                 "name": "임태희",
-                "votes": 59560
+                "votes": 59560,
+                "rate": 48.72
               },
               {
                 "name": "안민석",
-                "votes": 62678
+                "votes": 62678,
+                "rate": 51.27
               },
               {
                 "name": "계",
-                "votes": 122238
+                "votes": 122238,
+                "rate": null
               }
             ],
             "ballotTypes": [
               {
                 "type": "관내사전투표",
-                "electors": 35713,
-                "votes": 35702,
-                "validVotes": 34487,
-                "invalidVotes": 1215,
-                "abstentions": 11,
-                "rowCount": 17,
-                "unitCount": 1,
-                "units": [
-                  "rows"
-                ],
-                "started": true
+                "electors": null,
+                "votes": 0,
+                "validVotes": null,
+                "invalidVotes": null,
+                "abstentions": null,
+                "rowCount": 0,
+                "unitCount": 0,
+                "units": [],
+                "started": false
               },
               {
                 "type": "선거일투표",
-                "electors": 159089,
-                "votes": 75304,
-                "validVotes": 72704,
-                "invalidVotes": 2600,
-                "abstentions": 83785,
-                "rowCount": 17,
-                "unitCount": 1,
-                "units": [
-                  "rows"
-                ],
-                "started": true
+                "electors": null,
+                "votes": 0,
+                "validVotes": null,
+                "invalidVotes": null,
+                "abstentions": null,
+                "rowCount": 0,
+                "unitCount": 0,
+                "units": [],
+                "started": false
               },
               {
                 "type": "관외사전투표",
-                "electors": 15397,
-                "votes": 15389,
-                "validVotes": 14885,
-                "invalidVotes": 504,
-                "abstentions": 8,
-                "rowCount": 1,
-                "unitCount": 1,
-                "units": [
-                  "rows"
-                ],
-                "started": true
+                "electors": null,
+                "votes": 0,
+                "validVotes": null,
+                "invalidVotes": null,
+                "abstentions": null,
+                "rowCount": 0,
+                "unitCount": 0,
+                "units": [],
+                "started": false
               },
               {
                 "type": "거소투표",
-                "electors": 170,
-                "votes": 161,
-                "validVotes": 148,
-                "invalidVotes": 13,
-                "abstentions": 9,
-                "rowCount": 1,
-                "unitCount": 1,
-                "units": [
-                  "rows"
-                ],
-                "started": true
-              },
-              {
-                "type": "별도분류",
-                "electors": 0,
-                "votes": 17,
-                "validVotes": 14,
-                "invalidVotes": 3,
-                "abstentions": -17,
-                "rowCount": 1,
-                "unitCount": 1,
-                "units": [
-                  "rows"
-                ],
-                "started": true
-              },
-              {
-                "type": "합계",
-                "electors": 210369,
-                "votes": 126573,
-                "validVotes": 122238,
-                "invalidVotes": 4335,
-                "abstentions": 83796,
-                "rowCount": 1,
-                "unitCount": 1,
-                "units": [
-                  "rows"
-                ],
-                "started": true
+                "electors": null,
+                "votes": 0,
+                "validVotes": null,
+                "invalidVotes": null,
+                "abstentions": null,
+                "rowCount": 0,
+                "unitCount": 0,
+                "units": [],
+                "started": false
               }
             ]
           },
@@ -61031,6 +61003,6 @@
       "errors": []
     }
   ],
-  "errorCount": 0,
-  "durationSeconds": 27.64
+  "errorCount": 1,
+  "durationSeconds": 39.97
 }
