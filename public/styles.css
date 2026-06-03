@@ -375,9 +375,9 @@ details[open] .race-card__toggle-icon {
 
 .bar-row {
   display: grid;
-  grid-template-columns: 104px minmax(90px, 1fr) 82px;
+  grid-template-columns: 96px minmax(40px, 1fr) max-content;
   align-items: center;
-  gap: 9px;
+  gap: 8px;
   color: var(--muted);
   font-size: 12px;
 }
@@ -463,7 +463,7 @@ details[open] .race-card__toggle-icon {
 
 .district-card__meta {
   display: grid;
-  grid-template-columns: 96px minmax(120px, 1fr) minmax(160px, 1.4fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.4fr);
   gap: 8px;
   color: var(--muted);
   font-size: 12px;
@@ -631,7 +631,7 @@ details[open] > .local-breakdown__summary .unit-group__hint {
 
 .local-card__meta {
   display: grid;
-  grid-template-columns: minmax(78px, 0.8fr) minmax(96px, 1fr) minmax(130px, 1.2fr);
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr) minmax(0, 1.2fr);
   gap: 7px;
   color: var(--muted);
   font-size: 12px;
@@ -653,9 +653,9 @@ details[open] > .local-breakdown__summary .unit-group__hint {
 .local-ballot,
 .local-candidate {
   display: grid;
-  grid-template-columns: 96px minmax(60px, 1fr) 88px;
+  grid-template-columns: 84px minmax(30px, 1fr) max-content;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   color: var(--muted);
   font-size: 12px;
 }
@@ -699,9 +699,9 @@ details[open] > .local-breakdown__summary .unit-group__hint {
 .candidate-row,
 .unit-row {
   display: grid;
-  grid-template-columns: minmax(130px, 1fr) minmax(110px, 1.5fr) 132px;
+  grid-template-columns: minmax(90px, 1.5fr) minmax(40px, 1fr) max-content;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   font-size: 12px;
 }
 
