@@ -540,6 +540,32 @@ footer {
   gap: 10px;
 }
 
+.local-breakdown__accordion {
+  margin-top: 10px;
+}
+
+.local-breakdown__summary {
+  list-style: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.local-breakdown__summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] > .local-breakdown__summary .unit-group__hint {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  overflow: hidden;
+  margin: 0;
+}
+
+.local-breakdown__dongs {
+  margin-top: 10px;
+}
+
 .local-card__top strong {
   min-width: 0;
   overflow: hidden;

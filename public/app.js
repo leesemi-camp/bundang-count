@@ -4,6 +4,9 @@ const FOCUS_SCOPE_IDS = [
   "municipal-council-bundang",
   "mayor-seongnam",
   "governor-gyeonggi",
+  "pr-gyeonggi",
+  "pr-seongnam",
+  "superintendent-gyeonggi",
 ];
 const PARTY_COLOR_RULES = [
   { keyword: "더불어민주당", color: "#2563eb", soft: "rgba(37, 99, 235, 0.11)" },
@@ -505,29 +508,41 @@ function renderLocalBreakdown(scope) {
   header.append(makeElement("span", "muted", "후보 득표율과 투표 종류 반영 상태"));
   section.append(header);
 
-  const summaryGrid = makeElement("div", "local-grid local-grid--summary");
-  const summaryDetails = [
-    ...(breakdown.summaryRegions || []),
-    breakdown.bundangSummary,
-  ].filter(Boolean);
-  summaryDetails.forEach((detail) => {
-    summaryGrid.append(renderLocalAreaCard(detail));
-  });
-  section.append(summaryGrid);
-
-  const dongHeader = makeElement("div", "local-breakdown__subhead");
-  dongHeader.append(makeElement("strong", "", "분당구 동별 보기"));
-  dongHeader.append(makeElement("span", "muted", `${(breakdown.bundangDongs || []).length}개 동`));
-  section.append(dongHeader);
-
-  if (breakdown.bundangDongs?.length) {
-    const dongGrid = makeElement("div", "local-grid local-grid--dongs");
-    breakdown.bundangDongs.forEach((detail) => {
-      dongGrid.append(renderLocalAreaCard(detail, "local-card--dong"));
+  // 수정/중원구 카드는 기존 그리드에 표시
+  if (breakdown.summaryRegions?.length) {
+    const summaryGrid = makeElement("div", "local-grid local-grid--summary");
+    breakdown.summaryRegions.forEach((detail) => {
+      summaryGrid.append(renderLocalAreaCard(detail));
     });
-    section.append(dongGrid);
-  } else {
-    section.append(makeElement("p", "empty-state", "분당구 동별 개표 상세 행은 아직 NEC에 올라오지 않았습니다."));
+    section.append(summaryGrid);
+  }
+
+  // 분당구 요약 + 동별 아코디언
+  if (breakdown.bundangSummary) {
+    const details = makeElement("details", "local-breakdown__accordion");
+    const summary = makeElement("summary", "local-breakdown__summary");
+    const bundangCard = renderLocalAreaCard(breakdown.bundangSummary);
+    bundangCard.append(makeElement("p", "unit-group__hint muted", "▸ 분당구 동별 개표 현황 보기"));
+    summary.append(bundangCard);
+    details.append(summary);
+
+    const dongWrap = makeElement("div", "local-breakdown__dongs");
+    const dongHeader = makeElement("div", "local-breakdown__subhead");
+    dongHeader.append(makeElement("strong", "", "분당구 동별 보기"));
+    dongHeader.append(makeElement("span", "muted", `${(breakdown.bundangDongs || []).length}개 동`));
+    dongWrap.append(dongHeader);
+
+    if (breakdown.bundangDongs?.length) {
+      const dongGrid = makeElement("div", "local-grid local-grid--dongs");
+      breakdown.bundangDongs.forEach((detail) => {
+        dongGrid.append(renderLocalAreaCard(detail, "local-card--dong"));
+      });
+      dongWrap.append(dongGrid);
+    } else {
+      dongWrap.append(makeElement("p", "empty-state", "분당구 동별 개표 상세 행은 아직 NEC에 올라오지 않았습니다."));
+    }
+    details.append(dongWrap);
+    section.append(details);
   }
 
   return section;
