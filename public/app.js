@@ -122,6 +122,7 @@ function shouldShowDistrictBreakdown(scope) {
 }
 
 function shouldShowLocalBreakdown(scope) {
+  if (shouldShowDistrictBreakdown(scope)) return false;
   return Boolean(scope.localBreakdown);
 }
 
@@ -418,7 +419,10 @@ function renderDistrictBreakdown(scope) {
     const votes = unit.summary?.votes || progress?.votes || 0;
     const rate = progress?.progressRate;
 
-    const row = makeElement("article", "district-card");
+    const row = makeElement("details", "district-card district-card--accordion");
+    row.dataset.id = `district-card-${unit.name}`;
+    const summary = makeElement("summary", "district-card__summary");
+    
     const top = makeElement("div", "district-card__top");
     top.append(makeElement("strong", "", unit.name));
     top.append(makeElement("span", "district-card__rate", formatPercent(rate)));
@@ -433,7 +437,50 @@ function renderDistrictBreakdown(scope) {
     fill.style.width = `${((votes || 0) / maxVotes) * 100}%`;
     track.append(fill);
 
-    row.append(top, meta, track, renderUnitBallotBreakdown(unit), renderUnitCandidateBreakdown(unit));
+    summary.append(top, meta, track, renderUnitBallotBreakdown(unit), renderUnitCandidateBreakdown(unit));
+    summary.append(makeElement("p", "unit-group__hint muted", "▸ 선거구 내 동별 상세 보기"));
+    row.append(summary);
+
+    const dongsWrap = makeElement("div", "district-card__dongs");
+    const orderedNames = [];
+    (unit.rows || []).forEach(r => {
+      if (r.area && r.area !== "합계" && !orderedNames.includes(r.area)) {
+        orderedNames.push(r.area);
+      }
+    });
+
+    if (orderedNames.length) {
+      const dongGrid = makeElement("div", "local-grid local-grid--dongs");
+      orderedNames.forEach(name => {
+        const dongRows = unit.rows.filter(r => r.area === name);
+        let totalRow = dongRows.find(r => r.area === "합계");
+        if (!totalRow) totalRow = dongRows.find(r => r.ballotType === "계");
+        if (!totalRow && dongRows.length === 1) totalRow = dongRows[0];
+        
+        const detail = {
+          name: name,
+          progress: null,
+          summary: totalRow || { votes: 0 },
+          candidateVotes: totalRow?.candidateVotes || [],
+          ballotTypes: TARGET_TYPES.map(type => {
+            const typeRows = dongRows.filter(r => r.ballotType === type);
+            const typeVotes = typeRows.reduce((sum, r) => sum + (r.votes || 0), 0);
+            return {
+              type: type,
+              votes: typeVotes,
+              rowCount: typeRows.length,
+              started: typeRows.length > 0 && typeRows.some(r => r.votes > 0)
+            };
+          })
+        };
+        dongGrid.append(renderLocalAreaCard(detail, "local-card--dong"));
+      });
+      dongsWrap.append(dongGrid);
+    } else {
+      dongsWrap.append(makeElement("p", "empty-state", "동별 개표 상세 데이터가 없습니다."));
+    }
+
+    row.append(dongsWrap);
     list.append(row);
   });
 

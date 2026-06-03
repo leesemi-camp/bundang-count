@@ -433,8 +433,6 @@ details[open] .race-card__toggle-icon {
 }
 
 .district-card {
-  display: grid;
-  gap: 8px;
   padding: 11px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -445,6 +443,23 @@ details[open] .race-card__toggle-icon {
 .district-card:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow);
+}
+
+.district-card__summary {
+  display: grid;
+  gap: 8px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.district-card__summary::-webkit-details-marker {
+  display: none;
+}
+
+.district-card__dongs {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--line);
 }
 
 .district-card__top {
