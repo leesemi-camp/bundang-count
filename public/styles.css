@@ -1,0 +1,827 @@
+:root {
+  color-scheme: light;
+  --bg: #f4f6f3;
+  --surface: #ffffff;
+  --surface-soft: #eef3ef;
+  --text: #202421;
+  --muted: #667068;
+  --line: #d9ded8;
+  --green: #247a52;
+  --teal: #137c8b;
+  --amber: #ba6b00;
+  --red: #bb3e3e;
+  --blue: #3568a8;
+  --shadow: 0 12px 28px rgba(32, 36, 33, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 18px clamp(16px, 4vw, 40px);
+  border-bottom: 1px solid var(--line);
+  background: rgba(244, 246, 243, 0.92);
+  backdrop-filter: blur(14px);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: clamp(26px, 4vw, 42px);
+  line-height: 1.08;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+main {
+  width: min(1480px, 100%);
+  margin: 0 auto;
+  padding: 22px clamp(16px, 4vw, 40px) 48px;
+}
+
+footer {
+  padding: 24px clamp(16px, 4vw, 40px) 42px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.eyebrow {
+  color: var(--green);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.topbar__meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--muted);
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.topbar__meta a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.status-band {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.status-card,
+.race-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.status-card {
+  display: grid;
+  gap: 6px;
+  min-height: 118px;
+  padding: 18px;
+}
+
+.status-card strong {
+  font-size: clamp(28px, 5vw, 44px);
+  line-height: 1;
+}
+
+.status-card span:last-child {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.label {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.panel {
+  margin-top: 18px;
+  padding: 22px 0 0;
+}
+
+.section-title {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dot {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+
+.dot--early {
+  background: var(--green);
+}
+
+.dot--day {
+  background: var(--blue);
+}
+
+.dot--outside {
+  background: var(--amber);
+}
+
+.signal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.signal-card {
+  min-height: 132px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.signal-card strong {
+  display: block;
+  margin: 8px 0;
+  font-size: 24px;
+}
+
+.signal-card--active {
+  border-color: rgba(36, 122, 82, 0.45);
+  background: #f8fbf7;
+}
+
+.race-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.race-card {
+  display: grid;
+  gap: 14px;
+  padding: 16px;
+}
+
+.race-card__head {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.race-card__scope {
+  display: inline-block;
+  margin-bottom: 5px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.race-card__rate {
+  min-width: 72px;
+  color: var(--green);
+  font-size: 24px;
+  font-weight: 800;
+  text-align: right;
+}
+
+.progress {
+  height: 10px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--surface-soft);
+}
+
+.progress span {
+  display: block;
+  width: 0;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--green), var(--teal));
+}
+
+.race-card__summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.summary-item {
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfcfb;
+}
+
+.summary-item span {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.summary-item strong {
+  display: block;
+  margin-top: 4px;
+  font-size: 17px;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  padding: 0 9px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fbfcfb;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.chip--active {
+  border-color: rgba(36, 122, 82, 0.35);
+  background: rgba(36, 122, 82, 0.09);
+  color: var(--green);
+}
+
+.ballot-bars {
+  display: grid;
+  gap: 8px;
+}
+
+.bar-row {
+  display: grid;
+  grid-template-columns: 104px minmax(90px, 1fr) 82px;
+  align-items: center;
+  gap: 9px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.bar-track {
+  height: 8px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--surface-soft);
+}
+
+.bar-track span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--blue);
+}
+
+.bar-row[data-type="관내사전투표"] .bar-track span {
+  background: var(--green);
+}
+
+.bar-row[data-type="관외사전투표"] .bar-track span {
+  background: var(--amber);
+}
+
+.candidate-list {
+  display: grid;
+  gap: 6px;
+}
+
+.district-breakdown {
+  display: grid;
+  gap: 10px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+.district-breakdown__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.district-list {
+  display: grid;
+  gap: 8px;
+}
+
+.district-card {
+  display: grid;
+  gap: 8px;
+  padding: 11px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfcfb;
+}
+
+.district-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.district-card__rate {
+  color: var(--green);
+  font-size: 17px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.district-card__meta {
+  display: grid;
+  grid-template-columns: 96px minmax(120px, 1fr) minmax(160px, 1.4fr);
+  gap: 8px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.district-card__meta span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.district-card__track {
+  height: 7px;
+}
+
+.district-ballots,
+.district-candidates {
+  display: grid;
+  gap: 6px;
+}
+
+.district-ballots {
+  padding-top: 2px;
+}
+
+.district-ballot,
+.district-candidate {
+  display: grid;
+  grid-template-columns: 104px minmax(80px, 1fr) 92px;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.district-ballot strong,
+.district-candidate span {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.district-candidate b {
+  min-width: 0;
+  overflow: hidden;
+  color: var(--candidate-color, var(--text));
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.district-candidate--leader b {
+  font-weight: 850;
+}
+
+.district-candidate .bar-track span,
+.district-candidate--leader .bar-track span {
+  background: var(--candidate-color, var(--blue));
+}
+
+.district-ballot[data-type="관내사전투표"] .bar-track span {
+  background: var(--green);
+}
+
+.district-ballot[data-type="관외사전투표"] .bar-track span {
+  background: var(--amber);
+}
+
+.district-ballot:not(.district-ballot--active) {
+  opacity: 0.62;
+}
+
+.local-breakdown {
+  display: grid;
+  gap: 10px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+.local-breakdown__head,
+.local-breakdown__subhead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.local-breakdown__subhead {
+  padding-top: 4px;
+}
+
+.local-grid {
+  display: grid;
+  gap: 8px;
+}
+
+.local-grid--summary {
+  grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+}
+
+.local-grid--dongs {
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
+}
+
+.local-card {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+  padding: 11px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfcfb;
+}
+
+.local-card--dong {
+  background: #ffffff;
+}
+
+.local-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.local-card__top strong {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.local-card__rate {
+  color: var(--green);
+  font-size: 16px;
+  font-weight: 850;
+  white-space: nowrap;
+}
+
+.local-card__meta {
+  display: grid;
+  grid-template-columns: minmax(78px, 0.8fr) minmax(96px, 1fr) minmax(130px, 1.2fr);
+  gap: 7px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.local-card__meta span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.local-ballots,
+.local-candidates {
+  display: grid;
+  gap: 6px;
+}
+
+.local-ballot,
+.local-candidate {
+  display: grid;
+  grid-template-columns: 96px minmax(60px, 1fr) 88px;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.local-ballot strong,
+.local-candidate span {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.local-candidate b {
+  min-width: 0;
+  overflow: hidden;
+  color: var(--candidate-color, var(--text));
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.local-candidate--leader b {
+  font-weight: 850;
+}
+
+.local-candidate .bar-track span,
+.local-candidate--leader .bar-track span {
+  background: var(--candidate-color, var(--blue));
+}
+
+.local-ballot[data-type="관내사전투표"] .bar-track span {
+  background: var(--green);
+}
+
+.local-ballot[data-type="관외사전투표"] .bar-track span {
+  background: var(--amber);
+}
+
+.local-ballot--empty {
+  opacity: 0.62;
+}
+
+.candidate-row,
+.unit-row {
+  display: grid;
+  grid-template-columns: minmax(130px, 1fr) minmax(110px, 1.5fr) 132px;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+}
+
+.candidate-row b,
+.unit-row b {
+  overflow: hidden;
+  color: var(--candidate-color, var(--text));
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.candidate-row {
+  padding: 4px 0;
+}
+
+.candidate-row--leader {
+  margin: 0 -6px;
+  padding: 6px;
+  border-radius: 8px;
+  background: var(--candidate-soft, rgba(36, 122, 82, 0.08));
+}
+
+.candidate-row--leader b {
+  font-weight: 850;
+}
+
+.candidate-row .bar-track span,
+.candidate-row--leader .bar-track span {
+  background: var(--candidate-color, var(--blue));
+}
+
+.candidate-row span:last-child,
+.unit-row span:last-child {
+  color: var(--muted);
+  text-align: right;
+}
+
+.unit-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.unit-card {
+  display: grid;
+  gap: 8px;
+  min-height: 108px;
+  padding: 13px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.unit-card__top {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.unit-card strong {
+  min-width: 0;
+  font-size: 15px;
+  overflow-wrap: anywhere;
+}
+
+.unit-card__rate {
+  color: var(--green);
+  font-size: 17px;
+  font-weight: 850;
+  white-space: nowrap;
+}
+
+.unit-card .muted {
+  font-size: 12px;
+}
+
+.unit-candidate {
+  position: relative;
+  padding-left: 14px;
+  color: var(--candidate-color, var(--muted));
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.unit-candidate::before {
+  position: absolute;
+  top: 0.42em;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--candidate-color, var(--muted));
+  content: "";
+}
+
+.unit-candidate--leader {
+  font-weight: 850;
+}
+
+.empty-state {
+  padding: 20px;
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--muted);
+}
+
+@media (max-width: 980px) {
+  .status-band,
+  .signal-grid,
+  .race-grid,
+  .unit-list,
+  .local-grid--summary,
+  .local-grid--dongs {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .topbar__meta {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 640px) {
+  main {
+    padding-top: 14px;
+  }
+
+  .section-title,
+  .race-card__head,
+  .local-breakdown__head,
+  .local-breakdown__subhead,
+  .local-card__top,
+  .unit-card__top {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .race-card__rate {
+    text-align: left;
+  }
+
+  .race-card__summary {
+    grid-template-columns: 1fr;
+  }
+
+  .district-card__top {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .district-card__meta,
+  .local-card__meta {
+    grid-template-columns: 1fr;
+  }
+
+  .district-card__meta span,
+  .local-card__meta span {
+    white-space: normal;
+  }
+
+  .district-ballot,
+  .district-candidate,
+  .local-ballot,
+  .local-candidate {
+    grid-template-columns: 1fr;
+  }
+
+  .district-ballot strong,
+  .district-candidate span,
+  .local-ballot strong,
+  .local-candidate span {
+    text-align: left;
+  }
+
+  .district-candidate b,
+  .local-candidate b,
+  .local-card__top strong {
+    white-space: normal;
+  }
+
+  .bar-row,
+  .candidate-row,
+  .unit-row {
+    grid-template-columns: 1fr;
+  }
+
+  .candidate-row span:last-child,
+  .unit-row span:last-child {
+    text-align: left;
+  }
+}
