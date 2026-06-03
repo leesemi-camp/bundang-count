@@ -27,7 +27,7 @@ USER_AGENT = (
     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36"
 )
 
-TARGET_BALLOT_TYPES = ["관내사전투표", "선거일투표", "관외사전투표"]
+TARGET_BALLOT_TYPES = ["관내사전투표", "선거일투표", "관외사전투표", "거소투표"]
 CITY_GYEONGGI = "4100"
 CITY_GYEONGGI_NAME = "경기도"
 TOWN_SUJEONG = "4105"
