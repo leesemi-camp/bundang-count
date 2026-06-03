@@ -13,6 +13,9 @@ const PARTY_COLOR_RULES = [
   { keyword: "국민의힘", color: "#ef4444", soft: "rgba(239, 68, 68, 0.12)" },
   { keyword: "조국혁신당", color: "#4338ca", soft: "rgba(67, 56, 202, 0.12)" },
   { keyword: "개혁신당", color: "#f97316", soft: "rgba(249, 115, 22, 0.12)" },
+  { keyword: "진보당", color: "#f87171", soft: "rgba(248, 113, 113, 0.12)" },
+  { keyword: "안민석", color: "#60a5fa", soft: "rgba(96, 165, 250, 0.12)" },
+  { keyword: "임태희", color: "#f87171", soft: "rgba(248, 113, 113, 0.12)" },
 ];
 const NEUTRAL_CANDIDATE_COLORS = [
   { color: "#64748b", soft: "rgba(100, 116, 139, 0.12)" },
