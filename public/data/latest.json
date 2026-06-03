@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T08:41:13+09:00",
+  "generatedAt": "2026-06-04T08:43:48+09:00",
   "electionId": "0020260603",
   "source": {
     "name": "중앙선거관리위원회 선거통계시스템",
@@ -31601,16 +31601,16 @@
             "groupArea": null,
             "fullArea": "광주시",
             "electors": 343345,
-            "votes": 190436,
+            "votes": 190653,
             "candidateVotes": [
               {
                 "name": "더불어민주당",
-                "votes": 110715,
+                "votes": 110838,
                 "rate": 59.13
               },
               {
                 "name": "국민의힘",
-                "votes": 76518,
+                "votes": 76588,
                 "rate": 40.86
               },
               {
@@ -31630,14 +31630,14 @@
               },
               {
                 "name": "계",
-                "votes": 187233,
+                "votes": 187426,
                 "rate": null
               }
             ],
-            "validVotes": 187233,
-            "invalidVotes": 3203,
-            "abstentions": 152909,
-            "progressRate": 99.81
+            "validVotes": 187426,
+            "invalidVotes": 3227,
+            "abstentions": 152692,
+            "progressRate": 99.92
           },
           {
             "area": "하남시",
@@ -61032,5 +61032,5 @@
     }
   ],
   "errorCount": 0,
-  "durationSeconds": 27.12
+  "durationSeconds": 27.88
 }
