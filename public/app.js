@@ -8,6 +8,10 @@ const FOCUS_SCOPE_IDS = [
   "basic-pr-seongnam",
   "education-gyeonggi",
 ];
+const PR_SEATS = {
+  "metropolitan-pr-gyeonggi": 21,
+  "basic-pr-seongnam": 4,
+};
 const PARTY_COLOR_RULES = [
   { keyword: "더불어민주당", color: "#3b82f6", soft: "rgba(59, 130, 246, 0.12)" },
   { keyword: "국민의힘", color: "#ef4444", soft: "rgba(239, 68, 68, 0.12)" },
@@ -195,6 +199,73 @@ function renderBallotBars(container, scope) {
     });
 }
 
+function calculatePRSeats(candidates, totalSeats, isMetropolitan) {
+  const totalValidVotes = candidates.reduce((sum, c) => sum + (c.votes || 0), 0);
+  if (totalValidVotes === 0) return {};
+
+  const eligibleParties = candidates.filter((c) => (c.votes || 0) / totalValidVotes >= 0.05);
+  const eligibleVotes = eligibleParties.reduce((sum, c) => sum + (c.votes || 0), 0);
+  if (eligibleVotes === 0) return {};
+
+  function distribute(parties, seats) {
+    const arr = parties.map((p) => {
+      const exact = ((p.votes || 0) / eligibleVotes) * seats;
+      return {
+        name: p.name,
+        votes: p.votes || 0,
+        intPart: Math.floor(exact),
+        remainder: exact - Math.floor(exact),
+        allocated: Math.floor(exact),
+      };
+    });
+    const remain = seats - arr.reduce((s, a) => s + a.intPart, 0);
+    // 동점 시 득표수 순
+    arr.sort((a, b) => b.remainder - a.remainder || b.votes - a.votes);
+    for (let i = 0; i < remain; i++) {
+      if (arr[i]) arr[i].allocated += 1;
+    }
+    return arr;
+  }
+
+  let initialAlloc = distribute(eligibleParties, totalSeats);
+
+  if (isMetropolitan) {
+    const cap = Math.floor((totalSeats * 2) / 3);
+    const cappedParty = initialAlloc.find((a) => a.allocated > cap);
+    if (cappedParty) {
+      const finalResult = { [cappedParty.name]: cap };
+      const otherParties = eligibleParties.filter((p) => p.name !== cappedParty.name);
+      const remainingSeats = totalSeats - cap;
+      
+      // 재계산 로직: 나머지 정당들의 득표비율을 기준으로 남은 의석 배분
+      const otherTotalVotes = otherParties.reduce((sum, p) => sum + (p.votes || 0), 0);
+      if (otherTotalVotes > 0) {
+        const otherArr = otherParties.map((p) => {
+          const exact = ((p.votes || 0) / otherTotalVotes) * remainingSeats;
+          return {
+            name: p.name,
+            votes: p.votes || 0,
+            intPart: Math.floor(exact),
+            remainder: exact - Math.floor(exact),
+            allocated: Math.floor(exact),
+          };
+        });
+        const remain2 = remainingSeats - otherArr.reduce((s, a) => s + a.intPart, 0);
+        otherArr.sort((a, b) => b.remainder - a.remainder || b.votes - a.votes);
+        for (let i = 0; i < remain2; i++) {
+          if (otherArr[i]) otherArr[i].allocated += 1;
+        }
+        otherArr.forEach((a) => finalResult[a.name] = a.allocated);
+      }
+      return finalResult;
+    }
+  }
+
+  const finalResult = {};
+  initialAlloc.forEach((a) => finalResult[a.name] = a.allocated);
+  return finalResult;
+}
+
 function renderCandidateRows(container, scope) {
   const summary = getProgressSummary(scope) || {};
   const totalVotes = summary.validVotes || summary.votes;
@@ -211,6 +282,9 @@ function renderCandidateRows(container, scope) {
     return;
   }
   const maxVotes = Math.max(1, ...candidates.map((candidate) => candidate.votes || 0));
+  const isPR = scope.id in PR_SEATS;
+  const prSeatAllocations = isPR ? calculatePRSeats(candidates, PR_SEATS[scope.id], scope.id === "metropolitan-pr-gyeonggi") : {};
+
   candidates.forEach((candidate, index) => {
     const isLeader = candidate === candidates[0];
     const row = makeElement("div", `candidate-row ${isLeader ? "candidate-row--leader" : ""}`);
@@ -219,14 +293,19 @@ function renderCandidateRows(container, scope) {
     const fill = makeElement("span");
     fill.style.width = `${((candidate.votes || 0) / maxVotes) * 100}%`;
     track.append(fill);
+    
+    let text = `${formatNumber(candidate.votes)}표 · ${formatPercent(getCandidateRate(candidate, totalVotes))}`;
+    if (isPR) {
+      const seats = prSeatAllocations[candidate.name];
+      if (seats > 0) {
+        text += ` [예상 ${seats}석]`;
+      }
+    }
+    
     row.append(
       makeElement("b", "", candidate.name),
       track,
-      makeElement(
-        "span",
-        "",
-        `${formatNumber(candidate.votes)}표 · ${formatPercent(getCandidateRate(candidate, totalVotes))}`
-      )
+      makeElement("span", "", text)
     );
     container.append(row);
   });

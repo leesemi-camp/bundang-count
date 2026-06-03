@@ -375,7 +375,7 @@ details[open] .race-card__toggle-icon {
 
 .bar-row {
   display: grid;
-  grid-template-columns: 104px 1fr 140px;
+  grid-template-columns: 104px 1fr 190px;
   align-items: center;
   gap: 8px;
   color: var(--muted);
@@ -699,7 +699,7 @@ details[open] > .local-breakdown__summary .unit-group__hint {
 .candidate-row,
 .unit-row {
   display: grid;
-  grid-template-columns: 104px 1fr 140px;
+  grid-template-columns: 104px 1fr 190px;
   align-items: center;
   gap: 8px;
   font-size: 12px;
