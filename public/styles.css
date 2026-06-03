@@ -493,9 +493,9 @@ details[open] .race-card__toggle-icon {
 .district-ballot,
 .district-candidate {
   display: grid;
-  grid-template-columns: 104px minmax(80px, 1fr) 92px;
+  grid-template-columns: 84px minmax(30px, 1fr) max-content;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   color: var(--muted);
   font-size: 12px;
 }
