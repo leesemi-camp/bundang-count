@@ -508,7 +508,7 @@ details[open] .race-card__toggle-icon {
 .district-ballot,
 .district-candidate {
   display: grid;
-  grid-template-columns: 140px 1fr 190px;
+  grid-template-columns: 126px 1fr 120px;
   align-items: center;
   gap: 6px;
   color: var(--muted);
@@ -1005,16 +1005,4 @@ details.unit-card--group[open] > .unit-group__list {
   .unit-row span:last-child {
     text-align: left;
   }
-}
-
-.badge--winner {
-  display: inline-block;
-  background: rgba(239, 68, 68, 0.15);
-  color: #ef4444;
-  font-size: 10px;
-  font-weight: 700;
-  padding: 2px 6px;
-  border-radius: 4px;
-  margin-left: 6px;
-  vertical-align: middle;
 }

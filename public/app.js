@@ -195,9 +195,119 @@ function renderBallotBars(container, scope) {
       const fill = makeElement("span");
       fill.style.width = `${((item.votes || 0) / maxVotes) * 100}%`;
       track.append(fill);
-      const nameEl = makeElement("b", "", candidate.name);
-    if (isConfirmed) nameEl.append(makeElement("span", "badge badge--winner", "당선확실"));
-    row.append(nameEl, track, makeElement("span", "", text));
+      row.append(label, track, makeElement("span", "", formatNumber(item.votes || 0)));
+      container.append(row);
+    });
+}
+
+function calculatePRSeats(candidates, totalSeats, isMetropolitan) {
+  const totalValidVotes = candidates.reduce((sum, c) => sum + (c.votes || 0), 0);
+  if (totalValidVotes === 0) return {};
+
+  const eligibleParties = candidates.filter((c) => (c.votes || 0) / totalValidVotes >= 0.05);
+  const eligibleVotes = eligibleParties.reduce((sum, c) => sum + (c.votes || 0), 0);
+  if (eligibleVotes === 0) return {};
+
+  function distribute(parties, seats) {
+    const arr = parties.map((p) => {
+      const exact = ((p.votes || 0) / eligibleVotes) * seats;
+      return {
+        name: p.name,
+        votes: p.votes || 0,
+        intPart: Math.floor(exact),
+        remainder: exact - Math.floor(exact),
+        allocated: Math.floor(exact),
+      };
+    });
+    const remain = seats - arr.reduce((s, a) => s + a.intPart, 0);
+    // 동점 시 득표수 순
+    arr.sort((a, b) => b.remainder - a.remainder || b.votes - a.votes);
+    for (let i = 0; i < remain; i++) {
+      if (arr[i]) arr[i].allocated += 1;
+    }
+    return arr;
+  }
+
+  let initialAlloc = distribute(eligibleParties, totalSeats);
+
+  if (isMetropolitan) {
+    const cap = Math.floor((totalSeats * 2) / 3);
+    const cappedParty = initialAlloc.find((a) => a.allocated > cap);
+    if (cappedParty) {
+      const finalResult = { [cappedParty.name]: cap };
+      const otherParties = eligibleParties.filter((p) => p.name !== cappedParty.name);
+      const remainingSeats = totalSeats - cap;
+      
+      // 재계산 로직: 나머지 정당들의 득표비율을 기준으로 남은 의석 배분
+      const otherTotalVotes = otherParties.reduce((sum, p) => sum + (p.votes || 0), 0);
+      if (otherTotalVotes > 0) {
+        const otherArr = otherParties.map((p) => {
+          const exact = ((p.votes || 0) / otherTotalVotes) * remainingSeats;
+          return {
+            name: p.name,
+            votes: p.votes || 0,
+            intPart: Math.floor(exact),
+            remainder: exact - Math.floor(exact),
+            allocated: Math.floor(exact),
+          };
+        });
+        const remain2 = remainingSeats - otherArr.reduce((s, a) => s + a.intPart, 0);
+        otherArr.sort((a, b) => b.remainder - a.remainder || b.votes - a.votes);
+        for (let i = 0; i < remain2; i++) {
+          if (otherArr[i]) otherArr[i].allocated += 1;
+        }
+        otherArr.forEach((a) => finalResult[a.name] = a.allocated);
+      }
+      return finalResult;
+    }
+  }
+
+  const finalResult = {};
+  initialAlloc.forEach((a) => finalResult[a.name] = a.allocated);
+  return finalResult;
+}
+
+function renderCandidateRows(container, scope) {
+  const summary = getProgressSummary(scope) || {};
+  const totalVotes = summary.validVotes || summary.votes;
+  const allCandidates = (summary.candidateVotes || []).filter((c) => c.name !== "계" && c.votes);
+  const candidates = allCandidates
+    .sort((a, b) => (b.votes || 0) - (a.votes || 0))
+    .slice(0, 4);
+  container.replaceChildren();
+  if (!candidates.length) {
+    const message = shouldShowDistrictBreakdown(scope)
+      ? "선거구별 후보 득표율은 아래 선거구별 보기에서 확인"
+      : "후보 득표 데이터 대기";
+    container.append(makeElement("p", "muted", message));
+    return;
+  }
+  const maxVotes = Math.max(1, ...candidates.map((candidate) => candidate.votes || 0));
+  const isPR = scope.id in PR_SEATS;
+  const prSeatAllocations = isPR ? calculatePRSeats(allCandidates, PR_SEATS[scope.id], scope.id === "metropolitan-pr-gyeonggi") : {};
+
+  candidates.forEach((candidate, index) => {
+    const isLeader = candidate === candidates[0];
+    const row = makeElement("div", `candidate-row ${isLeader ? "candidate-row--leader" : ""}`);
+    applyCandidateAccent(row, candidate, index);
+    const track = makeElement("div", "bar-track");
+    const fill = makeElement("span");
+    fill.style.width = `${((candidate.votes || 0) / maxVotes) * 100}%`;
+    track.append(fill);
+    
+    let text = `${formatNumber(candidate.votes)}표 · ${formatPercent(getCandidateRate(candidate, totalVotes))}`;
+    if (isPR) {
+      const seats = prSeatAllocations[candidate.name];
+      if (seats > 0) {
+        text += ` [예상 ${seats}석]`;
+      }
+    }
+    
+    row.append(
+      makeElement("b", "", candidate.name),
+      track,
+      makeElement("span", "", text)
+    );
     container.append(row);
   });
 }
@@ -244,24 +354,22 @@ function renderUnitBallotBreakdown(unit) {
   return wrapper;
 }
 
-function renderUnitCandidateBreakdown(unit, globalMaxCandidateVotes) {
+function renderUnitCandidateBreakdown(unit) {
   const candidates = getUnitCandidates(unit).slice(0, 3);
   const wrapper = makeElement("div", "district-candidates");
   if (!candidates.length) return wrapper;
   const totalVotes = getUnitTotalRow(unit)?.validVotes || getUnitTotalRow(unit)?.votes;
-  const maxVotes = globalMaxCandidateVotes || Math.max(1, ...candidates.map((candidate) => candidate.votes || 0));
+  const maxVotes = Math.max(1, ...candidates.map((candidate) => candidate.votes || 0));
   candidates.forEach((candidate, index) => {
-    const isLeader = candidate === candidates[0];
-    const isConfirmed = isLeader && checkConfirmedWinner(candidates, unit.progress);
-    const row = makeElement("div", `district-candidate ${isLeader ? "district-candidate--leader" : ""}`);
+    const row = makeElement("div", `district-candidate ${candidate === candidates[0] ? "district-candidate--leader" : ""}`);
     applyCandidateAccent(row, candidate, index);
     const track = makeElement("div", "bar-track");
     const fill = makeElement("span");
     fill.style.width = `${((candidate.votes || 0) / maxVotes) * 100}%`;
     track.append(fill);
-    const nameEl = makeElement("b", "", candidate.name);
-    if (typeof isConfirmed !== "undefined" && isConfirmed) nameEl.append(makeElement("span", "badge badge--winner", "당선확실"));
-    row.append(nameEl, track,
+    row.append(
+      makeElement("b", "", candidate.name),
+      track,
       makeElement(
         "span",
         "",
@@ -304,9 +412,6 @@ function renderDistrictBreakdown(scope) {
 
   const list = makeElement("div", "district-list");
   const maxVotes = Math.max(1, ...visibleUnits.map((unit) => unit.summary?.votes || 0));
-  const globalMaxCandidateVotes = Math.max(1, ...visibleUnits.map(unit => {
-    return Math.max(0, ...getUnitCandidates(unit).map(c => c.votes || 0));
-  }));
 
   visibleUnits.forEach((unit) => {
     const progress = getUnitProgress(scope, unit);
@@ -332,7 +437,7 @@ function renderDistrictBreakdown(scope) {
     fill.style.width = `${((votes || 0) / maxVotes) * 100}%`;
     track.append(fill);
 
-    summary.append(top, meta, track, renderUnitBallotBreakdown(unit), renderUnitCandidateBreakdown(unit, globalMaxCandidateVotes));
+    summary.append(top, meta, track, renderUnitBallotBreakdown(unit), renderUnitCandidateBreakdown(unit));
     summary.append(makeElement("p", "unit-group__hint muted", "▸ 선거구 내 동별 상세 보기"));
     row.append(summary);
 
@@ -434,24 +539,25 @@ function renderDetailBallotBreakdown(detail) {
   return wrapper;
 }
 
-function renderDetailCandidateBreakdown(detail, globalMaxCandidateVotes) {
+function renderDetailCandidateBreakdown(detail) {
   const candidates = getDetailCandidates(detail).slice(0, 3);
   const wrapper = makeElement("div", "local-candidates");
-  if (!candidates.length) return wrapper;
-  const totalVotes = getDetailTotalRow(detail)?.validVotes || getDetailTotalRow(detail)?.votes;
-  const maxVotes = globalMaxCandidateVotes || Math.max(1, ...candidates.map((candidate) => candidate.votes || 0));
+  if (!candidates.length) {
+    wrapper.append(makeElement("p", "muted", "후보 득표 데이터 대기"));
+    return wrapper;
+  }
+  const totalVotes = getDetailTotalVotes(detail);
+  const maxVotes = Math.max(1, ...candidates.map((candidate) => candidate.votes || 0));
   candidates.forEach((candidate, index) => {
-    const isLeader = index === 0;
-    const isConfirmed = isLeader && checkConfirmedWinner(candidates, detail.progress);
-    const row = makeElement("div", `local-candidate ${isLeader ? "local-candidate--leader" : ""}`);
+    const row = makeElement("div", `local-candidate ${index === 0 ? "local-candidate--leader" : ""}`);
     applyCandidateAccent(row, candidate, index);
     const track = makeElement("div", "bar-track");
     const fill = makeElement("span");
     fill.style.width = `${((candidate.votes || 0) / maxVotes) * 100}%`;
     track.append(fill);
-    const nameEl = makeElement("b", "", candidate.name);
-    if (typeof isConfirmed !== "undefined" && isConfirmed) nameEl.append(makeElement("span", "badge badge--winner", "당선확실"));
-    row.append(nameEl, track,
+    row.append(
+      makeElement("b", "", candidate.name),
+      track,
       makeElement(
         "span",
         "",
@@ -463,7 +569,7 @@ function renderDetailCandidateBreakdown(detail, globalMaxCandidateVotes) {
   return wrapper;
 }
 
-function renderLocalAreaCard(detail, extraClass = "", globalMaxCandidateVotes = null) {
+function renderLocalAreaCard(detail, extraClass = "") {
   const card = makeElement("article", `local-card ${extraClass}`.trim());
   const activeTypes = getDetailActiveTypes(detail);
   const rate = detail?.progress?.progressRate;
@@ -478,7 +584,7 @@ function renderLocalAreaCard(detail, extraClass = "", globalMaxCandidateVotes = 
   meta.append(makeElement("span", "", activeTypes.length ? `반영 ${activeTypes.length}/${TARGET_TYPES.length}` : "투표구분 상세없음"));
   meta.append(makeElement("span", "", getDetailLeadingText(detail)));
 
-  card.append(top, meta, renderDetailBallotBreakdown(detail), renderDetailCandidateBreakdown(detail, globalMaxCandidateVotes, globalMaxCandidateVotes));
+  card.append(top, meta, renderDetailBallotBreakdown(detail), renderDetailCandidateBreakdown(detail));
   return card;
 }
 
@@ -489,20 +595,12 @@ function renderLocalBreakdown(scope) {
   header.append(makeElement("strong", "", "수정·중원 전체 / 분당 동별"));
   header.append(makeElement("span", "muted", "후보 득표율과 투표 종류 반영 상태"));
   section.append(header);
-  
-  const allDetails = [];
-  if (breakdown.summaryRegions) allDetails.push(...breakdown.summaryRegions);
-  if (breakdown.details) allDetails.push(...breakdown.details);
-  
-  const globalMaxCandidateVotes = Math.max(1, ...allDetails.map(detail => {
-    return Math.max(0, ...getDetailCandidates(detail).map(c => c.votes || 0));
-  }));
 
   // 수정/중원구 카드는 기존 그리드에 표시
   if (breakdown.summaryRegions?.length) {
     const summaryGrid = makeElement("div", "local-grid local-grid--summary");
     breakdown.summaryRegions.forEach((detail) => {
-      summaryGrid.append(renderLocalAreaCard(detail, "", globalMaxCandidateVotes));
+      summaryGrid.append(renderLocalAreaCard(detail));
     });
     section.append(summaryGrid);
   }
