@@ -4225,6 +4225,124 @@
           }
         }
       ]
+    },
+    {
+      "generatedAt": "2026-06-04T00:46:05+09:00",
+      "scopes": [
+        {
+          "id": "governor-gyeonggi",
+          "electionName": "시·도지사선거",
+          "scopeName": "경기도",
+          "progressRate": 41.34,
+          "activeTargetTypes": [],
+          "typeVotes": {
+            "관내사전투표": 0,
+            "선거일투표": 0,
+            "관외사전투표": 0
+          }
+        },
+        {
+          "id": "metropolitan-pr-gyeonggi",
+          "electionName": "광역의원비례대표선거",
+          "scopeName": "경기도",
+          "progressRate": 17.7,
+          "activeTargetTypes": [],
+          "typeVotes": {
+            "관내사전투표": 0,
+            "선거일투표": 0,
+            "관외사전투표": 0
+          }
+        },
+        {
+          "id": "education-gyeonggi",
+          "electionName": "교육감선거",
+          "scopeName": "경기도",
+          "progressRate": 44.96,
+          "activeTargetTypes": [],
+          "typeVotes": {
+            "관내사전투표": 0,
+            "선거일투표": 0,
+            "관외사전투표": 0
+          }
+        },
+        {
+          "id": "mayor-seongnam",
+          "electionName": "구·시·군의 장선거",
+          "scopeName": "성남시",
+          "progressRate": 48.59,
+          "activeTargetTypes": [
+            "관내사전투표",
+            "선거일투표",
+            "관외사전투표"
+          ],
+          "typeVotes": {
+            "관내사전투표": 106905,
+            "선거일투표": 130680,
+            "관외사전투표": 6251
+          }
+        },
+        {
+          "id": "provincial-council-bundang",
+          "electionName": "시·도의회의원선거",
+          "scopeName": "성남시 분당구",
+          "progressRate": 13.83,
+          "activeTargetTypes": [
+            "관내사전투표",
+            "관외사전투표"
+          ],
+          "typeVotes": {
+            "관내사전투표": 49399,
+            "선거일투표": 0,
+            "관외사전투표": 6256
+          }
+        },
+        {
+          "id": "municipal-council-bundang",
+          "electionName": "구·시·군의회의원선거",
+          "scopeName": "성남시 분당구",
+          "progressRate": 11.4,
+          "activeTargetTypes": [
+            "관내사전투표",
+            "관외사전투표"
+          ],
+          "typeVotes": {
+            "관내사전투표": 14921,
+            "선거일투표": 0,
+            "관외사전투표": 3070
+          }
+        },
+        {
+          "id": "basic-pr-seongnam",
+          "electionName": "기초의원비례대표선거",
+          "scopeName": "성남시",
+          "progressRate": 12.2,
+          "activeTargetTypes": [
+            "관내사전투표",
+            "선거일투표"
+          ],
+          "typeVotes": {
+            "관내사전투표": 42403,
+            "선거일투표": 21703,
+            "관외사전투표": 0
+          }
+        },
+        {
+          "id": "national-assembly-all",
+          "electionName": "국회의원선거",
+          "scopeName": "전체 선거구",
+          "progressRate": 47.25,
+          "activeTargetTypes": [
+            "관내사전투표",
+            "선거일투표",
+            "관외사전투표"
+          ],
+          "typeVotes": {
+            "관내사전투표": 229622,
+            "선거일투표": 324828,
+            "관외사전투표": 54131
+          }
+        }
+      ]
     }
   ]
 }
