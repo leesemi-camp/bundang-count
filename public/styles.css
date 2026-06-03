@@ -493,7 +493,7 @@ details[open] .race-card__toggle-icon {
 .district-ballot,
 .district-candidate {
   display: grid;
-  grid-template-columns: 84px 1fr 120px;
+  grid-template-columns: 104px 1fr 120px;
   align-items: center;
   gap: 6px;
   color: var(--muted);
@@ -653,7 +653,7 @@ details[open] > .local-breakdown__summary .unit-group__hint {
 .local-ballot,
 .local-candidate {
   display: grid;
-  grid-template-columns: 84px 1fr 104px;
+  grid-template-columns: 104px 1fr 104px;
   align-items: center;
   gap: 6px;
   color: var(--muted);
