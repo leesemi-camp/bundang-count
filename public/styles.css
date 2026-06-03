@@ -728,6 +728,56 @@ footer {
   font-weight: 850;
 }
 
+/* 분리선거구 그룹 카드 */
+.unit-card--group {
+  border-color: rgba(53, 104, 168, 0.3);
+  background: linear-gradient(to bottom, #f5f8fc, var(--surface));
+}
+
+.unit-group__divider {
+  height: 1px;
+  margin: 2px 0;
+  background: var(--line);
+}
+
+.unit-group__list {
+  display: grid;
+  gap: 10px;
+}
+
+.unit-group__item {
+  display: grid;
+  gap: 3px;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--surface);
+}
+
+.unit-group__item-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.unit-group__item-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.unit-group__item-rate {
+  font-size: 13px;
+  font-weight: 850;
+  color: var(--green);
+  white-space: nowrap;
+}
+
+.unit-group__candidate {
+  font-size: 11px;
+}
+
 .empty-state {
   padding: 20px;
   border: 1px dashed var(--line);

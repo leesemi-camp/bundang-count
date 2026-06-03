@@ -557,6 +557,121 @@ function renderRaces(data) {
   });
 }
 
+// " / " 구분자가 있는 유닛들을 앞부분(선거구명) 기준으로 그룹화.
+// 예: "군산시김제시부안군을 / 군산시" → 그룹키 "군산시김제시부안군을", 서브명 "군산시"
+function groupedNationalUnits(units) {
+  const groups = []; // { key, cityName, items: [unit,...] } or { key: null, unit }
+  const groupMap = new Map();
+  units.forEach((unit) => {
+    const sepIdx = unit.name.indexOf(" / ");
+    if (sepIdx !== -1) {
+      const groupKey = unit.name.slice(0, sepIdx);
+      if (!groupMap.has(groupKey)) {
+        const entry = { key: groupKey, cityName: unit.cityName, items: [] };
+        groupMap.set(groupKey, entry);
+        groups.push(entry);
+      }
+      groupMap.get(groupKey).items.push({ ...unit, subName: unit.name.slice(sepIdx + 3) });
+    } else {
+      groups.push({ key: null, unit });
+    }
+  });
+  return groups;
+}
+
+function renderNationalUnitCard(unit, scope) {
+  const card = makeElement("article", "unit-card");
+  const progress = unit.progress || getUnitProgress(scope, unit);
+  const activeTypes = TARGET_TYPES.filter((type) => {
+    return unit.rows.some((row) => row.ballotType === type && row.votes);
+  });
+  const top = makeElement("div", "unit-card__top");
+  top.append(makeElement("strong", "", unit.name));
+  top.append(makeElement("span", "unit-card__rate", formatPercent(progress?.progressRate)));
+  card.append(top);
+  card.append(
+    makeElement(
+      "p",
+      "muted",
+      `${unit.cityName ? `${unit.cityName} · ` : ""}${formatNumber(unit.summary?.votes || progress?.votes)}표 · ${
+        activeTypes.length ? activeTypes.join(" · ") : "개표구분 대기"
+      }`
+    )
+  );
+  const totalRow = getUnitTotalRow(unit);
+  const candidates = (totalRow?.candidateVotes || [])
+    .filter((candidate) => candidate.name !== "계" && candidate.votes)
+    .sort((a, b) => (b.votes || 0) - (a.votes || 0))
+    .slice(0, 2);
+  candidates.forEach((candidate, index) => {
+    const line = makeElement("p", `unit-candidate ${index === 0 ? "unit-candidate--leader" : ""}`);
+    applyCandidateAccent(line, candidate, index);
+    line.textContent = `${candidate.name} ${formatNumber(candidate.votes)}표 · ${formatPercent(getCandidateRate(candidate, totalRow?.validVotes || totalRow?.votes))}`;
+    card.append(line);
+  });
+  return card;
+}
+
+function renderNationalGroupCard(group) {
+  // 그룹 전체 집계
+  const totalVotes = group.items.reduce((s, u) => s + (u.summary?.votes || 0), 0);
+  const allActive = group.items.flatMap((u) =>
+    TARGET_TYPES.filter((t) => u.rows.some((r) => r.ballotType === t && r.votes))
+  );
+  const activeSet = [...new Set(allActive)];
+
+  const card = makeElement("article", "unit-card unit-card--group");
+
+  // 헤더
+  const top = makeElement("div", "unit-card__top");
+  top.append(makeElement("strong", "", group.key));
+  top.append(makeElement("span", "unit-card__rate", `${formatNumber(totalVotes)}표`));
+  card.append(top);
+  card.append(
+    makeElement(
+      "p",
+      "muted",
+      `${group.cityName ? `${group.cityName} · ` : ""}분리선거구 ${group.items.length}개 지역 합산 · ${
+        activeSet.length ? activeSet.join(" · ") : "개표구분 대기"
+      }`
+    )
+  );
+
+  // 구분선
+  card.append(makeElement("div", "unit-group__divider"));
+
+  // 서브아이템
+  const subList = makeElement("div", "unit-group__list");
+  group.items.forEach((unit) => {
+    const sub = makeElement("div", "unit-group__item");
+    const subTop = makeElement("div", "unit-group__item-top");
+    const progress = unit.progress || null;
+    subTop.append(makeElement("span", "unit-group__item-name", unit.subName));
+    subTop.append(makeElement("span", "unit-group__item-rate", formatPercent(progress?.progressRate)));
+    sub.append(subTop);
+
+    const votes = unit.summary?.votes || progress?.votes || 0;
+    const totalRow = getUnitTotalRow(unit);
+    const candidates = (totalRow?.candidateVotes || [])
+      .filter((c) => c.name !== "계" && c.votes)
+      .sort((a, b) => (b.votes || 0) - (a.votes || 0))
+      .slice(0, 2);
+
+    const subMeta = makeElement("p", "muted", `${formatNumber(votes)}표`);
+    sub.append(subMeta);
+
+    candidates.forEach((candidate, index) => {
+      const line = makeElement("p", `unit-candidate unit-group__candidate ${index === 0 ? "unit-candidate--leader" : ""}`);
+      applyCandidateAccent(line, candidate, index);
+      line.textContent = `${candidate.name} ${formatNumber(candidate.votes)}표 · ${formatPercent(getCandidateRate(candidate, totalRow?.validVotes || totalRow?.votes))}`;
+      sub.append(line);
+    });
+    subList.append(sub);
+  });
+  card.append(subList);
+  return card;
+}
+
 function renderNational(data) {
   const scope = data.scopes.find((item) => item.id === "national-assembly-all");
   const list = $("#nationalList");
@@ -576,37 +691,13 @@ function renderNational(data) {
     return;
   }
 
-  units.forEach((unit) => {
-    const card = makeElement("article", "unit-card");
-    const progress = unit.progress || getUnitProgress(scope, unit);
-    const activeTypes = TARGET_TYPES.filter((type) => {
-      return unit.rows.some((row) => row.ballotType === type && row.votes);
-    });
-    const top = makeElement("div", "unit-card__top");
-    top.append(makeElement("strong", "", unit.name));
-    top.append(makeElement("span", "unit-card__rate", formatPercent(progress?.progressRate)));
-    card.append(top);
-    card.append(
-      makeElement(
-        "p",
-        "muted",
-        `${unit.cityName ? `${unit.cityName} · ` : ""}${formatNumber(unit.summary?.votes || progress?.votes)}표 · ${
-          activeTypes.length ? activeTypes.join(" · ") : "개표구분 대기"
-        }`
-      )
-    );
-    const totalRow = getUnitTotalRow(unit);
-    const candidates = (totalRow?.candidateVotes || [])
-      .filter((candidate) => candidate.name !== "계" && candidate.votes)
-      .sort((a, b) => (b.votes || 0) - (a.votes || 0))
-      .slice(0, 2);
-    candidates.forEach((candidate, index) => {
-      const line = makeElement("p", `unit-candidate ${index === 0 ? "unit-candidate--leader" : ""}`);
-      applyCandidateAccent(line, candidate, index);
-      line.textContent = `${candidate.name} ${formatNumber(candidate.votes)}표 · ${formatPercent(getCandidateRate(candidate, totalRow?.validVotes || totalRow?.votes))}`;
-      card.append(line);
-    });
-    list.append(card);
+  const groups = groupedNationalUnits(units);
+  groups.forEach((group) => {
+    if (group.key === null) {
+      list.append(renderNationalUnitCard(group.unit, scope));
+    } else {
+      list.append(renderNationalGroupCard(group));
+    }
   });
 }
 
