@@ -348,17 +348,27 @@ function getUnitActiveTypes(unit) {
   return TARGET_TYPES.filter((type) => unit.rows.some((row) => row.ballotType === type && row.votes));
 }
 
+const UNCONTESTED_UNITS = new Set([
+  "성남시사선거구",
+  "성남시아선거구",
+  "성남시자선거구",
+  "성남시카선거구",
+]);
+
 function renderDistrictBreakdown(scope) {
   const section = makeElement("section", "district-breakdown");
   const header = makeElement("div", "district-breakdown__head");
+
+  const visibleUnits = scope.units.filter((u) => !UNCONTESTED_UNITS.has(u.name));
+
   header.append(makeElement("strong", "", "선거구별 보기"));
-  header.append(makeElement("span", "muted", `${scope.units.length}개 선거구`));
+  header.append(makeElement("span", "muted", `${visibleUnits.length}개 선거구`));
   section.append(header);
 
   const list = makeElement("div", "district-list");
-  const maxVotes = Math.max(1, ...scope.units.map((unit) => unit.summary?.votes || 0));
+  const maxVotes = Math.max(1, ...visibleUnits.map((unit) => unit.summary?.votes || 0));
 
-  scope.units.forEach((unit) => {
+  visibleUnits.forEach((unit) => {
     const progress = getUnitProgress(scope, unit);
     const activeTypes = getUnitActiveTypes(unit);
     const votes = unit.summary?.votes || progress?.votes || 0;
