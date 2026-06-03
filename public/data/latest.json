@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T06:13:18+09:00",
+  "generatedAt": "2026-06-04T06:15:56+09:00",
   "electionId": "0020260603",
   "source": {
     "name": "중앙선거관리위원회 선거통계시스템",
@@ -43,87 +43,87 @@
             "area": "합계",
             "groupArea": null,
             "fullArea": "합계",
-            "electors": 11642492,
-            "votes": 6784597,
+            "electors": 11655565,
+            "votes": 6794416,
             "candidateVotes": [
               {
                 "name": "더불어민주당 추미애",
-                "votes": 3677499,
+                "votes": 3683213,
                 "rate": 55.0
               },
               {
                 "name": "국민의힘 양향자",
-                "votes": 2635341,
-                "rate": 39.41
+                "votes": 2638717,
+                "rate": 39.4
               },
               {
                 "name": "개혁신당 조응천",
-                "votes": 288987,
+                "votes": 289451,
                 "rate": 4.32
               },
               {
                 "name": "진보당 홍성규",
-                "votes": 45596,
+                "votes": 45689,
                 "rate": 0.68
               },
               {
                 "name": "국민연합 김현욱",
-                "votes": 38517,
+                "votes": 38564,
                 "rate": 0.57
               },
               {
                 "name": "계",
-                "votes": 6685940,
+                "votes": 6695634,
                 "rate": null
               }
             ],
-            "validVotes": 6685940,
-            "invalidVotes": 98657,
-            "abstentions": 4857895,
-            "progressRate": 97.86
+            "validVotes": 6695634,
+            "invalidVotes": 98782,
+            "abstentions": 4861149,
+            "progressRate": 98.0
           },
           {
             "area": "수원시장안구",
             "groupArea": null,
             "fullArea": "수원시장안구",
-            "electors": 197316,
-            "votes": 115748,
+            "electors": 203801,
+            "votes": 122228,
             "candidateVotes": [
               {
                 "name": "더불어민주당 추미애",
-                "votes": 61781,
-                "rate": 54.19
+                "votes": 66062,
+                "rate": 54.87
               },
               {
                 "name": "국민의힘 양향자",
-                "votes": 45739,
-                "rate": 40.12
+                "votes": 47432,
+                "rate": 39.39
               },
               {
                 "name": "개혁신당 조응천",
-                "votes": 4950,
-                "rate": 4.34
+                "votes": 5272,
+                "rate": 4.37
               },
               {
                 "name": "진보당 홍성규",
-                "votes": 998,
-                "rate": 0.87
+                "votes": 1069,
+                "rate": 0.88
               },
               {
                 "name": "국민연합 김현욱",
-                "votes": 535,
+                "votes": 561,
                 "rate": 0.46
               },
               {
                 "name": "계",
-                "votes": 114003,
+                "votes": 120396,
                 "rate": null
               }
             ],
-            "validVotes": 114003,
-            "invalidVotes": 1745,
-            "abstentions": 81568,
-            "progressRate": 94.68
+            "validVotes": 120396,
+            "invalidVotes": 1832,
+            "abstentions": 81573,
+            "progressRate": 99.98
           },
           {
             "area": "수원시권선구",
@@ -216,26 +216,26 @@
             "groupArea": null,
             "fullArea": "수원시영통구",
             "electors": 303521,
-            "votes": 187142,
+            "votes": 187192,
             "candidateVotes": [
               {
                 "name": "더불어민주당 추미애",
-                "votes": 98284,
+                "votes": 98309,
                 "rate": 53.15
               },
               {
                 "name": "국민의힘 양향자",
-                "votes": 74520,
+                "votes": 74538,
                 "rate": 40.3
               },
               {
                 "name": "개혁신당 조응천",
-                "votes": 10286,
+                "votes": 10289,
                 "rate": 5.56
               },
               {
                 "name": "진보당 홍성규",
-                "votes": 1056,
+                "votes": 1057,
                 "rate": 0.57
               },
               {
@@ -245,14 +245,14 @@
               },
               {
                 "name": "계",
-                "votes": 184899,
+                "votes": 184946,
                 "rate": null
               }
             ],
-            "validVotes": 184899,
-            "invalidVotes": 2243,
-            "abstentions": 116379,
-            "progressRate": 99.98
+            "validVotes": 184946,
+            "invalidVotes": 2246,
+            "abstentions": 116329,
+            "progressRate": 100.0
           },
           {
             "area": "성남시수정구",
@@ -596,7 +596,7 @@
             "validVotes": 135022,
             "invalidVotes": 2133,
             "abstentions": 98358,
-            "progressRate": 99.98
+            "progressRate": 100.0
           },
           {
             "area": "부천시오정구",
@@ -903,44 +903,44 @@
             "area": "고양시덕양구",
             "groupArea": null,
             "fullArea": "고양시덕양구",
-            "electors": 433068,
-            "votes": 253018,
+            "electors": 435350,
+            "votes": 253934,
             "candidateVotes": [
               {
                 "name": "더불어민주당 추미애",
-                "votes": 144909,
-                "rate": 58.05
+                "votes": 145310,
+                "rate": 58.0
               },
               {
                 "name": "국민의힘 양향자",
-                "votes": 91687,
-                "rate": 36.73
+                "votes": 92161,
+                "rate": 36.78
               },
               {
                 "name": "개혁신당 조응천",
-                "votes": 10068,
+                "votes": 10097,
                 "rate": 4.03
               },
               {
                 "name": "진보당 홍성규",
-                "votes": 1921,
+                "votes": 1927,
                 "rate": 0.76
               },
               {
                 "name": "국민연합 김현욱",
-                "votes": 1035,
+                "votes": 1037,
                 "rate": 0.41
               },
               {
                 "name": "계",
-                "votes": 249620,
+                "votes": 250532,
                 "rate": null
               }
             ],
-            "validVotes": 249620,
-            "invalidVotes": 3398,
-            "abstentions": 180050,
-            "progressRate": 92.86
+            "validVotes": 250532,
+            "invalidVotes": 3402,
+            "abstentions": 181416,
+            "progressRate": 93.2
           },
           {
             "area": "고양시일산동구",
@@ -1155,7 +1155,7 @@
             "validVotes": 99502,
             "invalidVotes": 1523,
             "abstentions": 63381,
-            "progressRate": 99.98
+            "progressRate": 100.0
           },
           {
             "area": "남양주시",
@@ -1462,44 +1462,44 @@
             "area": "군포시",
             "groupArea": null,
             "fullArea": "군포시",
-            "electors": 176418,
-            "votes": 107210,
+            "electors": 178743,
+            "votes": 108574,
             "candidateVotes": [
               {
                 "name": "더불어민주당 추미애",
-                "votes": 58368,
-                "rate": 55.31
+                "votes": 59079,
+                "rate": 55.28
               },
               {
                 "name": "국민의힘 양향자",
-                "votes": 41746,
-                "rate": 39.56
+                "votes": 42290,
+                "rate": 39.57
               },
               {
                 "name": "개혁신당 조응천",
-                "votes": 4187,
-                "rate": 3.96
+                "votes": 4271,
+                "rate": 3.99
               },
               {
                 "name": "진보당 홍성규",
-                "votes": 661,
+                "votes": 669,
                 "rate": 0.62
               },
               {
                 "name": "국민연합 김현욱",
-                "votes": 555,
+                "votes": 561,
                 "rate": 0.52
               },
               {
                 "name": "계",
-                "votes": 105517,
+                "votes": 106870,
                 "rate": null
               }
             ],
-            "validVotes": 105517,
-            "invalidVotes": 1693,
-            "abstentions": 69208,
-            "progressRate": 76.8
+            "validVotes": 106870,
+            "invalidVotes": 1704,
+            "abstentions": 70169,
+            "progressRate": 77.78
           },
           {
             "area": "하남시",
@@ -1849,44 +1849,44 @@
             "area": "김포시",
             "groupArea": null,
             "fullArea": "김포시",
-            "electors": 386025,
-            "votes": 222441,
+            "electors": 387175,
+            "votes": 223021,
             "candidateVotes": [
               {
                 "name": "더불어민주당 추미애",
-                "votes": 125732,
-                "rate": 57.2
+                "votes": 125926,
+                "rate": 57.14
               },
               {
                 "name": "국민의힘 양향자",
-                "votes": 83709,
-                "rate": 38.08
+                "votes": 84066,
+                "rate": 38.15
               },
               {
                 "name": "개혁신당 조응천",
-                "votes": 7969,
+                "votes": 7983,
                 "rate": 3.62
               },
               {
                 "name": "진보당 홍성규",
-                "votes": 1146,
+                "votes": 1150,
                 "rate": 0.52
               },
               {
                 "name": "국민연합 김현욱",
-                "votes": 1224,
+                "votes": 1229,
                 "rate": 0.55
               },
               {
                 "name": "계",
-                "votes": 219780,
+                "votes": 220354,
                 "rate": null
               }
             ],
-            "validVotes": 219780,
-            "invalidVotes": 2661,
-            "abstentions": 163584,
-            "progressRate": 96.23
+            "validVotes": 220354,
+            "invalidVotes": 2667,
+            "abstentions": 164154,
+            "progressRate": 96.48
           },
           {
             "area": "광주시",
@@ -2021,44 +2021,44 @@
             "area": "양평군",
             "groupArea": null,
             "fullArea": "양평군",
-            "electors": 102684,
-            "votes": 66556,
+            "electors": 103515,
+            "votes": 66985,
             "candidateVotes": [
               {
                 "name": "더불어민주당 추미애",
-                "votes": 31373,
-                "rate": 48.03
+                "votes": 31475,
+                "rate": 47.88
               },
               {
                 "name": "국민의힘 양향자",
-                "votes": 30872,
-                "rate": 47.26
+                "votes": 31162,
+                "rate": 47.4
               },
               {
                 "name": "개혁신당 조응천",
-                "votes": 2208,
-                "rate": 3.38
+                "votes": 2220,
+                "rate": 3.37
               },
               {
                 "name": "진보당 홍성규",
-                "votes": 388,
+                "votes": 391,
                 "rate": 0.59
               },
               {
                 "name": "국민연합 김현욱",
-                "votes": 473,
-                "rate": 0.72
+                "votes": 481,
+                "rate": 0.73
               },
               {
                 "name": "계",
-                "votes": 65314,
+                "votes": 65729,
                 "rate": null
               }
             ],
-            "validVotes": 65314,
-            "invalidVotes": 1242,
-            "abstentions": 36128,
-            "progressRate": 92.59
+            "validVotes": 65729,
+            "invalidVotes": 1256,
+            "abstentions": 36530,
+            "progressRate": 93.18
           },
           {
             "area": "가평군",
@@ -2108,44 +2108,44 @@
           "area": "합계",
           "groupArea": null,
           "fullArea": "합계",
-          "electors": 11642492,
-          "votes": 6784597,
+          "electors": 11655565,
+          "votes": 6794416,
           "candidateVotes": [
             {
               "name": "더불어민주당 추미애",
-              "votes": 3677499,
+              "votes": 3683213,
               "rate": 55.0
             },
             {
               "name": "국민의힘 양향자",
-              "votes": 2635341,
-              "rate": 39.41
+              "votes": 2638717,
+              "rate": 39.4
             },
             {
               "name": "개혁신당 조응천",
-              "votes": 288987,
+              "votes": 289451,
               "rate": 4.32
             },
             {
               "name": "진보당 홍성규",
-              "votes": 45596,
+              "votes": 45689,
               "rate": 0.68
             },
             {
               "name": "국민연합 김현욱",
-              "votes": 38517,
+              "votes": 38564,
               "rate": 0.57
             },
             {
               "name": "계",
-              "votes": 6685940,
+              "votes": 6695634,
               "rate": null
             }
           ],
-          "validVotes": 6685940,
-          "invalidVotes": 98657,
-          "abstentions": 4857895,
-          "progressRate": 97.86
+          "validVotes": 6695634,
+          "invalidVotes": 98782,
+          "abstentions": 4861149,
+          "progressRate": 98.0
         }
       },
       "resultSummary": {
@@ -4950,114 +4950,114 @@
             "area": "합계",
             "groupArea": null,
             "fullArea": "합계",
-            "electors": 10726534,
-            "votes": 6235693,
+            "electors": 10763092,
+            "votes": 6252872,
             "candidateVotes": [
               {
                 "name": "더불어민주당",
-                "votes": 3024227,
-                "rate": 49.19
+                "votes": 3031527,
+                "rate": 49.17
               },
               {
                 "name": "국민의힘",
-                "votes": 2361292,
-                "rate": 38.41
+                "votes": 2368770,
+                "rate": 38.42
               },
               {
                 "name": "조국혁신당",
-                "votes": 308747,
+                "votes": 309515,
                 "rate": 5.02
               },
               {
                 "name": "개혁신당",
-                "votes": 222781,
+                "votes": 223448,
                 "rate": 3.62
               },
               {
                 "name": "진보당",
-                "votes": 68290,
+                "votes": 68533,
                 "rate": 1.11
               },
               {
                 "name": "기본소득당",
-                "votes": 61933,
+                "votes": 62101,
                 "rate": 1.0
               },
               {
                 "name": "사회민주당",
-                "votes": 3220,
+                "votes": 3224,
                 "rate": 0.05
               },
               {
                 "name": "거지당",
-                "votes": 6356,
+                "votes": 6372,
                 "rate": 0.1
               },
               {
                 "name": "공화당",
-                "votes": 1471,
+                "votes": 1474,
                 "rate": 0.02
               },
               {
                 "name": "국민대통합당",
-                "votes": 2070,
+                "votes": 2072,
                 "rate": 0.03
               },
               {
                 "name": "국민연합",
-                "votes": 2806,
+                "votes": 2812,
                 "rate": 0.04
               },
               {
                 "name": "기독당",
-                "votes": 4518,
+                "votes": 4530,
                 "rate": 0.07
               },
               {
                 "name": "대한국민당",
-                "votes": 2037,
+                "votes": 2042,
                 "rate": 0.03
               },
               {
                 "name": "새미래민주당",
-                "votes": 5436,
+                "votes": 5458,
                 "rate": 0.08
               },
               {
                 "name": "자유와혁신",
-                "votes": 32977,
+                "votes": 33114,
                 "rate": 0.53
               },
               {
                 "name": "정의당",
-                "votes": 30335,
+                "votes": 30433,
                 "rate": 0.49
               },
               {
                 "name": "친미연합",
-                "votes": 1005,
+                "votes": 1012,
                 "rate": 0.01
               },
               {
                 "name": "국민당",
-                "votes": 2817,
+                "votes": 2824,
                 "rate": 0.04
               },
               {
                 "name": "한나라당",
-                "votes": 4868,
+                "votes": 4886,
                 "rate": 0.07
               },
               {
                 "name": "계",
-                "votes": 6147186,
+                "votes": 6164147,
                 "rate": null
               }
             ],
-            "validVotes": 6147186,
-            "invalidVotes": 88507,
-            "abstentions": 4490841,
-            "progressRate": 89.94
+            "validVotes": 6164147,
+            "invalidVotes": 88725,
+            "abstentions": 4510220,
+            "progressRate": 90.19
           },
           {
             "area": "수원시장안구",
@@ -5176,47 +5176,47 @@
             "area": "수원시권선구",
             "groupArea": null,
             "fullArea": "수원시권선구",
-            "electors": 231018,
-            "votes": 138826,
+            "electors": 245691,
+            "votes": 145313,
             "candidateVotes": [
               {
                 "name": "더불어민주당",
-                "votes": 71662,
-                "rate": 52.31
+                "votes": 74406,
+                "rate": 51.89
               },
               {
                 "name": "국민의힘",
-                "votes": 46871,
-                "rate": 34.21
+                "votes": 49655,
+                "rate": 34.63
               },
               {
                 "name": "조국혁신당",
-                "votes": 7262,
-                "rate": 5.3
+                "votes": 7537,
+                "rate": 5.25
               },
               {
                 "name": "개혁신당",
-                "votes": 5447,
-                "rate": 3.97
+                "votes": 5710,
+                "rate": 3.98
               },
               {
                 "name": "진보당",
-                "votes": 2232,
-                "rate": 1.62
+                "votes": 2356,
+                "rate": 1.64
               },
               {
                 "name": "기본소득당",
-                "votes": 1440,
+                "votes": 1515,
                 "rate": 1.05
               },
               {
                 "name": "사회민주당",
-                "votes": 69,
-                "rate": 0.05
+                "votes": 70,
+                "rate": 0.04
               },
               {
                 "name": "거지당",
-                "votes": 169,
+                "votes": 178,
                 "rate": 0.12
               },
               {
@@ -5227,63 +5227,63 @@
               {
                 "name": "국민대통합당",
                 "votes": 42,
-                "rate": 0.03
+                "rate": 0.02
               },
               {
                 "name": "국민연합",
-                "votes": 58,
+                "votes": 61,
                 "rate": 0.04
               },
               {
                 "name": "기독당",
-                "votes": 97,
+                "votes": 102,
                 "rate": 0.07
               },
               {
                 "name": "대한국민당",
-                "votes": 43,
+                "votes": 45,
                 "rate": 0.03
               },
               {
                 "name": "새미래민주당",
-                "votes": 128,
+                "votes": 136,
                 "rate": 0.09
               },
               {
                 "name": "자유와혁신",
-                "votes": 576,
-                "rate": 0.42
+                "votes": 632,
+                "rate": 0.44
               },
               {
                 "name": "정의당",
-                "votes": 661,
+                "votes": 691,
                 "rate": 0.48
               },
               {
                 "name": "친미연합",
-                "votes": 26,
-                "rate": 0.01
+                "votes": 32,
+                "rate": 0.02
               },
               {
                 "name": "국민당",
-                "votes": 51,
+                "votes": 54,
                 "rate": 0.03
               },
               {
                 "name": "한나라당",
-                "votes": 106,
+                "votes": 114,
                 "rate": 0.07
               },
               {
                 "name": "계",
-                "votes": 136978,
+                "votes": 143374,
                 "rate": null
               }
             ],
-            "validVotes": 136978,
-            "invalidVotes": 1848,
-            "abstentions": 92192,
-            "progressRate": 71.81
+            "validVotes": 143374,
+            "invalidVotes": 1939,
+            "abstentions": 100378,
+            "progressRate": 75.16
           },
           {
             "area": "수원시팔달구",
@@ -5741,47 +5741,47 @@
             "area": "성남시분당구",
             "groupArea": null,
             "fullArea": "성남시분당구",
-            "electors": 155599,
-            "votes": 111868,
+            "electors": 158743,
+            "votes": 113883,
             "candidateVotes": [
               {
                 "name": "더불어민주당",
-                "votes": 47730,
-                "rate": 43.06
+                "votes": 48375,
+                "rate": 42.87
               },
               {
                 "name": "국민의힘",
-                "votes": 47285,
-                "rate": 42.66
+                "votes": 48346,
+                "rate": 42.85
               },
               {
                 "name": "조국혁신당",
-                "votes": 6857,
-                "rate": 6.18
+                "votes": 6955,
+                "rate": 6.16
               },
               {
                 "name": "개혁신당",
-                "votes": 5235,
-                "rate": 4.72
+                "votes": 5350,
+                "rate": 4.74
               },
               {
                 "name": "진보당",
-                "votes": 1399,
-                "rate": 1.26
+                "votes": 1421,
+                "rate": 1.25
               },
               {
                 "name": "기본소득당",
-                "votes": 854,
-                "rate": 0.77
+                "votes": 865,
+                "rate": 0.76
               },
               {
                 "name": "사회민주당",
-                "votes": 48,
+                "votes": 49,
                 "rate": 0.04
               },
               {
                 "name": "거지당",
-                "votes": 102,
+                "votes": 104,
                 "rate": 0.09
               },
               {
@@ -5791,7 +5791,7 @@
               },
               {
                 "name": "국민대통합당",
-                "votes": 18,
+                "votes": 19,
                 "rate": 0.01
               },
               {
@@ -5811,44 +5811,44 @@
               },
               {
                 "name": "새미래민주당",
-                "votes": 85,
+                "votes": 90,
                 "rate": 0.07
               },
               {
                 "name": "자유와혁신",
-                "votes": 443,
-                "rate": 0.39
+                "votes": 458,
+                "rate": 0.4
               },
               {
                 "name": "정의당",
-                "votes": 597,
-                "rate": 0.53
+                "votes": 611,
+                "rate": 0.54
               },
               {
                 "name": "친미연합",
-                "votes": 14,
+                "votes": 15,
                 "rate": 0.01
               },
               {
                 "name": "국민당",
-                "votes": 19,
+                "votes": 20,
                 "rate": 0.01
               },
               {
                 "name": "한나라당",
-                "votes": 48,
+                "votes": 49,
                 "rate": 0.04
               },
               {
                 "name": "계",
-                "votes": 110827,
+                "votes": 112820,
                 "rate": null
               }
             ],
-            "validVotes": 110827,
-            "invalidVotes": 1041,
-            "abstentions": 43731,
-            "progressRate": 42.2
+            "validVotes": 112820,
+            "invalidVotes": 1063,
+            "abstentions": 44860,
+            "progressRate": 42.96
           },
           {
             "area": "의정부시",
@@ -6413,7 +6413,7 @@
             "validVotes": 134957,
             "invalidVotes": 2165,
             "abstentions": 98391,
-            "progressRate": 99.98
+            "progressRate": 100.0
           },
           {
             "area": "부천시오정구",
@@ -6532,47 +6532,47 @@
             "area": "광명시",
             "groupArea": null,
             "fullArea": "광명시",
-            "electors": 261433,
-            "votes": 168767,
+            "electors": 262963,
+            "votes": 169523,
             "candidateVotes": [
               {
                 "name": "더불어민주당",
-                "votes": 81102,
-                "rate": 48.75
+                "votes": 81383,
+                "rate": 48.7
               },
               {
                 "name": "국민의힘",
-                "votes": 62305,
-                "rate": 37.45
+                "votes": 62657,
+                "rate": 37.5
               },
               {
                 "name": "조국혁신당",
-                "votes": 9990,
+                "votes": 10026,
                 "rate": 6.0
               },
               {
                 "name": "개혁신당",
-                "votes": 6556,
+                "votes": 6597,
                 "rate": 3.94
               },
               {
                 "name": "진보당",
-                "votes": 1670,
+                "votes": 1679,
                 "rate": 1.0
               },
               {
                 "name": "기본소득당",
-                "votes": 1628,
-                "rate": 0.97
+                "votes": 1640,
+                "rate": 0.98
               },
               {
                 "name": "사회민주당",
                 "votes": 100,
-                "rate": 0.06
+                "rate": 0.05
               },
               {
                 "name": "거지당",
-                "votes": 182,
+                "votes": 183,
                 "rate": 0.1
               },
               {
@@ -6592,7 +6592,7 @@
               },
               {
                 "name": "기독당",
-                "votes": 131,
+                "votes": 132,
                 "rate": 0.07
               },
               {
@@ -6607,12 +6607,12 @@
               },
               {
                 "name": "자유와혁신",
-                "votes": 779,
+                "votes": 782,
                 "rate": 0.46
               },
               {
                 "name": "정의당",
-                "votes": 1245,
+                "votes": 1252,
                 "rate": 0.74
               },
               {
@@ -6627,19 +6627,19 @@
               },
               {
                 "name": "한나라당",
-                "votes": 124,
+                "votes": 126,
                 "rate": 0.07
               },
               {
                 "name": "계",
-                "votes": 166332,
+                "votes": 167077,
                 "rate": null
               }
             ],
-            "validVotes": 166332,
-            "invalidVotes": 2435,
-            "abstentions": 92666,
-            "progressRate": 99.53
+            "validVotes": 167077,
+            "invalidVotes": 2446,
+            "abstentions": 93440,
+            "progressRate": 99.98
           },
           {
             "area": "평택시",
@@ -7210,87 +7210,87 @@
             "area": "고양시덕양구",
             "groupArea": null,
             "fullArea": "고양시덕양구",
-            "electors": 105763,
-            "votes": 52108,
+            "electors": 118514,
+            "votes": 58334,
             "candidateVotes": [
               {
                 "name": "더불어민주당",
-                "votes": 23415,
-                "rate": 45.51
+                "votes": 26297,
+                "rate": 45.65
               },
               {
                 "name": "국민의힘",
-                "votes": 21402,
-                "rate": 41.59
+                "votes": 23897,
+                "rate": 41.48
               },
               {
                 "name": "조국혁신당",
-                "votes": 2697,
-                "rate": 5.24
+                "votes": 3009,
+                "rate": 5.22
               },
               {
                 "name": "개혁신당",
-                "votes": 1623,
-                "rate": 3.15
+                "votes": 1840,
+                "rate": 3.19
               },
               {
                 "name": "진보당",
-                "votes": 770,
-                "rate": 1.49
+                "votes": 848,
+                "rate": 1.47
               },
               {
                 "name": "기본소득당",
-                "votes": 469,
-                "rate": 0.91
+                "votes": 521,
+                "rate": 0.9
               },
               {
                 "name": "사회민주당",
-                "votes": 23,
+                "votes": 25,
                 "rate": 0.04
               },
               {
                 "name": "거지당",
-                "votes": 41,
+                "votes": 44,
                 "rate": 0.07
               },
               {
                 "name": "공화당",
-                "votes": 16,
+                "votes": 19,
                 "rate": 0.03
               },
               {
                 "name": "국민대통합당",
-                "votes": 16,
-                "rate": 0.03
+                "votes": 17,
+                "rate": 0.02
               },
               {
                 "name": "국민연합",
-                "votes": 21,
-                "rate": 0.04
+                "votes": 23,
+                "rate": 0.03
               },
               {
                 "name": "기독당",
-                "votes": 31,
-                "rate": 0.06
+                "votes": 33,
+                "rate": 0.05
               },
               {
                 "name": "대한국민당",
-                "votes": 16,
+                "votes": 19,
                 "rate": 0.03
               },
               {
                 "name": "새미래민주당",
-                "votes": 69,
+                "votes": 77,
                 "rate": 0.13
               },
               {
                 "name": "자유와혁신",
-                "votes": 410,
-                "rate": 0.79
+                "votes": 455,
+                "rate": 0.78
               },
               {
                 "name": "정의당",
-                "votes": 366,
+                "votes": 409,
                 "rate": 0.71
               },
               {
@@ -7300,24 +7300,24 @@
               },
               {
                 "name": "국민당",
-                "votes": 19,
+                "votes": 21,
                 "rate": 0.03
               },
               {
                 "name": "한나라당",
-                "votes": 38,
+                "votes": 44,
                 "rate": 0.07
               },
               {
                 "name": "계",
-                "votes": 51448,
+                "votes": 57604,
                 "rate": null
               }
             ],
-            "validVotes": 51448,
-            "invalidVotes": 660,
-            "abstentions": 53655,
-            "progressRate": 19.12
+            "validVotes": 57604,
+            "invalidVotes": 730,
+            "abstentions": 60180,
+            "progressRate": 21.41
           },
           {
             "area": "고양시일산동구",
@@ -7882,7 +7882,7 @@
             "validVotes": 99419,
             "invalidVotes": 1575,
             "abstentions": 63412,
-            "progressRate": 99.98
+            "progressRate": 100.0
           },
           {
             "area": "남양주시",
@@ -8566,37 +8566,37 @@
             "area": "시흥시",
             "groupArea": null,
             "fullArea": "시흥시",
-            "electors": 438671,
-            "votes": 224409,
+            "electors": 443131,
+            "votes": 226096,
             "candidateVotes": [
               {
                 "name": "더불어민주당",
-                "votes": 122468,
-                "rate": 55.35
+                "votes": 123211,
+                "rate": 55.27
               },
               {
                 "name": "국민의힘",
-                "votes": 72382,
-                "rate": 32.71
+                "votes": 73165,
+                "rate": 32.82
               },
               {
                 "name": "조국혁신당",
-                "votes": 11043,
-                "rate": 4.99
+                "votes": 11090,
+                "rate": 4.97
               },
               {
                 "name": "개혁신당",
-                "votes": 6651,
-                "rate": 3.0
+                "votes": 6682,
+                "rate": 2.99
               },
               {
                 "name": "진보당",
-                "votes": 2574,
-                "rate": 1.16
+                "votes": 2584,
+                "rate": 1.15
               },
               {
                 "name": "기본소득당",
-                "votes": 2620,
+                "votes": 2638,
                 "rate": 1.18
               },
               {
@@ -8606,7 +8606,7 @@
               },
               {
                 "name": "거지당",
-                "votes": 237,
+                "votes": 238,
                 "rate": 0.1
               },
               {
@@ -8621,12 +8621,12 @@
               },
               {
                 "name": "국민연합",
-                "votes": 85,
+                "votes": 86,
                 "rate": 0.03
               },
               {
                 "name": "기독당",
-                "votes": 157,
+                "votes": 161,
                 "rate": 0.07
               },
               {
@@ -8636,17 +8636,17 @@
               },
               {
                 "name": "새미래민주당",
-                "votes": 181,
+                "votes": 182,
                 "rate": 0.08
               },
               {
                 "name": "자유와혁신",
-                "votes": 1155,
+                "votes": 1173,
                 "rate": 0.52
               },
               {
                 "name": "정의당",
-                "votes": 1082,
+                "votes": 1086,
                 "rate": 0.48
               },
               {
@@ -8656,24 +8656,24 @@
               },
               {
                 "name": "국민당",
-                "votes": 110,
+                "votes": 111,
                 "rate": 0.04
               },
               {
                 "name": "한나라당",
-                "votes": 157,
+                "votes": 158,
                 "rate": 0.07
               },
               {
                 "name": "계",
-                "votes": 221257,
+                "votes": 222920,
                 "rate": null
               }
             ],
-            "validVotes": 221257,
-            "invalidVotes": 3152,
-            "abstentions": 214262,
-            "progressRate": 99.21
+            "validVotes": 222920,
+            "invalidVotes": 3176,
+            "abstentions": 217035,
+            "progressRate": 99.96
           },
           {
             "area": "군포시",
@@ -9125,7 +9125,7 @@
             "validVotes": 59271,
             "invalidVotes": 1287,
             "abstentions": 41033,
-            "progressRate": 99.98
+            "progressRate": 100.0
           },
           {
             "area": "이천시",
@@ -9245,16 +9245,16 @@
             "groupArea": null,
             "fullArea": "용인시처인구",
             "electors": 248022,
-            "votes": 139842,
+            "votes": 139850,
             "candidateVotes": [
               {
                 "name": "더불어민주당",
-                "votes": 66507,
-                "rate": 48.27
+                "votes": 66512,
+                "rate": 48.28
               },
               {
                 "name": "국민의힘",
-                "votes": 56957,
+                "votes": 56960,
                 "rate": 41.34
               },
               {
@@ -9344,14 +9344,14 @@
               },
               {
                 "name": "계",
-                "votes": 137753,
+                "votes": 137761,
                 "rate": null
               }
             ],
-            "validVotes": 137753,
+            "validVotes": 137761,
             "invalidVotes": 2089,
-            "abstentions": 108180,
-            "progressRate": 99.97
+            "abstentions": 108172,
+            "progressRate": 99.98
           },
           {
             "area": "용인시수지구",
@@ -10375,114 +10375,114 @@
           "area": "합계",
           "groupArea": null,
           "fullArea": "합계",
-          "electors": 10726534,
-          "votes": 6235693,
+          "electors": 10763092,
+          "votes": 6252872,
           "candidateVotes": [
             {
               "name": "더불어민주당",
-              "votes": 3024227,
-              "rate": 49.19
+              "votes": 3031527,
+              "rate": 49.17
             },
             {
               "name": "국민의힘",
-              "votes": 2361292,
-              "rate": 38.41
+              "votes": 2368770,
+              "rate": 38.42
             },
             {
               "name": "조국혁신당",
-              "votes": 308747,
+              "votes": 309515,
               "rate": 5.02
             },
             {
               "name": "개혁신당",
-              "votes": 222781,
+              "votes": 223448,
               "rate": 3.62
             },
             {
               "name": "진보당",
-              "votes": 68290,
+              "votes": 68533,
               "rate": 1.11
             },
             {
               "name": "기본소득당",
-              "votes": 61933,
+              "votes": 62101,
               "rate": 1.0
             },
             {
               "name": "사회민주당",
-              "votes": 3220,
+              "votes": 3224,
               "rate": 0.05
             },
             {
               "name": "거지당",
-              "votes": 6356,
+              "votes": 6372,
               "rate": 0.1
             },
             {
               "name": "공화당",
-              "votes": 1471,
+              "votes": 1474,
               "rate": 0.02
             },
             {
               "name": "국민대통합당",
-              "votes": 2070,
+              "votes": 2072,
               "rate": 0.03
             },
             {
               "name": "국민연합",
-              "votes": 2806,
+              "votes": 2812,
               "rate": 0.04
             },
             {
               "name": "기독당",
-              "votes": 4518,
+              "votes": 4530,
               "rate": 0.07
             },
             {
               "name": "대한국민당",
-              "votes": 2037,
+              "votes": 2042,
               "rate": 0.03
             },
             {
               "name": "새미래민주당",
-              "votes": 5436,
+              "votes": 5458,
               "rate": 0.08
             },
             {
               "name": "자유와혁신",
-              "votes": 32977,
+              "votes": 33114,
               "rate": 0.53
             },
             {
               "name": "정의당",
-              "votes": 30335,
+              "votes": 30433,
               "rate": 0.49
             },
             {
               "name": "친미연합",
-              "votes": 1005,
+              "votes": 1012,
               "rate": 0.01
             },
             {
               "name": "국민당",
-              "votes": 2817,
+              "votes": 2824,
               "rate": 0.04
             },
             {
               "name": "한나라당",
-              "votes": 4868,
+              "votes": 4886,
               "rate": 0.07
             },
             {
               "name": "계",
-              "votes": 6147186,
+              "votes": 6164147,
               "rate": null
             }
           ],
-          "validVotes": 6147186,
-          "invalidVotes": 88507,
-          "abstentions": 4490841,
-          "progressRate": 89.94
+          "validVotes": 6164147,
+          "invalidVotes": 88725,
+          "abstentions": 4510220,
+          "progressRate": 90.19
         }
       },
       "resultSummary": {
@@ -11173,47 +11173,47 @@
             "area": "성남시분당구",
             "groupArea": null,
             "fullArea": "성남시분당구",
-            "electors": 155599,
-            "votes": 111868,
+            "electors": 158743,
+            "votes": 113883,
             "candidateVotes": [
               {
                 "name": "더불어민주당",
-                "votes": 47730,
-                "rate": 43.06
+                "votes": 48375,
+                "rate": 42.87
               },
               {
                 "name": "국민의힘",
-                "votes": 47285,
-                "rate": 42.66
+                "votes": 48346,
+                "rate": 42.85
               },
               {
                 "name": "조국혁신당",
-                "votes": 6857,
-                "rate": 6.18
+                "votes": 6955,
+                "rate": 6.16
               },
               {
                 "name": "개혁신당",
-                "votes": 5235,
-                "rate": 4.72
+                "votes": 5350,
+                "rate": 4.74
               },
               {
                 "name": "진보당",
-                "votes": 1399,
-                "rate": 1.26
+                "votes": 1421,
+                "rate": 1.25
               },
               {
                 "name": "기본소득당",
-                "votes": 854,
-                "rate": 0.77
+                "votes": 865,
+                "rate": 0.76
               },
               {
                 "name": "사회민주당",
-                "votes": 48,
+                "votes": 49,
                 "rate": 0.04
               },
               {
                 "name": "거지당",
-                "votes": 102,
+                "votes": 104,
                 "rate": 0.09
               },
               {
@@ -11223,7 +11223,7 @@
               },
               {
                 "name": "국민대통합당",
-                "votes": 18,
+                "votes": 19,
                 "rate": 0.01
               },
               {
@@ -11243,84 +11243,84 @@
               },
               {
                 "name": "새미래민주당",
-                "votes": 85,
+                "votes": 90,
                 "rate": 0.07
               },
               {
                 "name": "자유와혁신",
-                "votes": 443,
-                "rate": 0.39
+                "votes": 458,
+                "rate": 0.4
               },
               {
                 "name": "정의당",
-                "votes": 597,
-                "rate": 0.53
+                "votes": 611,
+                "rate": 0.54
               },
               {
                 "name": "친미연합",
-                "votes": 14,
+                "votes": 15,
                 "rate": 0.01
               },
               {
                 "name": "국민당",
-                "votes": 19,
+                "votes": 20,
                 "rate": 0.01
               },
               {
                 "name": "한나라당",
-                "votes": 48,
+                "votes": 49,
                 "rate": 0.04
               },
               {
                 "name": "계",
-                "votes": 110827,
+                "votes": 112820,
                 "rate": null
               }
             ],
-            "validVotes": 110827,
-            "invalidVotes": 1041,
-            "abstentions": 43731,
-            "progressRate": 42.2
+            "validVotes": 112820,
+            "invalidVotes": 1063,
+            "abstentions": 44860,
+            "progressRate": 42.96
           },
           "summary": {
-            "electors": 155599,
-            "votes": 111868,
-            "validVotes": 110827,
-            "invalidVotes": 1041,
-            "abstentions": 43731
+            "electors": 158743,
+            "votes": 113883,
+            "validVotes": 112820,
+            "invalidVotes": 1063,
+            "abstentions": 44860
           },
           "candidateVotes": [
             {
               "name": "더불어민주당",
-              "votes": 47730
+              "votes": 48375
             },
             {
               "name": "국민의힘",
-              "votes": 47285
+              "votes": 48346
             },
             {
               "name": "조국혁신당",
-              "votes": 6857
+              "votes": 6955
             },
             {
               "name": "개혁신당",
-              "votes": 5235
+              "votes": 5350
             },
             {
               "name": "진보당",
-              "votes": 1399
+              "votes": 1421
             },
             {
               "name": "기본소득당",
-              "votes": 854
+              "votes": 865
             },
             {
               "name": "사회민주당",
-              "votes": 48
+              "votes": 49
             },
             {
               "name": "거지당",
-              "votes": 102
+              "votes": 104
             },
             {
               "name": "공화당",
@@ -11328,7 +11328,7 @@
             },
             {
               "name": "국민대통합당",
-              "votes": 18
+              "votes": 19
             },
             {
               "name": "국민연합",
@@ -11344,31 +11344,31 @@
             },
             {
               "name": "새미래민주당",
-              "votes": 85
+              "votes": 90
             },
             {
               "name": "자유와혁신",
-              "votes": 443
+              "votes": 458
             },
             {
               "name": "정의당",
-              "votes": 597
+              "votes": 611
             },
             {
               "name": "친미연합",
-              "votes": 14
+              "votes": 15
             },
             {
               "name": "국민당",
-              "votes": 19
+              "votes": 20
             },
             {
               "name": "한나라당",
-              "votes": 48
+              "votes": 49
             },
             {
               "name": "계",
-              "votes": 110827
+              "votes": 112820
             }
           ],
           "ballotTypes": [
@@ -11388,12 +11388,12 @@
             },
             {
               "type": "선거일투표",
-              "electors": 100499,
-              "votes": 56774,
-              "validVotes": 56232,
-              "invalidVotes": 542,
-              "abstentions": 43725,
-              "rowCount": 11,
+              "electors": 103643,
+              "votes": 58789,
+              "validVotes": 58225,
+              "invalidVotes": 564,
+              "abstentions": 44854,
+              "rowCount": 12,
               "unitCount": 1,
               "units": [
                 "rows"
@@ -11428,11 +11428,11 @@
             },
             {
               "type": "합계",
-              "electors": 155599,
-              "votes": 111868,
-              "validVotes": 110827,
-              "invalidVotes": 1041,
-              "abstentions": 43731,
+              "electors": 158743,
+              "votes": 113883,
+              "validVotes": 112820,
+              "invalidVotes": 1063,
+              "abstentions": 44860,
               "rowCount": 1,
               "unitCount": 1,
               "units": [
@@ -11882,32 +11882,32 @@
             "name": "수내2동",
             "progress": null,
             "summary": {
-              "electors": 1370,
-              "votes": 1370,
-              "validVotes": 1363,
-              "invalidVotes": 7,
-              "abstentions": 0
+              "electors": 2826,
+              "votes": 2280,
+              "validVotes": 2265,
+              "invalidVotes": 15,
+              "abstentions": 546
             },
             "candidateVotes": [
               {
                 "name": "더불어민주당",
-                "votes": 702
+                "votes": 957
               },
               {
                 "name": "국민의힘",
-                "votes": 417
+                "votes": 938
               },
               {
                 "name": "조국혁신당",
-                "votes": 126
+                "votes": 176
               },
               {
                 "name": "개혁신당",
-                "votes": 79
+                "votes": 136
               },
               {
                 "name": "진보당",
-                "votes": 16
+                "votes": 26
               },
               {
                 "name": "기본소득당",
@@ -11947,11 +11947,11 @@
               },
               {
                 "name": "자유와혁신",
-                "votes": 1
+                "votes": 6
               },
               {
                 "name": "정의당",
-                "votes": 7
+                "votes": 10
               },
               {
                 "name": "친미연합",
@@ -11963,11 +11963,11 @@
               },
               {
                 "name": "한나라당",
-                "votes": 0
+                "votes": 1
               },
               {
                 "name": "계",
-                "votes": 1363
+                "votes": 2265
               }
             ],
             "ballotTypes": [
@@ -11987,15 +11987,17 @@
               },
               {
                 "type": "선거일투표",
-                "electors": null,
-                "votes": 0,
-                "validVotes": null,
-                "invalidVotes": null,
-                "abstentions": null,
-                "rowCount": 0,
-                "unitCount": 0,
-                "units": [],
-                "started": false
+                "electors": 1456,
+                "votes": 910,
+                "validVotes": 902,
+                "invalidVotes": 8,
+                "abstentions": 546,
+                "rowCount": 1,
+                "unitCount": 1,
+                "units": [
+                  "rows"
+                ],
+                "started": true
               },
               {
                 "type": "관외사전투표",
@@ -14504,44 +14506,44 @@
             "name": "운중동",
             "progress": null,
             "summary": {
-              "electors": 9453,
-              "votes": 5147,
-              "validVotes": 5106,
-              "invalidVotes": 41,
-              "abstentions": 4306
+              "electors": 11141,
+              "votes": 6252,
+              "validVotes": 6197,
+              "invalidVotes": 55,
+              "abstentions": 4889
             },
             "candidateVotes": [
               {
                 "name": "더불어민주당",
-                "votes": 1707
+                "votes": 2097
               },
               {
                 "name": "국민의힘",
-                "votes": 2754
+                "votes": 3294
               },
               {
                 "name": "조국혁신당",
-                "votes": 273
+                "votes": 321
               },
               {
                 "name": "개혁신당",
-                "votes": 217
+                "votes": 275
               },
               {
                 "name": "진보당",
-                "votes": 44
+                "votes": 56
               },
               {
                 "name": "기본소득당",
-                "votes": 35
+                "votes": 46
               },
               {
                 "name": "사회민주당",
-                "votes": 0
+                "votes": 1
               },
               {
                 "name": "거지당",
-                "votes": 6
+                "votes": 8
               },
               {
                 "name": "공화당",
@@ -14549,7 +14551,7 @@
               },
               {
                 "name": "국민대통합당",
-                "votes": 2
+                "votes": 3
               },
               {
                 "name": "국민연합",
@@ -14565,23 +14567,23 @@
               },
               {
                 "name": "새미래민주당",
-                "votes": 5
+                "votes": 10
               },
               {
                 "name": "자유와혁신",
-                "votes": 29
+                "votes": 39
               },
               {
                 "name": "정의당",
-                "votes": 24
+                "votes": 35
               },
               {
                 "name": "친미연합",
-                "votes": 1
+                "votes": 2
               },
               {
                 "name": "국민당",
-                "votes": 0
+                "votes": 1
               },
               {
                 "name": "한나라당",
@@ -14589,7 +14591,7 @@
               },
               {
                 "name": "계",
-                "votes": 5106
+                "votes": 6197
               }
             ],
             "ballotTypes": [
@@ -14607,11 +14609,11 @@
               },
               {
                 "type": "선거일투표",
-                "electors": 9453,
-                "votes": 5147,
-                "validVotes": 5106,
-                "invalidVotes": 41,
-                "abstentions": 4306,
+                "electors": 11141,
+                "votes": 6252,
+                "validVotes": 6197,
+                "invalidVotes": 55,
+                "abstentions": 4889,
                 "rowCount": 1,
                 "unitCount": 1,
                 "units": [
@@ -14670,29 +14672,29 @@
             "area": "합계",
             "groupArea": null,
             "fullArea": "합계",
-            "electors": 11783594,
-            "votes": 6868253,
+            "electors": 11794326,
+            "votes": 6875339,
             "candidateVotes": [
               {
                 "name": "임태희",
-                "votes": 3150688,
+                "votes": 3153982,
                 "rate": 47.2
               },
               {
                 "name": "안민석",
-                "votes": 3523804,
+                "votes": 3527372,
                 "rate": 52.79
               },
               {
                 "name": "계",
-                "votes": 6674492,
+                "votes": 6681354,
                 "rate": null
               }
             ],
-            "validVotes": 6674492,
-            "invalidVotes": 193761,
-            "abstentions": 4915341,
-            "progressRate": 99.06
+            "validVotes": 6681354,
+            "invalidVotes": 193985,
+            "abstentions": 4918987,
+            "progressRate": 99.17
           },
           {
             "area": "수원시장안구",
@@ -14726,29 +14728,29 @@
             "area": "수원시권선구",
             "groupArea": null,
             "fullArea": "수원시권선구",
-            "electors": 340515,
-            "votes": 192212,
+            "electors": 343552,
+            "votes": 193279,
             "candidateVotes": [
               {
                 "name": "임태희",
-                "votes": 86408,
-                "rate": 46.19
+                "votes": 86990,
+                "rate": 46.24
               },
               {
                 "name": "안민석",
-                "votes": 100662,
-                "rate": 53.8
+                "votes": 101106,
+                "rate": 53.75
               },
               {
                 "name": "계",
-                "votes": 187070,
+                "votes": 188096,
                 "rate": null
               }
             ],
-            "validVotes": 187070,
-            "invalidVotes": 5142,
-            "abstentions": 148303,
-            "progressRate": 99.42
+            "validVotes": 188096,
+            "invalidVotes": 5183,
+            "abstentions": 150273,
+            "progressRate": 99.97
           },
           {
             "area": "수원시팔달구",
@@ -14783,28 +14785,28 @@
             "groupArea": null,
             "fullArea": "수원시영통구",
             "electors": 303521,
-            "votes": 187104,
+            "votes": 187169,
             "candidateVotes": [
               {
                 "name": "임태희",
-                "votes": 89163,
+                "votes": 89191,
                 "rate": 48.81
               },
               {
                 "name": "안민석",
-                "votes": 93474,
+                "votes": 93510,
                 "rate": 51.18
               },
               {
                 "name": "계",
-                "votes": 182637,
+                "votes": 182701,
                 "rate": null
               }
             ],
-            "validVotes": 182637,
-            "invalidVotes": 4467,
-            "abstentions": 116417,
-            "progressRate": 99.96
+            "validVotes": 182701,
+            "invalidVotes": 4468,
+            "abstentions": 116352,
+            "progressRate": 99.99
           },
           {
             "area": "성남시수정구",
@@ -14866,29 +14868,29 @@
             "area": "성남시분당구",
             "groupArea": null,
             "fullArea": "성남시분당구",
-            "electors": 382835,
-            "votes": 254467,
+            "electors": 386483,
+            "votes": 258112,
             "candidateVotes": [
               {
                 "name": "임태희",
-                "votes": 138615,
-                "rate": 55.74
+                "votes": 140055,
+                "rate": 55.53
               },
               {
                 "name": "안민석",
-                "votes": 110027,
-                "rate": 44.25
+                "votes": 112116,
+                "rate": 44.46
               },
               {
                 "name": "계",
-                "votes": 248642,
+                "votes": 252171,
                 "rate": null
               }
             ],
-            "validVotes": 248642,
-            "invalidVotes": 5825,
-            "abstentions": 128368,
-            "progressRate": 95.99
+            "validVotes": 252171,
+            "invalidVotes": 5941,
+            "abstentions": 128371,
+            "progressRate": 97.37
           },
           {
             "area": "의정부시",
@@ -15028,7 +15030,7 @@
             "validVotes": 133036,
             "invalidVotes": 4105,
             "abstentions": 98372,
-            "progressRate": 99.98
+            "progressRate": 100.0
           },
           {
             "area": "부천시오정구",
@@ -15090,29 +15092,29 @@
             "area": "평택시",
             "groupArea": null,
             "fullArea": "평택시",
-            "electors": 490216,
-            "votes": 256904,
+            "electors": 493474,
+            "votes": 258743,
             "candidateVotes": [
               {
                 "name": "임태희",
-                "votes": 117666,
-                "rate": 47.32
+                "votes": 118614,
+                "rate": 47.36
               },
               {
                 "name": "안민석",
-                "votes": 130983,
-                "rate": 52.67
+                "votes": 131836,
+                "rate": 52.63
               },
               {
                 "name": "계",
-                "votes": 248649,
+                "votes": 250450,
                 "rate": null
               }
             ],
-            "validVotes": 248649,
-            "invalidVotes": 8255,
-            "abstentions": 233312,
-            "progressRate": 92.86
+            "validVotes": 250450,
+            "invalidVotes": 8293,
+            "abstentions": 234731,
+            "progressRate": 93.52
           },
           {
             "area": "양주시",
@@ -15343,28 +15345,28 @@
             "groupArea": null,
             "fullArea": "의왕시",
             "electors": 141274,
-            "votes": 95108,
+            "votes": 95131,
             "candidateVotes": [
               {
                 "name": "임태희",
-                "votes": 45570,
+                "votes": 45584,
                 "rate": 49.23
               },
               {
                 "name": "안민석",
-                "votes": 46984,
+                "votes": 46992,
                 "rate": 50.76
               },
               {
                 "name": "계",
-                "votes": 92554,
+                "votes": 92576,
                 "rate": null
               }
             ],
-            "validVotes": 92554,
-            "invalidVotes": 2554,
-            "abstentions": 46166,
-            "progressRate": 99.97
+            "validVotes": 92576,
+            "invalidVotes": 2555,
+            "abstentions": 46143,
+            "progressRate": 99.99
           },
           {
             "area": "구리시",
@@ -15392,7 +15394,7 @@
             "validVotes": 98020,
             "invalidVotes": 2977,
             "abstentions": 63408,
-            "progressRate": 99.98
+            "progressRate": 100.0
           },
           {
             "area": "남양주시",
@@ -15700,7 +15702,7 @@
             "validVotes": 58138,
             "invalidVotes": 2429,
             "abstentions": 41024,
-            "progressRate": 99.99
+            "progressRate": 100.0
           },
           {
             "area": "이천시",
@@ -15958,29 +15960,29 @@
             "area": "양평군",
             "groupArea": null,
             "fullArea": "양평군",
-            "electors": 107440,
-            "votes": 69012,
+            "electors": 108229,
+            "votes": 69459,
             "candidateVotes": [
               {
                 "name": "임태희",
-                "votes": 34284,
-                "rate": 51.69
+                "votes": 34566,
+                "rate": 51.78
               },
               {
                 "name": "안민석",
-                "votes": 32039,
-                "rate": 48.3
+                "votes": 32177,
+                "rate": 48.21
               },
               {
                 "name": "계",
-                "votes": 66323,
+                "votes": 66743,
                 "rate": null
               }
             ],
-            "validVotes": 66323,
-            "invalidVotes": 2689,
-            "abstentions": 38428,
-            "progressRate": 96.0
+            "validVotes": 66743,
+            "invalidVotes": 2716,
+            "abstentions": 38770,
+            "progressRate": 96.63
           },
           {
             "area": "가평군",
@@ -16015,29 +16017,29 @@
           "area": "합계",
           "groupArea": null,
           "fullArea": "합계",
-          "electors": 11783594,
-          "votes": 6868253,
+          "electors": 11794326,
+          "votes": 6875339,
           "candidateVotes": [
             {
               "name": "임태희",
-              "votes": 3150688,
+              "votes": 3153982,
               "rate": 47.2
             },
             {
               "name": "안민석",
-              "votes": 3523804,
+              "votes": 3527372,
               "rate": 52.79
             },
             {
               "name": "계",
-              "votes": 6674492,
+              "votes": 6681354,
               "rate": null
             }
           ],
-          "validVotes": 6674492,
-          "invalidVotes": 193761,
-          "abstentions": 4915341,
-          "progressRate": 99.06
+          "validVotes": 6681354,
+          "invalidVotes": 193985,
+          "abstentions": 4918987,
+          "progressRate": 99.17
         }
       },
       "resultSummary": {
@@ -16422,49 +16424,49 @@
             "area": "성남시분당구",
             "groupArea": null,
             "fullArea": "성남시분당구",
-            "electors": 382835,
-            "votes": 254467,
+            "electors": 386483,
+            "votes": 258112,
             "candidateVotes": [
               {
                 "name": "임태희",
-                "votes": 138615,
-                "rate": 55.74
+                "votes": 140055,
+                "rate": 55.53
               },
               {
                 "name": "안민석",
-                "votes": 110027,
-                "rate": 44.25
+                "votes": 112116,
+                "rate": 44.46
               },
               {
                 "name": "계",
-                "votes": 248642,
+                "votes": 252171,
                 "rate": null
               }
             ],
-            "validVotes": 248642,
-            "invalidVotes": 5825,
-            "abstentions": 128368,
-            "progressRate": 95.99
+            "validVotes": 252171,
+            "invalidVotes": 5941,
+            "abstentions": 128371,
+            "progressRate": 97.37
           },
           "summary": {
-            "electors": 382835,
-            "votes": 254467,
-            "validVotes": 248642,
-            "invalidVotes": 5825,
-            "abstentions": 128368
+            "electors": 386483,
+            "votes": 258112,
+            "validVotes": 252171,
+            "invalidVotes": 5941,
+            "abstentions": 128371
           },
           "candidateVotes": [
             {
               "name": "임태희",
-              "votes": 138615
+              "votes": 140055
             },
             {
               "name": "안민석",
-              "votes": 110027
+              "votes": 112116
             },
             {
               "name": "계",
-              "votes": 248642
+              "votes": 252171
             }
           ],
           "ballotTypes": [
@@ -16498,11 +16500,11 @@
             },
             {
               "type": "관외사전투표",
-              "electors": 21569,
-              "votes": 21549,
-              "validVotes": 20883,
-              "invalidVotes": 666,
-              "abstentions": 20,
+              "electors": 25217,
+              "votes": 25194,
+              "validVotes": 24412,
+              "invalidVotes": 782,
+              "abstentions": 23,
               "rowCount": 1,
               "unitCount": 1,
               "units": [
@@ -16524,11 +16526,11 @@
             },
             {
               "type": "합계",
-              "electors": 382835,
-              "votes": 254467,
-              "validVotes": 248642,
-              "invalidVotes": 5825,
-              "abstentions": 128368,
+              "electors": 386483,
+              "votes": 258112,
+              "validVotes": 252171,
+              "invalidVotes": 5941,
+              "abstentions": 128371,
               "rowCount": 1,
               "unitCount": 1,
               "units": [
@@ -16543,24 +16545,24 @@
             "name": "관외사전투표",
             "progress": null,
             "summary": {
-              "electors": 21569,
-              "votes": 21549,
-              "validVotes": 20883,
-              "invalidVotes": 666,
-              "abstentions": 20
+              "electors": 25217,
+              "votes": 25194,
+              "validVotes": 24412,
+              "invalidVotes": 782,
+              "abstentions": 23
             },
             "candidateVotes": [
               {
                 "name": "임태희",
-                "votes": 8642
+                "votes": 10082
               },
               {
                 "name": "안민석",
-                "votes": 12241
+                "votes": 14330
               },
               {
                 "name": "계",
-                "votes": 20883
+                "votes": 24412
               }
             ],
             "ballotTypes": [
@@ -16590,11 +16592,11 @@
               },
               {
                 "type": "관외사전투표",
-                "electors": 21569,
-                "votes": 21549,
-                "validVotes": 20883,
-                "invalidVotes": 666,
-                "abstentions": 20,
+                "electors": 25217,
+                "votes": 25194,
+                "validVotes": 24412,
+                "invalidVotes": 782,
+                "abstentions": 23,
                 "rowCount": 1,
                 "unitCount": 1,
                 "units": [
@@ -29648,27 +29650,27 @@
             "area": "소계",
             "groupArea": null,
             "fullArea": "소계",
-            "electors": 793053,
-            "votes": 456594,
+            "electors": 798852,
+            "votes": 459769,
             "candidateVotes": [
               {
                 "name": "더불어민주당",
-                "votes": 232462,
-                "rate": 51.73
+                "votes": 233951,
+                "rate": 51.7
               },
               {
                 "name": "국민의힘",
-                "votes": 179519,
-                "rate": 39.95
+                "votes": 180907,
+                "rate": 39.98
               },
               {
                 "name": "조국혁신당",
-                "votes": 26551,
+                "votes": 26715,
                 "rate": 5.9
               },
               {
                 "name": "개혁신당",
-                "votes": 10800,
+                "votes": 10870,
                 "rate": 2.4
               },
               {
@@ -29678,41 +29680,41 @@
               },
               {
                 "name": "계",
-                "votes": 449332,
+                "votes": 452443,
                 "rate": null
               }
             ],
-            "validVotes": 449332,
-            "invalidVotes": 7262,
-            "abstentions": 336459,
-            "progressRate": 83.63
+            "validVotes": 452443,
+            "invalidVotes": 7326,
+            "abstentions": 339083,
+            "progressRate": 84.22
           },
           {
             "area": "고양시덕양구",
             "groupArea": null,
             "fullArea": "고양시덕양구",
-            "electors": 351436,
-            "votes": 203105,
+            "electors": 357235,
+            "votes": 206280,
             "candidateVotes": [
               {
                 "name": "더불어민주당",
-                "votes": 105300,
-                "rate": 52.7
+                "votes": 106789,
+                "rate": 52.63
               },
               {
                 "name": "국민의힘",
-                "votes": 77349,
-                "rate": 38.71
+                "votes": 78737,
+                "rate": 38.8
               },
               {
                 "name": "조국혁신당",
-                "votes": 11714,
-                "rate": 5.86
+                "votes": 11878,
+                "rate": 5.85
               },
               {
                 "name": "개혁신당",
-                "votes": 5424,
-                "rate": 2.71
+                "votes": 5494,
+                "rate": 2.7
               },
               {
                 "name": "진보당",
@@ -29721,14 +29723,14 @@
               },
               {
                 "name": "계",
-                "votes": 199787,
+                "votes": 202898,
                 "rate": null
               }
             ],
-            "validVotes": 199787,
-            "invalidVotes": 3318,
-            "abstentions": 148331,
-            "progressRate": 74.54
+            "validVotes": 202898,
+            "invalidVotes": 3382,
+            "abstentions": 150955,
+            "progressRate": 75.71
           },
           {
             "area": "고양시일산동구",
@@ -30035,28 +30037,28 @@
             "area": "소계",
             "groupArea": null,
             "fullArea": "소계",
-            "electors": 575067,
-            "votes": 346280,
+            "electors": 591017,
+            "votes": 355514,
             "candidateVotes": [
               {
                 "name": "더불어민주당",
-                "votes": 163185,
-                "rate": 48.03
+                "votes": 166526,
+                "rate": 47.74
               },
               {
                 "name": "국민의힘",
-                "votes": 153439,
-                "rate": 45.16
+                "votes": 158652,
+                "rate": 45.48
               },
               {
                 "name": "조국혁신당",
-                "votes": 15252,
-                "rate": 4.48
+                "votes": 15610,
+                "rate": 4.47
               },
               {
                 "name": "개혁신당",
-                "votes": 7880,
-                "rate": 2.31
+                "votes": 8030,
+                "rate": 2.3
               },
               {
                 "name": "진보당",
@@ -30065,14 +30067,14 @@
               },
               {
                 "name": "계",
-                "votes": 339756,
+                "votes": 348818,
                 "rate": null
               }
             ],
-            "validVotes": 339756,
-            "invalidVotes": 6524,
-            "abstentions": 228787,
-            "progressRate": 68.96
+            "validVotes": 348818,
+            "invalidVotes": 6696,
+            "abstentions": 235503,
+            "progressRate": 70.79
           },
           {
             "area": "성남시수정구",
@@ -30164,27 +30166,27 @@
             "area": "성남시분당구",
             "groupArea": null,
             "fullArea": "성남시분당구",
-            "electors": 183337,
-            "votes": 109568,
+            "electors": 199287,
+            "votes": 118802,
             "candidateVotes": [
               {
                 "name": "더불어민주당",
-                "votes": 39997,
-                "rate": 37.1
+                "votes": 43338,
+                "rate": 37.08
               },
               {
                 "name": "국민의힘",
-                "votes": 60858,
-                "rate": 56.45
+                "votes": 66071,
+                "rate": 56.53
               },
               {
                 "name": "조국혁신당",
-                "votes": 5173,
-                "rate": 4.79
+                "votes": 5531,
+                "rate": 4.73
               },
               {
                 "name": "개혁신당",
-                "votes": 1776,
+                "votes": 1926,
                 "rate": 1.64
               },
               {
@@ -30194,14 +30196,14 @@
               },
               {
                 "name": "계",
-                "votes": 107804,
+                "votes": 116866,
                 "rate": null
               }
             ],
-            "validVotes": 107804,
-            "invalidVotes": 1764,
-            "abstentions": 73769,
-            "progressRate": 41.33
+            "validVotes": 116866,
+            "invalidVotes": 1936,
+            "abstentions": 80485,
+            "progressRate": 44.81
           },
           {
             "area": "남양주시",
@@ -31110,18 +31112,18 @@
             "area": "양평군",
             "groupArea": null,
             "fullArea": "양평군",
-            "electors": 106336,
-            "votes": 68244,
+            "electors": 107874,
+            "votes": 69097,
             "candidateVotes": [
               {
                 "name": "더불어민주당",
-                "votes": 32601,
-                "rate": 48.82
+                "votes": 32907,
+                "rate": 48.67
               },
               {
                 "name": "국민의힘",
-                "votes": 34175,
-                "rate": 51.17
+                "votes": 34702,
+                "rate": 51.32
               },
               {
                 "name": "조국혁신당",
@@ -31140,14 +31142,14 @@
               },
               {
                 "name": "계",
-                "votes": 66776,
+                "votes": 67609,
                 "rate": null
               }
             ],
-            "validVotes": 66776,
-            "invalidVotes": 1468,
-            "abstentions": 38092,
-            "progressRate": 94.94
+            "validVotes": 67609,
+            "invalidVotes": 1488,
+            "abstentions": 38777,
+            "progressRate": 96.12
           },
           {
             "area": "여주시",
@@ -31190,7 +31192,7 @@
             "validVotes": 58998,
             "invalidVotes": 1564,
             "abstentions": 41029,
-            "progressRate": 99.98
+            "progressRate": 100.0
           },
           {
             "area": "동두천시",
@@ -31410,11 +31412,11 @@
         }
       },
       "resultSummary": {
-        "electors": 575067,
-        "votes": 346280,
-        "validVotes": 339756,
-        "invalidVotes": 6524,
-        "abstentions": 228787
+        "electors": 591017,
+        "votes": 355514,
+        "validVotes": 348818,
+        "invalidVotes": 6696,
+        "abstentions": 235503
       },
       "ballotTypes": [
         {
@@ -31435,11 +31437,11 @@
         },
         {
           "type": "선거일투표",
-          "electors": 464322,
-          "votes": 235591,
-          "validVotes": 230631,
-          "invalidVotes": 4960,
-          "abstentions": 228731,
+          "electors": 480272,
+          "votes": 244825,
+          "validVotes": 239693,
+          "invalidVotes": 5132,
+          "abstentions": 235447,
           "rowCount": 48,
           "unitCount": 3,
           "units": [
@@ -31495,11 +31497,11 @@
         },
         {
           "type": "합계",
-          "electors": 575067,
-          "votes": 346280,
-          "validVotes": 339756,
-          "invalidVotes": 6524,
-          "abstentions": 228787,
+          "electors": 591017,
+          "votes": 355514,
+          "validVotes": 348818,
+          "invalidVotes": 6696,
+          "abstentions": 235503,
           "rowCount": 3,
           "unitCount": 3,
           "units": [
@@ -31533,7 +31535,7 @@
           },
           "선거일투표": {
             "started": true,
-            "votes": 235591,
+            "votes": 244825,
             "rows": 48
           },
           "관외사전투표": {
@@ -34522,33 +34524,33 @@
             {
               "area": "합계",
               "ballotType": "합계",
-              "electors": 183337,
-              "votes": 109568,
+              "electors": 199287,
+              "votes": 118802,
               "candidateVotes": [
                 {
                   "name": "더불어민주당",
-                  "votes": 39997
+                  "votes": 43338
                 },
                 {
                   "name": "국민의힘",
-                  "votes": 60858
+                  "votes": 66071
                 },
                 {
                   "name": "조국혁신당",
-                  "votes": 5173
+                  "votes": 5531
                 },
                 {
                   "name": "진보당",
-                  "votes": 1776
+                  "votes": 1926
                 },
                 {
                   "name": "계",
-                  "votes": 107804
+                  "votes": 116866
                 }
               ],
-              "validVotes": 107804,
-              "invalidVotes": 1764,
-              "abstentions": 73769
+              "validVotes": 116866,
+              "invalidVotes": 1936,
+              "abstentions": 80485
             },
             {
               "area": "분당동",
@@ -34615,33 +34617,33 @@
             {
               "area": "수내1동",
               "ballotType": "계",
-              "electors": 10821,
-              "votes": 7013,
+              "electors": 12291,
+              "votes": 7863,
               "candidateVotes": [
                 {
                   "name": "더불어민주당",
-                  "votes": 2774
+                  "votes": 3022
                 },
                 {
                   "name": "국민의힘",
-                  "votes": 3625
+                  "votes": 4165
                 },
                 {
                   "name": "조국혁신당",
-                  "votes": 401
+                  "votes": 416
                 },
                 {
                   "name": "진보당",
-                  "votes": 115
+                  "votes": 127
                 },
                 {
                   "name": "계",
-                  "votes": 6915
+                  "votes": 7730
                 }
               ],
-              "validVotes": 6915,
-              "invalidVotes": 98,
-              "abstentions": 3808
+              "validVotes": 7730,
+              "invalidVotes": 133,
+              "abstentions": 4428
             },
             {
               "area": "수내1동",
@@ -34677,33 +34679,33 @@
             {
               "area": "수내1동",
               "ballotType": "선거일투표",
-              "electors": 8340,
-              "votes": 4536,
+              "electors": 9810,
+              "votes": 5386,
               "candidateVotes": [
                 {
                   "name": "더불어민주당",
-                  "votes": 1424
+                  "votes": 1672
                 },
                 {
                   "name": "국민의힘",
-                  "votes": 2806
+                  "votes": 3346
                 },
                 {
                   "name": "조국혁신당",
-                  "votes": 183
+                  "votes": 198
                 },
                 {
                   "name": "진보당",
-                  "votes": 58
+                  "votes": 70
                 },
                 {
                   "name": "계",
-                  "votes": 4471
+                  "votes": 5286
                 }
               ],
-              "validVotes": 4471,
-              "invalidVotes": 65,
-              "abstentions": 3804
+              "validVotes": 5286,
+              "invalidVotes": 100,
+              "abstentions": 4424
             },
             {
               "area": "수내2동",
@@ -34925,33 +34927,33 @@
             {
               "area": "정자2동",
               "ballotType": "계",
-              "electors": 4755,
-              "votes": 3559,
+              "electors": 5687,
+              "votes": 3964,
               "candidateVotes": [
                 {
                   "name": "더불어민주당",
-                  "votes": 1713
+                  "votes": 1841
                 },
                 {
                   "name": "국민의힘",
-                  "votes": 1541
+                  "votes": 1789
                 },
                 {
                   "name": "조국혁신당",
-                  "votes": 187
+                  "votes": 203
                 },
                 {
                   "name": "진보당",
-                  "votes": 69
+                  "votes": 79
                 },
                 {
                   "name": "계",
-                  "votes": 3510
+                  "votes": 3912
                 }
               ],
-              "validVotes": 3510,
-              "invalidVotes": 49,
-              "abstentions": 1196
+              "validVotes": 3912,
+              "invalidVotes": 52,
+              "abstentions": 1723
             },
             {
               "area": "정자2동",
@@ -34987,33 +34989,33 @@
             {
               "area": "정자2동",
               "ballotType": "선거일투표",
-              "electors": 3006,
-              "votes": 1810,
+              "electors": 3938,
+              "votes": 2215,
               "candidateVotes": [
                 {
                   "name": "더불어민주당",
-                  "votes": 654
+                  "votes": 782
                 },
                 {
                   "name": "국민의힘",
-                  "votes": 1018
+                  "votes": 1266
                 },
                 {
                   "name": "조국혁신당",
-                  "votes": 81
+                  "votes": 97
                 },
                 {
                   "name": "진보당",
-                  "votes": 30
+                  "votes": 40
                 },
                 {
                   "name": "계",
-                  "votes": 1783
+                  "votes": 2185
                 }
               ],
-              "validVotes": 1783,
-              "invalidVotes": 27,
-              "abstentions": 1196
+              "validVotes": 2185,
+              "invalidVotes": 30,
+              "abstentions": 1723
             },
             {
               "area": "정자3동",
@@ -35142,33 +35144,33 @@
             {
               "area": "서현2동",
               "ballotType": "계",
-              "electors": 8334,
-              "votes": 6019,
+              "electors": 11030,
+              "votes": 7563,
               "candidateVotes": [
                 {
                   "name": "더불어민주당",
-                  "votes": 2703
+                  "votes": 3262
                 },
                 {
                   "name": "국민의힘",
-                  "votes": 2785
+                  "votes": 3666
                 },
                 {
                   "name": "조국혁신당",
-                  "votes": 355
+                  "votes": 414
                 },
                 {
                   "name": "진보당",
-                  "votes": 109
+                  "votes": 133
                 },
                 {
                   "name": "계",
-                  "votes": 5952
+                  "votes": 7475
                 }
               ],
-              "validVotes": 5952,
-              "invalidVotes": 67,
-              "abstentions": 2315
+              "validVotes": 7475,
+              "invalidVotes": 88,
+              "abstentions": 3467
             },
             {
               "area": "서현2동",
@@ -35204,33 +35206,33 @@
             {
               "area": "서현2동",
               "ballotType": "선거일투표",
-              "electors": 5509,
-              "votes": 3197,
+              "electors": 8205,
+              "votes": 4741,
               "candidateVotes": [
                 {
                   "name": "더불어민주당",
-                  "votes": 1139
+                  "votes": 1698
                 },
                 {
                   "name": "국민의힘",
-                  "votes": 1834
+                  "votes": 2715
                 },
                 {
                   "name": "조국혁신당",
-                  "votes": 147
+                  "votes": 206
                 },
                 {
                   "name": "진보당",
-                  "votes": 35
+                  "votes": 59
                 },
                 {
                   "name": "계",
-                  "votes": 3155
+                  "votes": 4678
                 }
               ],
-              "validVotes": 3155,
-              "invalidVotes": 42,
-              "abstentions": 2312
+              "validVotes": 4678,
+              "invalidVotes": 63,
+              "abstentions": 3464
             },
             {
               "area": "이매1동",
@@ -35297,64 +35299,64 @@
             {
               "area": "이매2동",
               "ballotType": "계",
-              "electors": 5445,
-              "votes": 3299,
+              "electors": 8212,
+              "votes": 4919,
               "candidateVotes": [
                 {
                   "name": "더불어민주당",
-                  "votes": 944
+                  "votes": 1387
                 },
                 {
                   "name": "국민의힘",
-                  "votes": 2109
+                  "votes": 3156
                 },
                 {
                   "name": "조국혁신당",
-                  "votes": 111
+                  "votes": 187
                 },
                 {
                   "name": "진보당",
-                  "votes": 43
+                  "votes": 69
                 },
                 {
                   "name": "계",
-                  "votes": 3207
+                  "votes": 4799
                 }
               ],
-              "validVotes": 3207,
-              "invalidVotes": 92,
-              "abstentions": 2146
+              "validVotes": 4799,
+              "invalidVotes": 120,
+              "abstentions": 3293
             },
             {
               "area": "이매2동",
               "ballotType": "선거일투표",
-              "electors": 5445,
-              "votes": 3299,
+              "electors": 8212,
+              "votes": 4919,
               "candidateVotes": [
                 {
                   "name": "더불어민주당",
-                  "votes": 944
+                  "votes": 1387
                 },
                 {
                   "name": "국민의힘",
-                  "votes": 2109
+                  "votes": 3156
                 },
                 {
                   "name": "조국혁신당",
-                  "votes": 111
+                  "votes": 187
                 },
                 {
                   "name": "진보당",
-                  "votes": 43
+                  "votes": 69
                 },
                 {
                   "name": "계",
-                  "votes": 3207
+                  "votes": 4799
                 }
               ],
-              "validVotes": 3207,
-              "invalidVotes": 92,
-              "abstentions": 2146
+              "validVotes": 4799,
+              "invalidVotes": 120,
+              "abstentions": 3293
             },
             {
               "area": "야탑1동",
@@ -35483,64 +35485,64 @@
             {
               "area": "야탑3동",
               "ballotType": "계",
-              "electors": 12393,
-              "votes": 6833,
+              "electors": 17927,
+              "votes": 10227,
               "candidateVotes": [
                 {
                   "name": "더불어민주당",
-                  "votes": 2843
+                  "votes": 4162
                 },
                 {
                   "name": "국민의힘",
-                  "votes": 3528
+                  "votes": 5344
                 },
                 {
                   "name": "조국혁신당",
-                  "votes": 250
+                  "votes": 387
                 },
                 {
                   "name": "진보당",
-                  "votes": 89
+                  "votes": 146
                 },
                 {
                   "name": "계",
-                  "votes": 6710
+                  "votes": 10039
                 }
               ],
-              "validVotes": 6710,
-              "invalidVotes": 123,
-              "abstentions": 5560
+              "validVotes": 10039,
+              "invalidVotes": 188,
+              "abstentions": 7700
             },
             {
               "area": "야탑3동",
               "ballotType": "선거일투표",
-              "electors": 12393,
-              "votes": 6833,
+              "electors": 17927,
+              "votes": 10227,
               "candidateVotes": [
                 {
                   "name": "더불어민주당",
-                  "votes": 2843
+                  "votes": 4162
                 },
                 {
                   "name": "국민의힘",
-                  "votes": 3528
+                  "votes": 5344
                 },
                 {
                   "name": "조국혁신당",
-                  "votes": 250
+                  "votes": 387
                 },
                 {
                   "name": "진보당",
-                  "votes": 89
+                  "votes": 146
                 },
                 {
                   "name": "계",
-                  "votes": 6710
+                  "votes": 10039
                 }
               ],
-              "validVotes": 6710,
-              "invalidVotes": 123,
-              "abstentions": 5560
+              "validVotes": 10039,
+              "invalidVotes": 188,
+              "abstentions": 7700
             },
             {
               "area": "금곡동",
@@ -35638,64 +35640,64 @@
             {
               "area": "구미동",
               "ballotType": "계",
-              "electors": 3826,
-              "votes": 1947,
+              "electors": 6377,
+              "votes": 3368,
               "candidateVotes": [
                 {
                   "name": "더불어민주당",
-                  "votes": 641
+                  "votes": 1285
                 },
                 {
                   "name": "국민의힘",
-                  "votes": 1157
+                  "votes": 1838
                 },
                 {
                   "name": "조국혁신당",
-                  "votes": 81
+                  "votes": 136
                 },
                 {
                   "name": "진보당",
-                  "votes": 29
+                  "votes": 50
                 },
                 {
                   "name": "계",
-                  "votes": 1908
+                  "votes": 3309
                 }
               ],
-              "validVotes": 1908,
-              "invalidVotes": 39,
-              "abstentions": 1879
+              "validVotes": 3309,
+              "invalidVotes": 59,
+              "abstentions": 3009
             },
             {
               "area": "구미동",
               "ballotType": "선거일투표",
-              "electors": 3826,
-              "votes": 1947,
+              "electors": 6377,
+              "votes": 3368,
               "candidateVotes": [
                 {
                   "name": "더불어민주당",
-                  "votes": 641
+                  "votes": 1285
                 },
                 {
                   "name": "국민의힘",
-                  "votes": 1157
+                  "votes": 1838
                 },
                 {
                   "name": "조국혁신당",
-                  "votes": 81
+                  "votes": 136
                 },
                 {
                   "name": "진보당",
-                  "votes": 29
+                  "votes": 50
                 },
                 {
                   "name": "계",
-                  "votes": 1908
+                  "votes": 3309
                 }
               ],
-              "validVotes": 1908,
-              "invalidVotes": 39,
-              "abstentions": 1879
+              "validVotes": 3309,
+              "invalidVotes": 59,
+              "abstentions": 3009
             },
             {
               "area": "판교동",
@@ -35978,37 +35980,37 @@
             }
           ],
           "summary": {
-            "electors": 183337,
-            "votes": 109568,
-            "validVotes": 107804,
-            "invalidVotes": 1764,
-            "abstentions": 73769
+            "electors": 199287,
+            "votes": 118802,
+            "validVotes": 116866,
+            "invalidVotes": 1936,
+            "abstentions": 80485
           },
           "progress": {
             "area": "성남시분당구",
             "groupArea": null,
             "fullArea": "성남시분당구",
-            "electors": 183337,
-            "votes": 109568,
+            "electors": 199287,
+            "votes": 118802,
             "candidateVotes": [
               {
                 "name": "더불어민주당",
-                "votes": 39997,
-                "rate": 37.1
+                "votes": 43338,
+                "rate": 37.08
               },
               {
                 "name": "국민의힘",
-                "votes": 60858,
-                "rate": 56.45
+                "votes": 66071,
+                "rate": 56.53
               },
               {
                 "name": "조국혁신당",
-                "votes": 5173,
-                "rate": 4.79
+                "votes": 5531,
+                "rate": 4.73
               },
               {
                 "name": "개혁신당",
-                "votes": 1776,
+                "votes": 1926,
                 "rate": 1.64
               },
               {
@@ -36018,14 +36020,14 @@
               },
               {
                 "name": "계",
-                "votes": 107804,
+                "votes": 116866,
                 "rate": null
               }
             ],
-            "validVotes": 107804,
-            "invalidVotes": 1764,
-            "abstentions": 73769,
-            "progressRate": 41.33
+            "validVotes": 116866,
+            "invalidVotes": 1936,
+            "abstentions": 80485,
+            "progressRate": 44.81
           }
         }
       ],
@@ -36347,27 +36349,27 @@
             "area": "성남시분당구",
             "groupArea": null,
             "fullArea": "성남시분당구",
-            "electors": 183337,
-            "votes": 109568,
+            "electors": 199287,
+            "votes": 118802,
             "candidateVotes": [
               {
                 "name": "더불어민주당",
-                "votes": 39997,
-                "rate": 37.1
+                "votes": 43338,
+                "rate": 37.08
               },
               {
                 "name": "국민의힘",
-                "votes": 60858,
-                "rate": 56.45
+                "votes": 66071,
+                "rate": 56.53
               },
               {
                 "name": "조국혁신당",
-                "votes": 5173,
-                "rate": 4.79
+                "votes": 5531,
+                "rate": 4.73
               },
               {
                 "name": "개혁신당",
-                "votes": 1776,
+                "votes": 1926,
                 "rate": 1.64
               },
               {
@@ -36377,42 +36379,42 @@
               },
               {
                 "name": "계",
-                "votes": 107804,
+                "votes": 116866,
                 "rate": null
               }
             ],
-            "validVotes": 107804,
-            "invalidVotes": 1764,
-            "abstentions": 73769,
-            "progressRate": 41.33
+            "validVotes": 116866,
+            "invalidVotes": 1936,
+            "abstentions": 80485,
+            "progressRate": 44.81
           },
           "summary": {
-            "electors": 183337,
-            "votes": 109568,
-            "validVotes": 107804,
-            "invalidVotes": 1764,
-            "abstentions": 73769
+            "electors": 199287,
+            "votes": 118802,
+            "validVotes": 116866,
+            "invalidVotes": 1936,
+            "abstentions": 80485
           },
           "candidateVotes": [
             {
               "name": "더불어민주당",
-              "votes": 39997
+              "votes": 43338
             },
             {
               "name": "국민의힘",
-              "votes": 60858
+              "votes": 66071
             },
             {
               "name": "조국혁신당",
-              "votes": 5173
+              "votes": 5531
             },
             {
               "name": "진보당",
-              "votes": 1776
+              "votes": 1926
             },
             {
               "name": "계",
-              "votes": 107804
+              "votes": 116866
             }
           ],
           "ballotTypes": [
@@ -36432,11 +36434,11 @@
             },
             {
               "type": "선거일투표",
-              "electors": 168516,
-              "votes": 94761,
-              "validVotes": 93183,
-              "invalidVotes": 1578,
-              "abstentions": 73755,
+              "electors": 184466,
+              "votes": 103995,
+              "validVotes": 102245,
+              "invalidVotes": 1750,
+              "abstentions": 80471,
               "rowCount": 20,
               "unitCount": 1,
               "units": [
@@ -36470,11 +36472,11 @@
             },
             {
               "type": "합계",
-              "electors": 183337,
-              "votes": 109568,
-              "validVotes": 107804,
-              "invalidVotes": 1764,
-              "abstentions": 73769,
+              "electors": 199287,
+              "votes": 118802,
+              "validVotes": 116866,
+              "invalidVotes": 1936,
+              "abstentions": 80485,
               "rowCount": 1,
               "unitCount": 1,
               "units": [
@@ -36574,32 +36576,32 @@
             "name": "수내1동",
             "progress": null,
             "summary": {
-              "electors": 10821,
-              "votes": 7013,
-              "validVotes": 6915,
-              "invalidVotes": 98,
-              "abstentions": 3808
+              "electors": 12291,
+              "votes": 7863,
+              "validVotes": 7730,
+              "invalidVotes": 133,
+              "abstentions": 4428
             },
             "candidateVotes": [
               {
                 "name": "더불어민주당",
-                "votes": 2774
+                "votes": 3022
               },
               {
                 "name": "국민의힘",
-                "votes": 3625
+                "votes": 4165
               },
               {
                 "name": "조국혁신당",
-                "votes": 401
+                "votes": 416
               },
               {
                 "name": "진보당",
-                "votes": 115
+                "votes": 127
               },
               {
                 "name": "계",
-                "votes": 6915
+                "votes": 7730
               }
             ],
             "ballotTypes": [
@@ -36619,11 +36621,11 @@
               },
               {
                 "type": "선거일투표",
-                "electors": 8340,
-                "votes": 4536,
-                "validVotes": 4471,
-                "invalidVotes": 65,
-                "abstentions": 3804,
+                "electors": 9810,
+                "votes": 5386,
+                "validVotes": 5286,
+                "invalidVotes": 100,
+                "abstentions": 4424,
                 "rowCount": 1,
                 "unitCount": 1,
                 "units": [
@@ -36918,32 +36920,32 @@
             "name": "정자2동",
             "progress": null,
             "summary": {
-              "electors": 4755,
-              "votes": 3559,
-              "validVotes": 3510,
-              "invalidVotes": 49,
-              "abstentions": 1196
+              "electors": 5687,
+              "votes": 3964,
+              "validVotes": 3912,
+              "invalidVotes": 52,
+              "abstentions": 1723
             },
             "candidateVotes": [
               {
                 "name": "더불어민주당",
-                "votes": 1713
+                "votes": 1841
               },
               {
                 "name": "국민의힘",
-                "votes": 1541
+                "votes": 1789
               },
               {
                 "name": "조국혁신당",
-                "votes": 187
+                "votes": 203
               },
               {
                 "name": "진보당",
-                "votes": 69
+                "votes": 79
               },
               {
                 "name": "계",
-                "votes": 3510
+                "votes": 3912
               }
             ],
             "ballotTypes": [
@@ -36963,11 +36965,11 @@
               },
               {
                 "type": "선거일투표",
-                "electors": 3006,
-                "votes": 1810,
-                "validVotes": 1783,
-                "invalidVotes": 27,
-                "abstentions": 1196,
+                "electors": 3938,
+                "votes": 2215,
+                "validVotes": 2185,
+                "invalidVotes": 30,
+                "abstentions": 1723,
                 "rowCount": 1,
                 "unitCount": 1,
                 "units": [
@@ -37175,32 +37177,32 @@
             "name": "서현2동",
             "progress": null,
             "summary": {
-              "electors": 8334,
-              "votes": 6019,
-              "validVotes": 5952,
-              "invalidVotes": 67,
-              "abstentions": 2315
+              "electors": 11030,
+              "votes": 7563,
+              "validVotes": 7475,
+              "invalidVotes": 88,
+              "abstentions": 3467
             },
             "candidateVotes": [
               {
                 "name": "더불어민주당",
-                "votes": 2703
+                "votes": 3262
               },
               {
                 "name": "국민의힘",
-                "votes": 2785
+                "votes": 3666
               },
               {
                 "name": "조국혁신당",
-                "votes": 355
+                "votes": 414
               },
               {
                 "name": "진보당",
-                "votes": 109
+                "votes": 133
               },
               {
                 "name": "계",
-                "votes": 5952
+                "votes": 7475
               }
             ],
             "ballotTypes": [
@@ -37220,11 +37222,11 @@
               },
               {
                 "type": "선거일투표",
-                "electors": 5509,
-                "votes": 3197,
-                "validVotes": 3155,
-                "invalidVotes": 42,
-                "abstentions": 2312,
+                "electors": 8205,
+                "votes": 4741,
+                "validVotes": 4678,
+                "invalidVotes": 63,
+                "abstentions": 3464,
                 "rowCount": 1,
                 "unitCount": 1,
                 "units": [
@@ -37347,32 +37349,32 @@
             "name": "이매2동",
             "progress": null,
             "summary": {
-              "electors": 5445,
-              "votes": 3299,
-              "validVotes": 3207,
-              "invalidVotes": 92,
-              "abstentions": 2146
+              "electors": 8212,
+              "votes": 4919,
+              "validVotes": 4799,
+              "invalidVotes": 120,
+              "abstentions": 3293
             },
             "candidateVotes": [
               {
                 "name": "더불어민주당",
-                "votes": 944
+                "votes": 1387
               },
               {
                 "name": "국민의힘",
-                "votes": 2109
+                "votes": 3156
               },
               {
                 "name": "조국혁신당",
-                "votes": 111
+                "votes": 187
               },
               {
                 "name": "진보당",
-                "votes": 43
+                "votes": 69
               },
               {
                 "name": "계",
-                "votes": 3207
+                "votes": 4799
               }
             ],
             "ballotTypes": [
@@ -37390,11 +37392,11 @@
               },
               {
                 "type": "선거일투표",
-                "electors": 5445,
-                "votes": 3299,
-                "validVotes": 3207,
-                "invalidVotes": 92,
-                "abstentions": 2146,
+                "electors": 8212,
+                "votes": 4919,
+                "validVotes": 4799,
+                "invalidVotes": 120,
+                "abstentions": 3293,
                 "rowCount": 1,
                 "unitCount": 1,
                 "units": [
@@ -37602,32 +37604,32 @@
             "name": "야탑3동",
             "progress": null,
             "summary": {
-              "electors": 12393,
-              "votes": 6833,
-              "validVotes": 6710,
-              "invalidVotes": 123,
-              "abstentions": 5560
+              "electors": 17927,
+              "votes": 10227,
+              "validVotes": 10039,
+              "invalidVotes": 188,
+              "abstentions": 7700
             },
             "candidateVotes": [
               {
                 "name": "더불어민주당",
-                "votes": 2843
+                "votes": 4162
               },
               {
                 "name": "국민의힘",
-                "votes": 3528
+                "votes": 5344
               },
               {
                 "name": "조국혁신당",
-                "votes": 250
+                "votes": 387
               },
               {
                 "name": "진보당",
-                "votes": 89
+                "votes": 146
               },
               {
                 "name": "계",
-                "votes": 6710
+                "votes": 10039
               }
             ],
             "ballotTypes": [
@@ -37645,11 +37647,11 @@
               },
               {
                 "type": "선거일투표",
-                "electors": 12393,
-                "votes": 6833,
-                "validVotes": 6710,
-                "invalidVotes": 123,
-                "abstentions": 5560,
+                "electors": 17927,
+                "votes": 10227,
+                "validVotes": 10039,
+                "invalidVotes": 188,
+                "abstentions": 7700,
                 "rowCount": 1,
                 "unitCount": 1,
                 "units": [
@@ -37774,32 +37776,32 @@
             "name": "구미동",
             "progress": null,
             "summary": {
-              "electors": 3826,
-              "votes": 1947,
-              "validVotes": 1908,
-              "invalidVotes": 39,
-              "abstentions": 1879
+              "electors": 6377,
+              "votes": 3368,
+              "validVotes": 3309,
+              "invalidVotes": 59,
+              "abstentions": 3009
             },
             "candidateVotes": [
               {
                 "name": "더불어민주당",
-                "votes": 641
+                "votes": 1285
               },
               {
                 "name": "국민의힘",
-                "votes": 1157
+                "votes": 1838
               },
               {
                 "name": "조국혁신당",
-                "votes": 81
+                "votes": 136
               },
               {
                 "name": "진보당",
-                "votes": 29
+                "votes": 50
               },
               {
                 "name": "계",
-                "votes": 1908
+                "votes": 3309
               }
             ],
             "ballotTypes": [
@@ -37817,11 +37819,11 @@
               },
               {
                 "type": "선거일투표",
-                "electors": 3826,
-                "votes": 1947,
-                "validVotes": 1908,
-                "invalidVotes": 39,
-                "abstentions": 1879,
+                "electors": 6377,
+                "votes": 3368,
+                "validVotes": 3309,
+                "invalidVotes": 59,
+                "abstentions": 3009,
                 "rowCount": 1,
                 "unitCount": 1,
                 "units": [
@@ -38935,7 +38937,7 @@
             "validVotes": 118529,
             "invalidVotes": 5492,
             "abstentions": 91007,
-            "progressRate": 99.93
+            "progressRate": 100.0
           },
           {
             "area": "소계",
@@ -38983,7 +38985,7 @@
             "validVotes": 78943,
             "invalidVotes": 4502,
             "abstentions": 40095,
-            "progressRate": 99.95
+            "progressRate": 100.0
           },
           {
             "area": "군산시",
@@ -39031,7 +39033,7 @@
             "validVotes": 4070,
             "invalidVotes": 389,
             "abstentions": 2297,
-            "progressRate": 99.89
+            "progressRate": 100.0
           },
           {
             "area": "김제시",
@@ -39186,7 +39188,7 @@
           "validVotes": 1521543,
           "invalidVotes": 45929,
           "abstentions": 979650,
-          "progressRate": 99.26
+          "progressRate": 99.27
         }
       },
       "resultSummary": {
@@ -54642,7 +54644,7 @@
             "validVotes": 118529,
             "invalidVotes": 5492,
             "abstentions": 91007,
-            "progressRate": 99.93
+            "progressRate": 100.0
           }
         },
         {
@@ -54925,7 +54927,7 @@
             "validVotes": 4070,
             "invalidVotes": 389,
             "abstentions": 2297,
-            "progressRate": 99.89
+            "progressRate": 100.0
           }
         },
         {
@@ -58818,5 +58820,5 @@
     }
   ],
   "errorCount": 0,
-  "durationSeconds": 28.59
+  "durationSeconds": 33.09
 }
