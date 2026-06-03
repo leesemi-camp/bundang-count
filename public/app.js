@@ -1,4 +1,4 @@
-const TARGET_TYPES = ["관내사전투표", "선거일투표", "관외사전투표"];
+const TARGET_TYPES = ["관내사전투표", "선거일투표", "관외사전투표", "거소투표"];
 const FOCUS_SCOPE_IDS = [
   "provincial-council-bundang",
   "municipal-council-bundang",
