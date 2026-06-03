@@ -561,6 +561,7 @@ function renderLocalBreakdown(scope) {
   // 분당구 요약 + 동별 아코디언
   if (breakdown.bundangSummary) {
     const details = makeElement("details", "local-breakdown__accordion");
+    details.dataset.id = `local-breakdown-${scope.id}`;
     const summary = makeElement("summary", "local-breakdown__summary");
     const bundangCard = renderLocalAreaCard(breakdown.bundangSummary);
     bundangCard.append(makeElement("p", "unit-group__hint muted", "▸ 분당구 동별 개표 현황 보기"));
@@ -592,6 +593,7 @@ function renderLocalBreakdown(scope) {
 function renderRaceCard(scope) {
   const template = $("#raceCardTemplate");
   const card = template.content.firstElementChild.cloneNode(true);
+  card.dataset.id = `race-${scope.id}`;
   const rate = getProgressRate(scope);
   card.querySelector(".race-card__scope").textContent = scope.scopeName;
   card.querySelector("h3").textContent = scope.electionName;
@@ -672,6 +674,7 @@ function renderNationalUnitCard(unit, scope) {
   );
 
   const details = makeElement("details", "unit-card");
+  details.dataset.id = `nat-unit-${unit.name}`;
   const summary = makeElement("summary", "unit-card__summary");
 
   // 제목 + 개표율
@@ -754,6 +757,7 @@ function renderNationalGroupCard(group) {
 
   // ── 카드 구조 (details/summary 아코디언) ───────────
   const details = makeElement("details", "unit-card unit-card--group");
+  details.dataset.id = `nat-group-${group.key}`;
   const summary = makeElement("summary", "unit-card__summary");
 
   // 헤더 행
@@ -872,15 +876,50 @@ function renderError(message) {
   document.body.append(main);
 }
 
+let currentDataGeneratedAt = null;
+let isFirstLoad = true;
+
 async function boot() {
   const data = await fetchJson("./data/latest.json", null);
   if (!data || !Array.isArray(data.scopes)) {
     renderError("아직 수집된 데이터가 없습니다. GitHub Actions 또는 scripts/fetch_nec.py를 먼저 실행해 주세요.");
     return;
   }
+  
+  if (currentDataGeneratedAt === data.generatedAt) {
+    return;
+  }
+  currentDataGeneratedAt = data.generatedAt;
+
+  const openIds = new Set();
+  const closedIds = new Set();
+  if (!isFirstLoad) {
+    document.querySelectorAll("details").forEach((d) => {
+      if (d.dataset.id) {
+        if (d.hasAttribute("open")) openIds.add(d.dataset.id);
+        else closedIds.add(d.dataset.id);
+      }
+    });
+  }
+
   renderTopStatus(data);
   renderRaces(data);
   renderNational(data);
+
+  if (!isFirstLoad) {
+    document.querySelectorAll("details").forEach((d) => {
+      if (d.dataset.id) {
+        if (openIds.has(d.dataset.id)) {
+          d.setAttribute("open", "");
+        } else if (closedIds.has(d.dataset.id)) {
+          d.removeAttribute("open");
+        }
+      }
+    });
+  }
+  
+  isFirstLoad = false;
 }
 
 boot();
+setInterval(boot, 60000);
