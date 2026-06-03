@@ -270,8 +270,8 @@ function calculatePRSeats(candidates, totalSeats, isMetropolitan) {
 function renderCandidateRows(container, scope) {
   const summary = getProgressSummary(scope) || {};
   const totalVotes = summary.validVotes || summary.votes;
-  const candidates = (summary.candidateVotes || [])
-    .filter((candidate) => candidate.name !== "계" && candidate.votes)
+  const allCandidates = (summary.candidateVotes || []).filter((c) => c.name !== "계" && c.votes);
+  const candidates = allCandidates
     .sort((a, b) => (b.votes || 0) - (a.votes || 0))
     .slice(0, 4);
   container.replaceChildren();
@@ -284,7 +284,7 @@ function renderCandidateRows(container, scope) {
   }
   const maxVotes = Math.max(1, ...candidates.map((candidate) => candidate.votes || 0));
   const isPR = scope.id in PR_SEATS;
-  const prSeatAllocations = isPR ? calculatePRSeats(candidates, PR_SEATS[scope.id], scope.id === "metropolitan-pr-gyeonggi") : {};
+  const prSeatAllocations = isPR ? calculatePRSeats(allCandidates, PR_SEATS[scope.id], scope.id === "metropolitan-pr-gyeonggi") : {};
 
   candidates.forEach((candidate, index) => {
     const isLeader = candidate === candidates[0];
