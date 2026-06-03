@@ -672,13 +672,53 @@ footer {
 }
 
 .unit-card {
-  display: grid;
-  gap: 8px;
-  min-height: 108px;
-  padding: 13px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--surface);
+  cursor: pointer;
+}
+
+.unit-card__summary {
+  display: grid;
+  gap: 8px;
+  padding: 13px;
+  list-style: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.unit-card__summary::-webkit-details-marker {
+  display: none;
+}
+
+.unit-card__ballot-detail {
+  padding: 4px 13px 13px;
+}
+
+.unit-group__merged-candidates {
+  display: grid;
+  gap: 5px;
+}
+
+.unit-group__hint {
+  font-size: 11px;
+  color: var(--blue);
+  font-weight: 600;
+  transition: opacity 0.15s;
+}
+
+details[open] .unit-group__hint {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  overflow: hidden;
+  margin: 0;
+}
+
+.unit-group__divider {
+  height: 1px;
+  margin: 0 13px 4px;
+  background: var(--line);
 }
 
 .unit-card__top {
@@ -728,51 +768,10 @@ footer {
   font-weight: 850;
 }
 
-/* 분리선거구 그룹 카드 (details/summary 아코디언) */
+/* 분리선거구 그룹 카드 */
 .unit-card--group {
   border-color: rgba(53, 104, 168, 0.32);
   background: linear-gradient(to bottom, #f5f8fc, var(--surface));
-  padding: 0;
-  cursor: pointer;
-}
-
-.unit-group__summary {
-  display: grid;
-  gap: 8px;
-  padding: 13px;
-  list-style: none;
-  cursor: pointer;
-  user-select: none;
-}
-
-.unit-group__summary::-webkit-details-marker {
-  display: none;
-}
-
-.unit-group__merged-candidates {
-  display: grid;
-  gap: 5px;
-}
-
-.unit-group__hint {
-  font-size: 11px;
-  color: var(--blue);
-  font-weight: 600;
-  transition: opacity 0.15s;
-}
-
-details[open] .unit-group__hint {
-  opacity: 0;
-  pointer-events: none;
-  height: 0;
-  overflow: hidden;
-  margin: 0;
-}
-
-.unit-group__divider {
-  height: 1px;
-  margin: 0 13px 4px;
-  background: var(--line);
 }
 
 .unit-card--group details[open] > .unit-group__list,

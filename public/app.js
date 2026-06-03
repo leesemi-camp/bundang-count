@@ -563,7 +563,12 @@ function renderRaces(data) {
     return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi);
   });
   ordered.forEach((scope) => {
-    if (scope.id !== "national-assembly-all") grid.append(renderRaceCard(scope));
+    if (scope.id === "national-assembly-all") return;
+    // 무투표 선거구를 scope 레벨에서 완전히 제거
+    const renderScope = scope.id === "municipal-council-bundang"
+      ? { ...scope, units: scope.units.filter((u) => !UNCONTESTED_UNITS.has(u.name)) }
+      : scope;
+    grid.append(renderRaceCard(renderScope));
   });
 }
 
@@ -590,36 +595,60 @@ function groupedNationalUnits(units) {
 }
 
 function renderNationalUnitCard(unit, scope) {
-  const card = makeElement("article", "unit-card");
   const progress = unit.progress || getUnitProgress(scope, unit);
-  const activeTypes = TARGET_TYPES.filter((type) => {
-    return unit.rows.some((row) => row.ballotType === type && row.votes);
-  });
+  const totalRow = getUnitTotalRow(unit);
+  const totalValidVotes = totalRow?.validVotes || totalRow?.votes;
+  const totalVotes = unit.summary?.votes || progress?.votes || 0;
+  const candidates = (totalRow?.candidateVotes || [])
+    .filter((c) => c.name && c.name !== "계" && c.votes)
+    .sort((a, b) => (b.votes || 0) - (a.votes || 0))
+    .slice(0, 2);
+  const activeTypes = TARGET_TYPES.filter((t) =>
+    unit.rows.some((r) => r.ballotType === t && r.votes)
+  );
+
+  const details = makeElement("details", "unit-card");
+  const summary = makeElement("summary", "unit-card__summary");
+
   const top = makeElement("div", "unit-card__top");
   top.append(makeElement("strong", "", unit.name));
   top.append(makeElement("span", "unit-card__rate", formatPercent(progress?.progressRate)));
-  card.append(top);
-  card.append(
-    makeElement(
-      "p",
-      "muted",
-      `${unit.cityName ? `${unit.cityName} · ` : ""}${formatNumber(unit.summary?.votes || progress?.votes)}표 · ${
-        activeTypes.length ? activeTypes.join(" · ") : "개표구분 대기"
-      }`
-    )
-  );
-  const totalRow = getUnitTotalRow(unit);
-  const candidates = (totalRow?.candidateVotes || [])
-    .filter((candidate) => candidate.name !== "계" && candidate.votes)
-    .sort((a, b) => (b.votes || 0) - (a.votes || 0))
-    .slice(0, 2);
-  candidates.forEach((candidate, index) => {
-    const line = makeElement("p", `unit-candidate ${index === 0 ? "unit-candidate--leader" : ""}`);
-    applyCandidateAccent(line, candidate, index);
-    line.textContent = `${candidate.name} ${formatNumber(candidate.votes)}표 · ${formatPercent(getCandidateRate(candidate, totalRow?.validVotes || totalRow?.votes))}`;
-    card.append(line);
-  });
-  return card;
+  summary.append(top);
+
+  summary.append(makeElement("p", "muted",
+    `${unit.cityName ? `${unit.cityName} · ` : ""}${formatNumber(totalVotes)}표 · ` +
+    (activeTypes.length ? activeTypes.join(" · ") : "개표구분 대기")
+  ));
+
+  if (candidates.length) {
+    const maxV = candidates[0].votes || 1;
+    const candList = makeElement("div", "unit-group__merged-candidates");
+    candidates.forEach((c, i) => {
+      const row = makeElement("div", `candidate-row ${i === 0 ? "candidate-row--leader" : ""}`);
+      applyCandidateAccent(row, c, i);
+      const track = makeElement("div", "bar-track");
+      const fill = makeElement("span");
+      fill.style.width = `${((c.votes || 0) / maxV) * 100}%`;
+      track.append(fill);
+      row.append(
+        makeElement("b", "", c.name),
+        track,
+        makeElement("span", "", `${formatNumber(c.votes)}표 · ${formatPercent(getCandidateRate(c, totalValidVotes))}`)
+      );
+      candList.append(row);
+    });
+    summary.append(candList);
+  }
+
+  summary.append(makeElement("p", "unit-group__hint muted", "▸ 투표 종류별 상세"));
+  details.append(summary);
+
+  details.append(makeElement("div", "unit-group__divider"));
+  const ballotWrap = makeElement("div", "unit-card__ballot-detail");
+  ballotWrap.append(renderUnitBallotBreakdown(unit));
+  details.append(ballotWrap);
+
+  return details;
 }
 
 function renderNationalGroupCard(group) {
