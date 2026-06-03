@@ -9,17 +9,17 @@ const FOCUS_SCOPE_IDS = [
   "education-gyeonggi",
 ];
 const PARTY_COLOR_RULES = [
-  { keyword: "더불어민주당", color: "#2563eb", soft: "rgba(37, 99, 235, 0.11)" },
-  { keyword: "국민의힘", color: "#dc2626", soft: "rgba(220, 38, 38, 0.11)" },
-  { keyword: "조국혁신당", color: "#1e3a8a", soft: "rgba(30, 58, 138, 0.12)" },
-  { keyword: "개혁신당", color: "#ea580c", soft: "rgba(234, 88, 12, 0.12)" },
+  { keyword: "더불어민주당", color: "#3b82f6", soft: "rgba(59, 130, 246, 0.12)" },
+  { keyword: "국민의힘", color: "#ef4444", soft: "rgba(239, 68, 68, 0.12)" },
+  { keyword: "조국혁신당", color: "#4338ca", soft: "rgba(67, 56, 202, 0.12)" },
+  { keyword: "개혁신당", color: "#f97316", soft: "rgba(249, 115, 22, 0.12)" },
 ];
 const NEUTRAL_CANDIDATE_COLORS = [
-  { color: "#475569", soft: "rgba(71, 85, 105, 0.11)" },
-  { color: "#5f6b7a", soft: "rgba(95, 107, 122, 0.11)" },
-  { color: "#737985", soft: "rgba(115, 121, 133, 0.12)" },
-  { color: "#858892", soft: "rgba(133, 136, 146, 0.12)" },
-  { color: "#9ca3af", soft: "rgba(156, 163, 175, 0.13)" },
+  { color: "#64748b", soft: "rgba(100, 116, 139, 0.12)" },
+  { color: "#94a3b8", soft: "rgba(148, 163, 184, 0.12)" },
+  { color: "#475569", soft: "rgba(71, 85, 105, 0.12)" },
+  { color: "#cbd5e1", soft: "rgba(203, 213, 225, 0.12)" },
+  { color: "#334155", soft: "rgba(51, 65, 85, 0.12)" },
 ];
 
 const numberFormatter = new Intl.NumberFormat("ko-KR");

@@ -1,17 +1,36 @@
 :root {
-  color-scheme: light;
-  --bg: #f4f6f3;
+  color-scheme: light dark;
+  --bg: #f8fafc;
   --surface: #ffffff;
-  --surface-soft: #eef3ef;
-  --text: #202421;
-  --muted: #667068;
-  --line: #d9ded8;
-  --green: #247a52;
-  --teal: #137c8b;
-  --amber: #ba6b00;
-  --red: #bb3e3e;
-  --blue: #3568a8;
-  --shadow: 0 12px 28px rgba(32, 36, 33, 0.08);
+  --surface-soft: #f1f5f9;
+  --text: #0f172a;
+  --muted: #64748b;
+  --line: #e2e8f0;
+  --green: #10b981;
+  --teal: #14b8a6;
+  --amber: #f59e0b;
+  --red: #ef4444;
+  --blue: #3b82f6;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.03);
+  --shadow-hover: 0 10px 24px rgba(0, 0, 0, 0.08), 0 4px 8px rgba(0, 0, 0, 0.04);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f172a;
+    --surface: #1e293b;
+    --surface-soft: #334155;
+    --text: #f8fafc;
+    --muted: #94a3b8;
+    --line: #334155;
+    --green: #34d399;
+    --teal: #2dd4bf;
+    --amber: #fbbf24;
+    --red: #f87171;
+    --blue: #60a5fa;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.25), 0 1px 3px rgba(0, 0, 0, 0.15);
+    --shadow-hover: 0 10px 24px rgba(0, 0, 0, 0.4), 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
 }
 
 * {
@@ -24,11 +43,14 @@ body {
   color: var(--text);
   overflow-x: hidden;
   font-family:
+    "Pretendard Variable",
+    Pretendard,
     system-ui,
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
     sans-serif;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 a {
@@ -45,8 +67,9 @@ a {
   gap: 18px;
   padding: 18px clamp(16px, 4vw, 40px);
   border-bottom: 1px solid var(--line);
-  background: rgba(244, 246, 243, 0.92);
-  backdrop-filter: blur(14px);
+  background: color-mix(in srgb, var(--surface) 85%, transparent);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 
 h1,
@@ -194,6 +217,16 @@ footer {
 
 .race-card {
   padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.race-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
 }
 
 .race-card__summary-header {
@@ -257,9 +290,10 @@ details[open] .race-card__toggle-icon {
 
 .progress {
   height: 10px;
-  overflow: hidden;
+  overflow: visible;
   border-radius: 999px;
   background: var(--surface-soft);
+  position: relative;
 }
 
 .progress span {
@@ -268,6 +302,8 @@ details[open] .race-card__toggle-icon {
   height: 100%;
   border-radius: inherit;
   background: linear-gradient(90deg, var(--green), var(--teal));
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.4);
+  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .race-card__summary {
@@ -280,7 +316,13 @@ details[open] .race-card__toggle-icon {
   padding: 10px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: #fbfcfb;
+  background: var(--surface-soft);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.summary-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
 }
 
 .summary-item span {
@@ -310,7 +352,7 @@ details[open] .race-card__toggle-icon {
   padding: 0 9px;
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: #fbfcfb;
+  background: var(--surface-soft);
   color: var(--muted);
   font-size: 12px;
   font-weight: 700;
@@ -388,7 +430,13 @@ details[open] .race-card__toggle-icon {
   padding: 11px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: #fbfcfb;
+  background: var(--surface-soft);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.district-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
 }
 
 .district-card__top {
