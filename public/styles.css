@@ -207,6 +207,10 @@ footer {
   background: var(--amber);
 }
 
+.dot--residence {
+  background: var(--teal);
+}
+
 
 
 .race-grid {
@@ -398,6 +402,10 @@ details[open] .race-card__toggle-icon {
 
 .bar-row[data-type="관외사전투표"] .bar-track span {
   background: var(--amber);
+}
+
+.bar-row[data-type="거소투표"] .bar-track span {
+  background: var(--teal);
 }
 
 .candidate-list {
