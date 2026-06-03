@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T08:54:18+09:00",
+  "generatedAt": "2026-06-04T08:56:54+09:00",
   "electionId": "0020260603",
   "source": {
     "name": "중앙선거관리위원회 선거통계시스템",
@@ -15025,27 +15025,27 @@
             "groupArea": null,
             "fullArea": "합계",
             "electors": 11875766,
-            "votes": 6929329,
+            "votes": 6929359,
             "candidateVotes": [
               {
                 "name": "임태희",
-                "votes": 3177326,
+                "votes": 3177339,
                 "rate": 47.18
               },
               {
                 "name": "안민석",
-                "votes": 3556451,
+                "votes": 3556465,
                 "rate": 52.81
               },
               {
                 "name": "계",
-                "votes": 6733777,
+                "votes": 6733804,
                 "rate": null
               }
             ],
-            "validVotes": 6733777,
-            "invalidVotes": 195552,
-            "abstentions": 4946437,
+            "validVotes": 6733804,
+            "invalidVotes": 195555,
+            "abstentions": 4946407,
             "progressRate": 99.95
           },
           {
@@ -15613,27 +15613,27 @@
             "groupArea": null,
             "fullArea": "고양시일산동구",
             "electors": 244864,
-            "votes": 139700,
+            "votes": 139730,
             "candidateVotes": [
               {
                 "name": "임태희",
-                "votes": 62661,
+                "votes": 62674,
                 "rate": 46.08
               },
               {
                 "name": "안민석",
-                "votes": 73320,
+                "votes": 73334,
                 "rate": 53.91
               },
               {
                 "name": "계",
-                "votes": 135981,
+                "votes": 136008,
                 "rate": null
               }
             ],
-            "validVotes": 135981,
-            "invalidVotes": 3719,
-            "abstentions": 105164,
+            "validVotes": 136008,
+            "invalidVotes": 3722,
+            "abstentions": 105134,
             "progressRate": 99.98
           },
           {
@@ -16370,27 +16370,27 @@
           "groupArea": null,
           "fullArea": "합계",
           "electors": 11875766,
-          "votes": 6929329,
+          "votes": 6929359,
           "candidateVotes": [
             {
               "name": "임태희",
-              "votes": 3177326,
+              "votes": 3177339,
               "rate": 47.18
             },
             {
               "name": "안민석",
-              "votes": 3556451,
+              "votes": 3556465,
               "rate": 52.81
             },
             {
               "name": "계",
-              "votes": 6733777,
+              "votes": 6733804,
               "rate": null
             }
           ],
-          "validVotes": 6733777,
-          "invalidVotes": 195552,
-          "abstentions": 4946437,
+          "validVotes": 6733804,
+          "invalidVotes": 195555,
+          "abstentions": 4946407,
           "progressRate": 99.95
         }
       },
@@ -40301,7 +40301,7 @@
             "groupArea": null,
             "fullArea": "연수구",
             "electors": 163504,
-            "votes": 103052,
+            "votes": 103053,
             "candidateVotes": [
               {
                 "name": "더불어민주당 하정우",
@@ -40340,8 +40340,8 @@
               }
             ],
             "validVotes": 100174,
-            "invalidVotes": 2878,
-            "abstentions": 60452,
+            "invalidVotes": 2879,
+            "abstentions": 60451,
             "progressRate": 99.9
           },
           {
@@ -41164,20 +41164,20 @@
         "summary": {
           "area": "합계",
           "electors": 2562576,
-          "votes": 1581315,
+          "votes": 1581316,
           "candidateVotes": [],
           "validVotes": 1534918,
-          "invalidVotes": 46397,
-          "abstentions": 981261,
+          "invalidVotes": 46398,
+          "abstentions": 981260,
           "progressRate": 99.99
         }
       },
       "resultSummary": {
         "electors": 2267121,
-        "votes": 1379573,
+        "votes": 1379574,
         "validVotes": 1341466,
-        "invalidVotes": 38107,
-        "abstentions": 887548
+        "invalidVotes": 38108,
+        "abstentions": 887547
       },
       "ballotTypes": [
         {
@@ -41307,10 +41307,10 @@
         {
           "type": "별도분류",
           "electors": 0,
-          "votes": 1702,
+          "votes": 1703,
           "validVotes": 1599,
-          "invalidVotes": 103,
-          "abstentions": -1702,
+          "invalidVotes": 104,
+          "abstentions": -1703,
           "rowCount": 18,
           "unitCount": 18,
           "units": [
@@ -41338,10 +41338,10 @@
         {
           "type": "합계",
           "electors": 2267121,
-          "votes": 1379573,
+          "votes": 1379574,
           "validVotes": 1341466,
-          "invalidVotes": 38107,
-          "abstentions": 887548,
+          "invalidVotes": 38108,
+          "abstentions": 887547,
           "rowCount": 18,
           "unitCount": 18,
           "units": [
@@ -43046,7 +43046,7 @@
               "area": "합계",
               "ballotType": "합계",
               "electors": 163504,
-              "votes": 103052,
+              "votes": 103053,
               "candidateVotes": [
                 {
                   "name": "더불어민주당 송영길",
@@ -43066,8 +43066,8 @@
                 }
               ],
               "validVotes": 100174,
-              "invalidVotes": 2878,
-              "abstentions": 60452
+              "invalidVotes": 2879,
+              "abstentions": 60451
             },
             {
               "area": "거소투표",
@@ -43937,7 +43937,7 @@
               "area": "잘못 투입·구분된 투표지",
               "ballotType": "별도분류",
               "electors": 0,
-              "votes": 143,
+              "votes": 144,
               "candidateVotes": [
                 {
                   "name": "더불어민주당 송영길",
@@ -43957,16 +43957,16 @@
                 }
               ],
               "validVotes": 127,
-              "invalidVotes": 16,
-              "abstentions": -143
+              "invalidVotes": 17,
+              "abstentions": -144
             }
           ],
           "summary": {
             "electors": 163504,
-            "votes": 103052,
+            "votes": 103053,
             "validVotes": 100174,
-            "invalidVotes": 2878,
-            "abstentions": 60452
+            "invalidVotes": 2879,
+            "abstentions": 60451
           },
           "cityName": "인천광역시",
           "progressNames": [
@@ -43979,7 +43979,7 @@
             "groupArea": null,
             "fullArea": "연수구",
             "electors": 163504,
-            "votes": 103052,
+            "votes": 103053,
             "candidateVotes": [
               {
                 "name": "더불어민주당 하정우",
@@ -44018,8 +44018,8 @@
               }
             ],
             "validVotes": 100174,
-            "invalidVotes": 2878,
-            "abstentions": 60452,
+            "invalidVotes": 2879,
+            "abstentions": 60451,
             "progressRate": 99.9
           }
         },
@@ -61032,5 +61032,5 @@
     }
   ],
   "errorCount": 0,
-  "durationSeconds": 27.19
+  "durationSeconds": 34.2
 }
