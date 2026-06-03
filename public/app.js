@@ -325,7 +325,7 @@ function renderCandidateRows(container, scope) {
     }
     
     const nameEl = makeElement("b", "", candidate.name);
-    if (isConfirmed) nameEl.append(makeElement("span", "badge badge--winner", "당선확실"));
+    if (isConfirmed) nameEl.append(makeElement("span", "badge badge--winner", "당선"));
     row.append(nameEl, track, makeElement("span", "", text));
     container.append(row);
   });
@@ -396,7 +396,7 @@ function renderUnitCandidateBreakdown(unit, globalMaxCandidateVotes) {
     fill.style.width = `${((candidate.votes || 0) / maxVotes) * 100}%`;
     track.append(fill);
     const nameEl = makeElement("b", "", candidate.name);
-    if (typeof isConfirmed !== "undefined" && isConfirmed) nameEl.append(makeElement("span", "badge badge--winner", "당선확실"));
+    if (typeof isConfirmed !== "undefined" && isConfirmed) nameEl.append(makeElement("span", "badge badge--winner", "당선"));
     row.append(nameEl, track,
       makeElement(
         "span",
@@ -588,7 +588,7 @@ function renderDetailCandidateBreakdown(detail) {
     fill.style.width = `${((candidate.votes || 0) / maxVotes) * 100}%`;
     track.append(fill);
     const nameEl = makeElement("b", "", candidate.name);
-    if (typeof isConfirmed !== "undefined" && isConfirmed) nameEl.append(makeElement("span", "badge badge--winner", "당선확실"));
+    if (typeof isConfirmed !== "undefined" && isConfirmed) nameEl.append(makeElement("span", "badge badge--winner", "당선"));
     row.append(nameEl, track,
       makeElement(
         "span",
@@ -782,6 +782,7 @@ function renderNationalUnitCard(unit, scope) {
     const candList = makeElement("div", "unit-group__merged-candidates");
     candidates.forEach((c, i) => {
       const isLeader = i === 0;
+      const isConfirmed = checkConfirmedWinner(c, candidates, progress, 1);
       const row = makeElement("div", `candidate-row ${isLeader ? "candidate-row--leader" : ""}`);
       applyCandidateAccent(row, c, i);
       const track = makeElement("div", "bar-track");
@@ -789,6 +790,7 @@ function renderNationalUnitCard(unit, scope) {
       fill.style.width = `${((c.votes || 0) / maxV) * 100}%`;
       track.append(fill);
       const nameEl = makeElement("b", "", c.name);
+      if (isConfirmed) nameEl.append(makeElement("span", "badge badge--winner", "당선"));
       row.append(nameEl, track,
         makeElement("span", "", `${formatNumber(c.votes)}표 · ${formatPercent(getCandidateRate(c, totalValidVotes))}`)
       );
@@ -869,6 +871,7 @@ function renderNationalGroupCard(group) {
     const candList = makeElement("div", "unit-group__merged-candidates");
     const maxV = sortedCandidates[0].votes || 1;
     sortedCandidates.forEach((c, i) => {
+      const isConfirmed = checkConfirmedWinner(c, sortedCandidates, { progressRate, electors: totalElectors }, 1);
       const row = makeElement("div", `candidate-row ${i === 0 ? "candidate-row--leader" : ""}`);
       applyCandidateAccent(row, c, i);
       const track = makeElement("div", "bar-track");
@@ -876,8 +879,10 @@ function renderNationalGroupCard(group) {
       fill.style.width = `${((c.votes || 0) / maxV) * 100}%`;
       track.append(fill);
       const rate = totalValidVotes ? (c.votes / totalValidVotes) * 100 : null;
+      const nameEl = makeElement("b", "", c.name);
+      if (isConfirmed) nameEl.append(makeElement("span", "badge badge--winner", "당선"));
       row.append(
-        makeElement("b", "", c.name),
+        nameEl,
         track,
         makeElement("span", "", `${formatNumber(c.votes)}표 · ${formatPercent(rate)}`)
       );
