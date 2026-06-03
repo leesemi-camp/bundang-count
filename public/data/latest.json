@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T08:38:43+09:00",
+  "generatedAt": "2026-06-04T08:41:13+09:00",
   "electionId": "0020260603",
   "source": {
     "name": "중앙선거관리위원회 선거통계시스템",
@@ -209,7 +209,7 @@
             "validVotes": 101005,
             "invalidVotes": 1621,
             "abstentions": 82163,
-            "progressRate": 99.98
+            "progressRate": 100.0
           },
           {
             "area": "수원시영통구",
@@ -5412,7 +5412,7 @@
             "validVotes": 100907,
             "invalidVotes": 1679,
             "abstentions": 82203,
-            "progressRate": 99.99
+            "progressRate": 100.0
           },
           {
             "area": "수원시영통구",
@@ -15130,7 +15130,7 @@
             "validVotes": 99570,
             "invalidVotes": 3048,
             "abstentions": 82171,
-            "progressRate": 99.98
+            "progressRate": 100.0
           },
           {
             "area": "수원시영통구",
@@ -30347,7 +30347,7 @@
             "validVotes": 594982,
             "invalidVotes": 10223,
             "abstentions": 430458,
-            "progressRate": 99.97
+            "progressRate": 100.0
           },
           {
             "area": "수원시장안구",
@@ -30476,7 +30476,7 @@
             "validVotes": 100348,
             "invalidVotes": 2229,
             "abstentions": 82212,
-            "progressRate": 99.99
+            "progressRate": 100.0
           },
           {
             "area": "수원시영통구",
@@ -32283,7 +32283,7 @@
           "validVotes": 594982,
           "invalidVotes": 10223,
           "abstentions": 430458,
-          "progressRate": 99.97
+          "progressRate": 100.0
         }
       },
       "resultSummary": {
@@ -61032,5 +61032,5 @@
     }
   ],
   "errorCount": 0,
-  "durationSeconds": 27.75
+  "durationSeconds": 27.12
 }
