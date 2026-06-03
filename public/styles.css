@@ -728,21 +728,62 @@ footer {
   font-weight: 850;
 }
 
-/* 분리선거구 그룹 카드 */
+/* 분리선거구 그룹 카드 (details/summary 아코디언) */
 .unit-card--group {
-  border-color: rgba(53, 104, 168, 0.3);
+  border-color: rgba(53, 104, 168, 0.32);
   background: linear-gradient(to bottom, #f5f8fc, var(--surface));
+  padding: 0;
+  cursor: pointer;
+}
+
+.unit-group__summary {
+  display: grid;
+  gap: 8px;
+  padding: 13px;
+  list-style: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.unit-group__summary::-webkit-details-marker {
+  display: none;
+}
+
+.unit-group__merged-candidates {
+  display: grid;
+  gap: 5px;
+}
+
+.unit-group__hint {
+  font-size: 11px;
+  color: var(--blue);
+  font-weight: 600;
+  transition: opacity 0.15s;
+}
+
+details[open] .unit-group__hint {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  overflow: hidden;
+  margin: 0;
 }
 
 .unit-group__divider {
   height: 1px;
-  margin: 2px 0;
+  margin: 0 13px 4px;
   background: var(--line);
+}
+
+.unit-card--group details[open] > .unit-group__list,
+details.unit-card--group[open] > .unit-group__list {
+  display: grid;
 }
 
 .unit-group__list {
   display: grid;
-  gap: 10px;
+  gap: 8px;
+  padding: 0 13px 13px;
 }
 
 .unit-group__item {
