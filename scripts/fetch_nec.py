@@ -281,10 +281,17 @@ def parse_vccp08(html: str) -> dict[str, Any]:
             valid_votes = to_int(row[extra_start])
             extra_start += 1
 
+        area_val = row[0]
+        ballot_val = row[1]
+        if not clean_text(ballot_val):
+            normalized_area = normalize_ballot_type(area_val)
+            if normalized_area:
+                ballot_val = normalized_area
+
         data_rows.append(
             {
-                "area": row[0],
-                "ballotType": row[1],
+                "area": area_val,
+                "ballotType": ballot_val,
                 "electors": to_int(row[2]),
                 "votes": to_int(row[3]),
                 "candidateVotes": candidates,
