@@ -921,6 +921,8 @@ def dynamic_scope_specs() -> list[ScopeSpec]:
             },
             progress_preferred_names=[TOWN_BUNDANG_NAME, "성남시 분당구"],
             units=provincial_units,
+            local_units=provincial_units,
+            include_local_breakdown=True,
         )
     )
 
@@ -951,6 +953,8 @@ def dynamic_scope_specs() -> list[ScopeSpec]:
             },
             progress_preferred_names=[TOWN_BUNDANG_NAME, "성남시 분당구"],
             units=municipal_units,
+            local_units=municipal_units,
+            include_local_breakdown=True,
         )
     )
 
