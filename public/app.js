@@ -396,6 +396,7 @@ function renderUnitCandidateBreakdown(unit, globalMaxCandidateVotes) {
     fill.style.width = `${((candidate.votes || 0) / maxVotes) * 100}%`;
     track.append(fill);
     const nameEl = makeElement("b", "", candidate.name);
+    if (typeof isConfirmed !== "undefined" && isConfirmed) nameEl.append(makeElement("span", "badge badge--winner", "당선확실"));
     row.append(nameEl, track,
       makeElement(
         "span",
