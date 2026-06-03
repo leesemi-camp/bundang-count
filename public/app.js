@@ -343,7 +343,7 @@ function renderDistrictBreakdown(scope) {
 
     const meta = makeElement("div", "district-card__meta");
     meta.append(makeElement("span", "", `투표수 ${formatNumber(votes)}`));
-    meta.append(makeElement("span", "", activeTypes.length ? `반영 ${activeTypes.length}/3` : "투표구분 대기"));
+    meta.append(makeElement("span", "", activeTypes.length ? `반영 ${activeTypes.length}/${TARGET_TYPES.length}` : "투표구분 대기"));
     meta.append(makeElement("span", "", getUnitLeadingText(unit)));
 
     const track = makeElement("div", "bar-track district-card__track");
@@ -452,7 +452,7 @@ function renderLocalAreaCard(detail, extraClass = "") {
 
   const meta = makeElement("div", "local-card__meta");
   meta.append(makeElement("span", "", `투표수 ${formatNumber(votes)}`));
-  meta.append(makeElement("span", "", activeTypes.length ? `반영 ${activeTypes.length}/3` : "투표구분 상세없음"));
+  meta.append(makeElement("span", "", activeTypes.length ? `반영 ${activeTypes.length}/${TARGET_TYPES.length}` : "투표구분 상세없음"));
   meta.append(makeElement("span", "", getDetailLeadingText(detail)));
 
   card.append(top, meta, renderDetailBallotBreakdown(detail), renderDetailCandidateBreakdown(detail));
