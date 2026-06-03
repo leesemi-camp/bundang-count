@@ -610,16 +610,19 @@ function renderNationalUnitCard(unit, scope) {
   const details = makeElement("details", "unit-card");
   const summary = makeElement("summary", "unit-card__summary");
 
+  // 제목 + 개표율
   const top = makeElement("div", "unit-card__top");
   top.append(makeElement("strong", "", unit.name));
   top.append(makeElement("span", "unit-card__rate", formatPercent(progress?.progressRate)));
   summary.append(top);
 
+  // 메타
   summary.append(makeElement("p", "muted",
     `${unit.cityName ? `${unit.cityName} · ` : ""}${formatNumber(totalVotes)}표 · ` +
     (activeTypes.length ? activeTypes.join(" · ") : "개표구분 대기")
   ));
 
+  // 후보 득표 바
   if (candidates.length) {
     const maxV = candidates[0].votes || 1;
     const candList = makeElement("div", "unit-group__merged-candidates");
@@ -640,9 +643,10 @@ function renderNationalUnitCard(unit, scope) {
     summary.append(candList);
   }
 
-  summary.append(makeElement("p", "unit-group__hint muted", "▸ 투표 종류별 상세"));
+  summary.append(makeElement("p", "unit-group__hint muted", "▸ 투표 종류별 상세 보기"));
   details.append(summary);
 
+  // 펼쳐진 영역: 투표 종류별 상세
   details.append(makeElement("div", "unit-group__divider"));
   const ballotWrap = makeElement("div", "unit-card__ballot-detail");
   ballotWrap.append(renderUnitBallotBreakdown(unit));
@@ -686,8 +690,7 @@ function renderNationalGroupCard(group) {
 
   // ── 카드 구조 (details/summary 아코디언) ───────────
   const details = makeElement("details", "unit-card unit-card--group");
-
-  const summary = makeElement("summary", "unit-group__summary");
+  const summary = makeElement("summary", "unit-card__summary");
 
   // 헤더 행
   const top = makeElement("div", "unit-card__top");

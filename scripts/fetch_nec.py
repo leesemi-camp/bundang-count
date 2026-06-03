@@ -1021,7 +1021,12 @@ def build_scope(spec: ScopeSpec) -> dict[str, Any]:
 
     units: list[dict[str, Any]] = []
     errors: list[dict[str, str]] = []
+    
+    UNCONTESTED_UNITS = {"성남시사선거구", "성남시아선거구", "성남시자선거구", "성남시카선거구"}
+
     for unit in spec.units:
+        if clean_text(unit["name"]) in UNCONTESTED_UNITS:
+            continue
         try:
             units.append(
                 with_unit_metadata(
@@ -1042,6 +1047,8 @@ def build_scope(spec: ScopeSpec) -> dict[str, Any]:
     if spec.include_local_breakdown and not local_units:
         print(f"Fetching local Seongnam detail for {spec.election_name}", file=sys.stderr)
         for unit in spec.local_units:
+            if clean_text(unit["name"]) in UNCONTESTED_UNITS:
+                continue
             try:
                 local_units.append(
                     with_unit_metadata(
