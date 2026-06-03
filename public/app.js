@@ -4,9 +4,9 @@ const FOCUS_SCOPE_IDS = [
   "municipal-council-bundang",
   "mayor-seongnam",
   "governor-gyeonggi",
-  "pr-gyeonggi",
-  "pr-seongnam",
-  "superintendent-gyeonggi",
+  "metropolitan-pr-gyeonggi",
+  "basic-pr-seongnam",
+  "education-gyeonggi",
 ];
 const PARTY_COLOR_RULES = [
   { keyword: "더불어민주당", color: "#2563eb", soft: "rgba(37, 99, 235, 0.11)" },
