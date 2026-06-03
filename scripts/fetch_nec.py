@@ -631,10 +631,13 @@ def aggregate_ballot_types_from_rows(rows: list[dict[str, Any]]) -> list[dict[st
 
 
 def find_total_row(rows: list[dict[str, Any]]) -> dict[str, Any] | None:
-    return next((row for row in rows if row.get("area") == "합계"), None) or next(
-        (row for row in rows if row.get("ballotType") == "계"),
-        None,
-    )
+    total = next((row for row in rows if row.get("area") == "합계"), None)
+    if total: return total
+    total = next((row for row in rows if row.get("ballotType") == "계"), None)
+    if total: return total
+    if len(rows) == 1:
+        return rows[0]
+    return None
 
 
 def area_detail(name: str, rows: list[dict[str, Any]], progress_row: dict[str, Any] | None) -> dict[str, Any]:
