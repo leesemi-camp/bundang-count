@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T10:39:51+09:00",
+  "generatedAt": "2026-06-04T10:42:22+09:00",
   "electionId": "0020260603",
   "source": {
     "name": "중앙선거관리위원회 선거통계시스템",
@@ -940,7 +940,7 @@
             "validVotes": 268585,
             "invalidVotes": 3639,
             "abstentions": 182283,
-            "progressRate": 99.91
+            "progressRate": 100.0
           },
           {
             "area": "고양시일산동구",
@@ -7448,7 +7448,7 @@
             "validVotes": 268793,
             "invalidVotes": 3358,
             "abstentions": 182356,
-            "progressRate": 99.88
+            "progressRate": 100.0
           },
           {
             "area": "고양시일산동구",
@@ -15892,7 +15892,7 @@
             "validVotes": 264721,
             "invalidVotes": 7484,
             "abstentions": 182302,
-            "progressRate": 99.9
+            "progressRate": 100.0
           },
           {
             "area": "고양시일산동구",
@@ -31308,7 +31308,7 @@
             "validVotes": 537142,
             "invalidVotes": 8470,
             "abstentions": 378010,
-            "progressRate": 99.94
+            "progressRate": 100.0
           },
           {
             "area": "고양시덕양구",
@@ -31351,7 +31351,7 @@
             "validVotes": 267858,
             "invalidVotes": 4279,
             "abstentions": 182370,
-            "progressRate": 99.88
+            "progressRate": 100.0
           },
           {
             "area": "고양시일산동구",
@@ -61921,5 +61921,5 @@
     }
   ],
   "errorCount": 0,
-  "durationSeconds": 27.08
+  "durationSeconds": 27.78
 }
