@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T08:59:32+09:00",
+  "generatedAt": "2026-06-04T09:02:07+09:00",
   "electionId": "0020260603",
   "source": {
     "name": "중앙선거관리위원회 선거통계시스템",
@@ -4967,7 +4967,7 @@
             "groupArea": null,
             "fullArea": "합계",
             "electors": 11872617,
-            "votes": 6925650,
+            "votes": 6925658,
             "candidateVotes": [
               {
                 "name": "더불어민주당",
@@ -4976,7 +4976,7 @@
               },
               {
                 "name": "국민의힘",
-                "votes": 2626511,
+                "votes": 2626519,
                 "rate": 38.46
               },
               {
@@ -5066,13 +5066,13 @@
               },
               {
                 "name": "계",
-                "votes": 6828375,
+                "votes": 6828383,
                 "rate": null
               }
             ],
-            "validVotes": 6828375,
+            "validVotes": 6828383,
             "invalidVotes": 97275,
-            "abstentions": 4946967,
+            "abstentions": 4946959,
             "progressRate": 99.89
           },
           {
@@ -8583,16 +8583,16 @@
             "groupArea": null,
             "fullArea": "시흥시",
             "electors": 443131,
-            "votes": 226096,
+            "votes": 226104,
             "candidateVotes": [
               {
                 "name": "더불어민주당",
                 "votes": 123211,
-                "rate": 55.27
+                "rate": 55.26
               },
               {
                 "name": "국민의힘",
-                "votes": 73165,
+                "votes": 73173,
                 "rate": 32.82
               },
               {
@@ -8682,13 +8682,13 @@
               },
               {
                 "name": "계",
-                "votes": 222920,
+                "votes": 222928,
                 "rate": null
               }
             ],
-            "validVotes": 222920,
+            "validVotes": 222928,
             "invalidVotes": 3176,
-            "abstentions": 217035,
+            "abstentions": 217027,
             "progressRate": 99.96
           },
           {
@@ -10392,7 +10392,7 @@
           "groupArea": null,
           "fullArea": "합계",
           "electors": 11872617,
-          "votes": 6925650,
+          "votes": 6925658,
           "candidateVotes": [
             {
               "name": "더불어민주당",
@@ -10401,7 +10401,7 @@
             },
             {
               "name": "국민의힘",
-              "votes": 2626511,
+              "votes": 2626519,
               "rate": 38.46
             },
             {
@@ -10491,13 +10491,13 @@
             },
             {
               "name": "계",
-              "votes": 6828375,
+              "votes": 6828383,
               "rate": null
             }
           ],
-          "validVotes": 6828375,
+          "validVotes": 6828383,
           "invalidVotes": 97275,
-          "abstentions": 4946967,
+          "abstentions": 4946959,
           "progressRate": 99.89
         }
       },
@@ -15025,27 +15025,27 @@
             "groupArea": null,
             "fullArea": "합계",
             "electors": 11875766,
-            "votes": 6929359,
+            "votes": 6929404,
             "candidateVotes": [
               {
                 "name": "임태희",
-                "votes": 3177339,
+                "votes": 3177362,
                 "rate": 47.18
               },
               {
                 "name": "안민석",
-                "votes": 3556465,
+                "votes": 3556484,
                 "rate": 52.81
               },
               {
                 "name": "계",
-                "votes": 6733804,
+                "votes": 6733846,
                 "rate": null
               }
             ],
-            "validVotes": 6733804,
-            "invalidVotes": 195555,
-            "abstentions": 4946407,
+            "validVotes": 6733846,
+            "invalidVotes": 195558,
+            "abstentions": 4946362,
             "progressRate": 99.95
           },
           {
@@ -15921,28 +15921,28 @@
             "groupArea": null,
             "fullArea": "시흥시",
             "electors": 443131,
-            "votes": 226088,
+            "votes": 226133,
             "candidateVotes": [
               {
                 "name": "임태희",
-                "votes": 94221,
+                "votes": 94244,
                 "rate": 42.9
               },
               {
                 "name": "안민석",
-                "votes": 125394,
+                "votes": 125413,
                 "rate": 57.09
               },
               {
                 "name": "계",
-                "votes": 219615,
+                "votes": 219657,
                 "rate": null
               }
             ],
-            "validVotes": 219615,
-            "invalidVotes": 6473,
-            "abstentions": 217043,
-            "progressRate": 99.95
+            "validVotes": 219657,
+            "invalidVotes": 6476,
+            "abstentions": 216998,
+            "progressRate": 99.97
           },
           {
             "area": "군포시",
@@ -16370,27 +16370,27 @@
           "groupArea": null,
           "fullArea": "합계",
           "electors": 11875766,
-          "votes": 6929359,
+          "votes": 6929404,
           "candidateVotes": [
             {
               "name": "임태희",
-              "votes": 3177339,
+              "votes": 3177362,
               "rate": 47.18
             },
             {
               "name": "안민석",
-              "votes": 3556465,
+              "votes": 3556484,
               "rate": 52.81
             },
             {
               "name": "계",
-              "votes": 6733804,
+              "votes": 6733846,
               "rate": null
             }
           ],
-          "validVotes": 6733804,
-          "invalidVotes": 195555,
-          "abstentions": 4946407,
+          "validVotes": 6733846,
+          "invalidVotes": 195558,
+          "abstentions": 4946362,
           "progressRate": 99.95
         }
       },
@@ -61032,5 +61032,5 @@
     }
   ],
   "errorCount": 0,
-  "durationSeconds": 31.47
+  "durationSeconds": 27.87
 }
