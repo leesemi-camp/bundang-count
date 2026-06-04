@@ -838,7 +838,17 @@ function renderNationalGroupCard(group) {
     });
   });
 
-  const progressRate = totalElectors > 0 ? (totalVotes / totalElectors) * 100 : null;
+  let sumWeightedRates = 0;
+  let weightSum = 0;
+  group.items.forEach((unit) => {
+    const rate = unit.progress?.progressRate ?? unit.summary?.progressRate;
+    const weight = unit.summary?.votes || unit.progress?.votes || 1;
+    if (rate !== undefined && rate !== null) {
+      sumWeightedRates += rate * weight;
+      weightSum += weight;
+    }
+  });
+  const progressRate = weightSum > 0 ? sumWeightedRates / weightSum : null;
   const sortedCandidates = [...candidateTotals.entries()]
     .sort((a, b) => b[1] - a[1])
     .slice(0, 2)

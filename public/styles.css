@@ -646,7 +646,7 @@ details[open] > .local-breakdown__summary .unit-group__hint {
 
 .local-card__meta {
   display: grid;
-  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr) minmax(0, 1.2fr);
+  grid-template-columns: 1fr;
   gap: 7px;
   color: var(--muted);
   font-size: 12px;
@@ -656,7 +656,7 @@ details[open] > .local-breakdown__summary .unit-group__hint {
   min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .local-ballots,
@@ -668,7 +668,7 @@ details[open] > .local-breakdown__summary .unit-group__hint {
 .local-ballot,
 .local-candidate {
   display: grid;
-  grid-template-columns: 175px 1fr 190px;
+  grid-template-columns: 1fr;
   align-items: center;
   gap: 6px;
   color: var(--muted);
@@ -677,7 +677,7 @@ details[open] > .local-breakdown__summary .unit-group__hint {
 
 .local-ballot strong,
 .local-candidate span {
-  text-align: right;
+  text-align: left;
   white-space: nowrap;
 }
 
@@ -687,7 +687,7 @@ details[open] > .local-breakdown__summary .unit-group__hint {
   color: var(--candidate-color, var(--text));
   font-weight: 500;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .local-candidate--leader b {
@@ -965,32 +965,25 @@ details.unit-card--group[open] > .unit-group__list {
     flex-direction: column;
   }
 
-  .district-card__meta,
-  .local-card__meta {
+  .district-card__meta {
     grid-template-columns: 1fr;
   }
 
-  .district-card__meta span,
-  .local-card__meta span {
+  .district-card__meta span {
     white-space: normal;
   }
 
   .district-ballot,
-  .district-candidate,
-  .local-ballot,
-  .local-candidate {
+  .district-candidate {
     grid-template-columns: 1fr;
   }
 
   .district-ballot strong,
-  .district-candidate span,
-  .local-ballot strong,
-  .local-candidate span {
+  .district-candidate span {
     text-align: left;
   }
 
   .district-candidate b,
-  .local-candidate b,
   .local-card__top strong {
     white-space: normal;
   }
