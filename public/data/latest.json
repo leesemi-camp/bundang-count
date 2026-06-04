@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T09:22:33+09:00",
+  "generatedAt": "2026-06-04T09:25:08+09:00",
   "electionId": "0020260603",
   "source": {
     "name": "중앙선거관리위원회 선거통계시스템",
@@ -44,21 +44,21 @@
             "groupArea": null,
             "fullArea": "합계",
             "electors": 11878997,
-            "votes": 6931880,
+            "votes": 6931914,
             "candidateVotes": [
               {
                 "name": "더불어민주당 추미애",
-                "votes": 3760012,
+                "votes": 3760026,
                 "rate": 55.04
               },
               {
                 "name": "국민의힘 양향자",
-                "votes": 2689815,
+                "votes": 2689831,
                 "rate": 39.37
               },
               {
                 "name": "개혁신당 조응천",
-                "votes": 295223,
+                "votes": 295224,
                 "rate": 4.32
               },
               {
@@ -73,13 +73,13 @@
               },
               {
                 "name": "계",
-                "votes": 6831087,
+                "votes": 6831118,
                 "rate": null
               }
             ],
-            "validVotes": 6831087,
-            "invalidVotes": 100793,
-            "abstentions": 4947117,
+            "validVotes": 6831118,
+            "invalidVotes": 100796,
+            "abstentions": 4947083,
             "progressRate": 99.98
           },
           {
@@ -904,21 +904,21 @@
             "groupArea": null,
             "fullArea": "고양시덕양구",
             "electors": 454507,
-            "votes": 272190,
+            "votes": 272224,
             "candidateVotes": [
               {
                 "name": "더불어민주당 추미애",
-                "votes": 157707,
+                "votes": 157721,
                 "rate": 58.72
               },
               {
                 "name": "국민의힘 양향자",
-                "votes": 96681,
+                "votes": 96697,
                 "rate": 36.0
               },
               {
                 "name": "개혁신당 조응천",
-                "votes": 10921,
+                "votes": 10922,
                 "rate": 4.06
               },
               {
@@ -933,14 +933,14 @@
               },
               {
                 "name": "계",
-                "votes": 268554,
+                "votes": 268585,
                 "rate": null
               }
             ],
-            "validVotes": 268554,
-            "invalidVotes": 3636,
-            "abstentions": 182317,
-            "progressRate": 99.9
+            "validVotes": 268585,
+            "invalidVotes": 3639,
+            "abstentions": 182283,
+            "progressRate": 99.91
           },
           {
             "area": "고양시일산동구",
@@ -2109,21 +2109,21 @@
           "groupArea": null,
           "fullArea": "합계",
           "electors": 11878997,
-          "votes": 6931880,
+          "votes": 6931914,
           "candidateVotes": [
             {
               "name": "더불어민주당 추미애",
-              "votes": 3760012,
+              "votes": 3760026,
               "rate": 55.04
             },
             {
               "name": "국민의힘 양향자",
-              "votes": 2689815,
+              "votes": 2689831,
               "rate": 39.37
             },
             {
               "name": "개혁신당 조응천",
-              "votes": 295223,
+              "votes": 295224,
               "rate": 4.32
             },
             {
@@ -2138,13 +2138,13 @@
             },
             {
               "name": "계",
-              "votes": 6831087,
+              "votes": 6831118,
               "rate": null
             }
           ],
-          "validVotes": 6831087,
-          "invalidVotes": 100793,
-          "abstentions": 4947117,
+          "validVotes": 6831118,
+          "invalidVotes": 100796,
+          "abstentions": 4947083,
           "progressRate": 99.98
         }
       },
@@ -15025,27 +15025,27 @@
             "groupArea": null,
             "fullArea": "합계",
             "electors": 11878988,
-            "votes": 6930686,
+            "votes": 6930754,
             "candidateVotes": [
               {
                 "name": "임태희",
-                "votes": 3178030,
+                "votes": 3178059,
                 "rate": 47.18
               },
               {
                 "name": "안민석",
-                "votes": 3557066,
+                "votes": 3557103,
                 "rate": 52.81
               },
               {
                 "name": "계",
-                "votes": 6735096,
+                "votes": 6735162,
                 "rate": null
               }
             ],
-            "validVotes": 6735096,
-            "invalidVotes": 195590,
-            "abstentions": 4948302,
+            "validVotes": 6735162,
+            "invalidVotes": 195592,
+            "abstentions": 4948234,
             "progressRate": 99.97
           },
           {
@@ -15585,28 +15585,28 @@
             "groupArea": null,
             "fullArea": "고양시덕양구",
             "electors": 454507,
-            "votes": 272137,
+            "votes": 272205,
             "candidateVotes": [
               {
                 "name": "임태희",
-                "votes": 115170,
+                "votes": 115199,
                 "rate": 43.51
               },
               {
                 "name": "안민석",
-                "votes": 149485,
+                "votes": 149522,
                 "rate": 56.48
               },
               {
                 "name": "계",
-                "votes": 264655,
+                "votes": 264721,
                 "rate": null
               }
             ],
-            "validVotes": 264655,
-            "invalidVotes": 7482,
-            "abstentions": 182370,
-            "progressRate": 99.88
+            "validVotes": 264721,
+            "invalidVotes": 7484,
+            "abstentions": 182302,
+            "progressRate": 99.9
           },
           {
             "area": "고양시일산동구",
@@ -16370,27 +16370,27 @@
           "groupArea": null,
           "fullArea": "합계",
           "electors": 11878988,
-          "votes": 6930686,
+          "votes": 6930754,
           "candidateVotes": [
             {
               "name": "임태희",
-              "votes": 3178030,
+              "votes": 3178059,
               "rate": 47.18
             },
             {
               "name": "안민석",
-              "votes": 3557066,
+              "votes": 3557103,
               "rate": 52.81
             },
             {
               "name": "계",
-              "votes": 6735096,
+              "votes": 6735162,
               "rate": null
             }
           ],
-          "validVotes": 6735096,
-          "invalidVotes": 195590,
-          "abstentions": 4948302,
+          "validVotes": 6735162,
+          "invalidVotes": 195592,
+          "abstentions": 4948234,
           "progressRate": 99.97
         }
       },
@@ -61032,5 +61032,5 @@
     }
   ],
   "errorCount": 0,
-  "durationSeconds": 32.9
+  "durationSeconds": 34.54
 }
