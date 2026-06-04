@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T10:16:53+09:00",
+  "generatedAt": "2026-06-04T10:19:24+09:00",
   "electionId": "0020260603",
   "source": {
     "name": "중앙선거관리위원회 선거통계시스템",
@@ -29106,26 +29106,26 @@
             "groupArea": null,
             "fullArea": "성남시바선거구",
             "electors": 50578,
-            "votes": 34629,
+            "votes": 34675,
             "candidateVotes": [
               {
                 "name": "더불어민주당 김소희",
-                "votes": 14627,
-                "rate": 42.99
+                "votes": 14644,
+                "rate": 42.98
               },
               {
                 "name": "국민의힘 민영미",
-                "votes": 14849,
+                "votes": 14869,
                 "rate": 43.64
               },
               {
                 "name": "개혁신당 오정대",
-                "votes": 1001,
+                "votes": 1003,
                 "rate": 2.94
               },
               {
                 "name": "무소속 박종각",
-                "votes": 3546,
+                "votes": 3550,
                 "rate": 10.42
               },
               {
@@ -29135,13 +29135,13 @@
               },
               {
                 "name": "계",
-                "votes": 34023,
+                "votes": 34066,
                 "rate": null
               }
             ],
-            "validVotes": 34023,
-            "invalidVotes": 606,
-            "abstentions": 15949,
+            "validVotes": 34066,
+            "invalidVotes": 609,
+            "abstentions": 15903,
             "progressRate": 100.0
           },
           {
@@ -29234,20 +29234,20 @@
         "summary": {
           "area": "합계",
           "electors": 182135,
-          "votes": 122361,
+          "votes": 122407,
           "candidateVotes": [],
-          "validVotes": 118386,
-          "invalidVotes": 3975,
-          "abstentions": 59774,
+          "validVotes": 118429,
+          "invalidVotes": 3978,
+          "abstentions": 59728,
           "progressRate": 100.0
         }
       },
       "resultSummary": {
         "electors": 182135,
-        "votes": 122361,
-        "validVotes": 118386,
-        "invalidVotes": 3975,
-        "abstentions": 59774
+        "votes": 122407,
+        "validVotes": 118429,
+        "invalidVotes": 3978,
+        "abstentions": 59728
       },
       "ballotTypes": [
         {
@@ -29317,13 +29317,14 @@
         {
           "type": "별도분류",
           "electors": 0,
-          "votes": 50,
-          "validVotes": 50,
-          "invalidVotes": 0,
-          "abstentions": -50,
-          "rowCount": 2,
-          "unitCount": 2,
+          "votes": 96,
+          "validVotes": 93,
+          "invalidVotes": 3,
+          "abstentions": -96,
+          "rowCount": 3,
+          "unitCount": 3,
           "units": [
+            "municipal-council-bundang-6410701",
             "municipal-council-bundang-6410705",
             "municipal-council-bundang-6410707"
           ],
@@ -29332,10 +29333,10 @@
         {
           "type": "합계",
           "electors": 182135,
-          "votes": 122361,
-          "validVotes": 118386,
-          "invalidVotes": 3975,
-          "abstentions": 59774,
+          "votes": 122407,
+          "validVotes": 118429,
+          "invalidVotes": 3978,
+          "abstentions": 59728,
           "rowCount": 3,
           "unitCount": 3,
           "units": [
@@ -29404,32 +29405,32 @@
               "area": "합계",
               "ballotType": "합계",
               "electors": 50578,
-              "votes": 34629,
+              "votes": 34675,
               "candidateVotes": [
                 {
                   "name": "더불어민주당 김소희",
-                  "votes": 14627
+                  "votes": 14644
                 },
                 {
                   "name": "국민의힘 민영미",
-                  "votes": 14849
+                  "votes": 14869
                 },
                 {
                   "name": "개혁신당 오정대",
-                  "votes": 1001
+                  "votes": 1003
                 },
                 {
                   "name": "무소속 박종각",
-                  "votes": 3546
+                  "votes": 3550
                 },
                 {
                   "name": "계",
-                  "votes": 34023
+                  "votes": 34066
                 }
               ],
-              "validVotes": 34023,
-              "invalidVotes": 606,
-              "abstentions": 15949
+              "validVotes": 34066,
+              "invalidVotes": 609,
+              "abstentions": 15903
             },
             {
               "area": "거소투표",
@@ -29771,40 +29772,71 @@
               "validVotes": 8298,
               "invalidVotes": 222,
               "abstentions": 6352
+            },
+            {
+              "area": "잘못 투입·구분된 투표지",
+              "ballotType": "별도분류",
+              "electors": 0,
+              "votes": 46,
+              "candidateVotes": [
+                {
+                  "name": "더불어민주당 김소희",
+                  "votes": 17
+                },
+                {
+                  "name": "국민의힘 민영미",
+                  "votes": 20
+                },
+                {
+                  "name": "개혁신당 오정대",
+                  "votes": 2
+                },
+                {
+                  "name": "무소속 박종각",
+                  "votes": 4
+                },
+                {
+                  "name": "계",
+                  "votes": 43
+                }
+              ],
+              "validVotes": 43,
+              "invalidVotes": 3,
+              "abstentions": -46
             }
           ],
           "summary": {
             "electors": 50578,
-            "votes": 34629,
-            "validVotes": 34023,
-            "invalidVotes": 606,
-            "abstentions": 15949
+            "votes": 34675,
+            "validVotes": 34066,
+            "invalidVotes": 609,
+            "abstentions": 15903
           },
           "progress": {
             "area": "성남시바선거구",
             "groupArea": null,
             "fullArea": "성남시바선거구",
             "electors": 50578,
-            "votes": 34629,
+            "votes": 34675,
             "candidateVotes": [
               {
                 "name": "더불어민주당 김소희",
-                "votes": 14627,
-                "rate": 42.99
+                "votes": 14644,
+                "rate": 42.98
               },
               {
                 "name": "국민의힘 민영미",
-                "votes": 14849,
+                "votes": 14869,
                 "rate": 43.64
               },
               {
                 "name": "개혁신당 오정대",
-                "votes": 1001,
+                "votes": 1003,
                 "rate": 2.94
               },
               {
                 "name": "무소속 박종각",
-                "votes": 3546,
+                "votes": 3550,
                 "rate": 10.42
               },
               {
@@ -29814,13 +29846,13 @@
               },
               {
                 "name": "계",
-                "votes": 34023,
+                "votes": 34066,
                 "rate": null
               }
             ],
-            "validVotes": 34023,
-            "invalidVotes": 606,
-            "abstentions": 15949,
+            "validVotes": 34066,
+            "invalidVotes": 609,
+            "abstentions": 15903,
             "progressRate": 100.0
           }
         },
@@ -61865,5 +61897,5 @@
     }
   ],
   "errorCount": 0,
-  "durationSeconds": 26.73
+  "durationSeconds": 27.47
 }
