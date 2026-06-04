@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T10:19:24+09:00",
+  "generatedAt": "2026-06-04T10:22:00+09:00",
   "electionId": "0020260603",
   "source": {
     "name": "중앙선거관리위원회 선거통계시스템",
@@ -5979,7 +5979,7 @@
             "validVotes": 262340,
             "invalidVotes": 2635,
             "abstentions": 131839,
-            "progressRate": 99.95
+            "progressRate": 100.0
           },
           {
             "area": "의정부시",
@@ -11425,7 +11425,7 @@
             "validVotes": 262340,
             "invalidVotes": 2635,
             "abstentions": 131839,
-            "progressRate": 99.95
+            "progressRate": 100.0
           },
           "summary": {
             "electors": 396814,
@@ -15528,7 +15528,7 @@
             "validVotes": 258871,
             "invalidVotes": 6193,
             "abstentions": 131750,
-            "progressRate": 99.99
+            "progressRate": 100.0
           },
           {
             "area": "의정부시",
@@ -17098,7 +17098,7 @@
             "validVotes": 258871,
             "invalidVotes": 6193,
             "abstentions": 131750,
-            "progressRate": 99.99
+            "progressRate": 100.0
           },
           "summary": {
             "electors": 396814,
@@ -19241,7 +19241,7 @@
             "validVotes": 496220,
             "invalidVotes": 5669,
             "abstentions": 286655,
-            "progressRate": 99.94
+            "progressRate": 100.0
           },
           {
             "area": "성남시수정구",
@@ -19340,7 +19340,7 @@
             "validVotes": 262600,
             "invalidVotes": 2477,
             "abstentions": 131737,
-            "progressRate": 99.99
+            "progressRate": 100.0
           }
         ],
         "summary": {
@@ -19374,7 +19374,7 @@
           "validVotes": 496220,
           "invalidVotes": 5669,
           "abstentions": 286655,
-          "progressRate": 99.94
+          "progressRate": 100.0
         }
       },
       "resultSummary": {
@@ -24060,7 +24060,7 @@
             "validVotes": 262600,
             "invalidVotes": 2477,
             "abstentions": 131737,
-            "progressRate": 99.99
+            "progressRate": 100.0
           }
         }
       ],
@@ -24395,7 +24395,7 @@
             "validVotes": 262600,
             "invalidVotes": 2477,
             "abstentions": 131737,
-            "progressRate": 99.99
+            "progressRate": 100.0
           },
           "summary": {
             "electors": 396814,
@@ -26651,16 +26651,16 @@
             "groupArea": null,
             "fullArea": "성남시제6선거구",
             "electors": 114308,
-            "votes": 76075,
+            "votes": 76115,
             "candidateVotes": [
               {
                 "name": "더불어민주당 유민아",
-                "votes": 37766,
+                "votes": 37787,
                 "rate": 50.46
               },
               {
                 "name": "국민의힘 방성환",
-                "votes": 37072,
+                "votes": 37088,
                 "rate": 49.53
               },
               {
@@ -26670,13 +26670,13 @@
               },
               {
                 "name": "계",
-                "votes": 74838,
+                "votes": 74875,
                 "rate": null
               }
             ],
-            "validVotes": 74838,
-            "invalidVotes": 1237,
-            "abstentions": 38233,
+            "validVotes": 74875,
+            "invalidVotes": 1240,
+            "abstentions": 38193,
             "progressRate": 100.0
           },
           {
@@ -26749,20 +26749,20 @@
         "summary": {
           "area": "합계",
           "electors": 396814,
-          "votes": 264922,
+          "votes": 264962,
           "candidateVotes": [],
-          "validVotes": 260684,
-          "invalidVotes": 4238,
-          "abstentions": 131892,
+          "validVotes": 260721,
+          "invalidVotes": 4241,
+          "abstentions": 131852,
           "progressRate": 100.0
         }
       },
       "resultSummary": {
         "electors": 396814,
-        "votes": 264922,
-        "validVotes": 260684,
-        "invalidVotes": 4238,
-        "abstentions": 131892
+        "votes": 264962,
+        "validVotes": 260721,
+        "invalidVotes": 4241,
+        "abstentions": 131852
       },
       "ballotTypes": [
         {
@@ -26836,14 +26836,15 @@
         {
           "type": "별도분류",
           "electors": 0,
-          "votes": 99,
-          "validVotes": 94,
-          "invalidVotes": 5,
-          "abstentions": -99,
-          "rowCount": 3,
-          "unitCount": 3,
+          "votes": 139,
+          "validVotes": 131,
+          "invalidVotes": 8,
+          "abstentions": -139,
+          "rowCount": 4,
+          "unitCount": 4,
           "units": [
             "provincial-council-bundang-5410701",
+            "provincial-council-bundang-5410702",
             "provincial-council-bundang-5410703",
             "provincial-council-bundang-5410704"
           ],
@@ -26852,10 +26853,10 @@
         {
           "type": "합계",
           "electors": 396814,
-          "votes": 264922,
-          "validVotes": 260684,
-          "invalidVotes": 4238,
-          "abstentions": 131892,
+          "votes": 264962,
+          "validVotes": 260721,
+          "invalidVotes": 4241,
+          "abstentions": 131852,
           "rowCount": 4,
           "unitCount": 4,
           "units": [
@@ -27573,24 +27574,24 @@
               "area": "합계",
               "ballotType": "합계",
               "electors": 114308,
-              "votes": 76075,
+              "votes": 76115,
               "candidateVotes": [
                 {
                   "name": "더불어민주당 김진명",
-                  "votes": 37766
+                  "votes": 37787
                 },
                 {
                   "name": "국민의힘 송경택",
-                  "votes": 37072
+                  "votes": 37088
                 },
                 {
                   "name": "계",
-                  "votes": 74838
+                  "votes": 74875
                 }
               ],
-              "validVotes": 74838,
-              "invalidVotes": 1237,
-              "abstentions": 38233
+              "validVotes": 74875,
+              "invalidVotes": 1240,
+              "abstentions": 38193
             },
             {
               "area": "거소투표",
@@ -27982,30 +27983,53 @@
               "validVotes": 14563,
               "invalidVotes": 240,
               "abstentions": 10556
+            },
+            {
+              "area": "잘못 투입·구분된 투표지",
+              "ballotType": "별도분류",
+              "electors": 0,
+              "votes": 40,
+              "candidateVotes": [
+                {
+                  "name": "더불어민주당 김진명",
+                  "votes": 21
+                },
+                {
+                  "name": "국민의힘 송경택",
+                  "votes": 16
+                },
+                {
+                  "name": "계",
+                  "votes": 37
+                }
+              ],
+              "validVotes": 37,
+              "invalidVotes": 3,
+              "abstentions": -40
             }
           ],
           "summary": {
             "electors": 114308,
-            "votes": 76075,
-            "validVotes": 74838,
-            "invalidVotes": 1237,
-            "abstentions": 38233
+            "votes": 76115,
+            "validVotes": 74875,
+            "invalidVotes": 1240,
+            "abstentions": 38193
           },
           "progress": {
             "area": "성남시제6선거구",
             "groupArea": null,
             "fullArea": "성남시제6선거구",
             "electors": 114308,
-            "votes": 76075,
+            "votes": 76115,
             "candidateVotes": [
               {
                 "name": "더불어민주당 유민아",
-                "votes": 37766,
+                "votes": 37787,
                 "rate": 50.46
               },
               {
                 "name": "국민의힘 방성환",
-                "votes": 37072,
+                "votes": 37088,
                 "rate": 49.53
               },
               {
@@ -28015,13 +28039,13 @@
               },
               {
                 "name": "계",
-                "votes": 74838,
+                "votes": 74875,
                 "rate": null
               }
             ],
-            "validVotes": 74838,
-            "invalidVotes": 1237,
-            "abstentions": 38233,
+            "validVotes": 74875,
+            "invalidVotes": 1240,
+            "abstentions": 38193,
             "progressRate": 100.0
           }
         },
@@ -31671,7 +31695,7 @@
             "validVotes": 492835,
             "invalidVotes": 8894,
             "abstentions": 286815,
-            "progressRate": 99.91
+            "progressRate": 100.0
           },
           {
             "area": "성남시수정구",
@@ -31800,7 +31824,7 @@
             "validVotes": 260842,
             "invalidVotes": 4133,
             "abstentions": 131839,
-            "progressRate": 99.95
+            "progressRate": 100.0
           },
           {
             "area": "남양주시",
@@ -38372,7 +38396,7 @@
             "validVotes": 260842,
             "invalidVotes": 4133,
             "abstentions": 131839,
-            "progressRate": 99.95
+            "progressRate": 100.0
           }
         }
       ],
@@ -38745,7 +38769,7 @@
             "validVotes": 260842,
             "invalidVotes": 4133,
             "abstentions": 131839,
-            "progressRate": 99.95
+            "progressRate": 100.0
           },
           "summary": {
             "electors": 396814,
@@ -61897,5 +61921,5 @@
     }
   ],
   "errorCount": 0,
-  "durationSeconds": 27.47
+  "durationSeconds": 33.35
 }
