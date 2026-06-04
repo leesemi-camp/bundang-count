@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T09:53:11+09:00",
+  "generatedAt": "2026-06-04T09:55:48+09:00",
   "electionId": "0020260603",
   "source": {
     "name": "중앙선거관리위원회 선거통계시스템",
@@ -6655,7 +6655,7 @@
             "validVotes": 167090,
             "invalidVotes": 2446,
             "abstentions": 93427,
-            "progressRate": 99.98
+            "progressRate": 100.0
           },
           {
             "area": "평택시",
@@ -9367,7 +9367,7 @@
             "validVotes": 137761,
             "invalidVotes": 2089,
             "abstentions": 108172,
-            "progressRate": 99.98
+            "progressRate": 100.0
           },
           {
             "area": "용인시수지구",
@@ -16110,7 +16110,7 @@
             "validVotes": 135641,
             "invalidVotes": 4223,
             "abstentions": 108158,
-            "progressRate": 99.99
+            "progressRate": 100.0
           },
           {
             "area": "용인시수지구",
@@ -61032,5 +61032,5 @@
     }
   ],
   "errorCount": 0,
-  "durationSeconds": 27.95
+  "durationSeconds": 28.43
 }
