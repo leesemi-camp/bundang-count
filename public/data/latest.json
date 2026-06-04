@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T09:47:54+09:00",
+  "generatedAt": "2026-06-04T09:50:31+09:00",
   "electionId": "0020260603",
   "source": {
     "name": "중앙선거관리위원회 선거통계시스템",
@@ -4967,16 +4967,16 @@
             "groupArea": null,
             "fullArea": "합계",
             "electors": 11876922,
-            "votes": 6927540,
+            "votes": 6927555,
             "candidateVotes": [
               {
                 "name": "더불어민주당",
-                "votes": 3348628,
+                "votes": 3348633,
                 "rate": 49.02
               },
               {
                 "name": "국민의힘",
-                "votes": 2627542,
+                "votes": 2627549,
                 "rate": 38.46
               },
               {
@@ -4986,7 +4986,7 @@
               },
               {
                 "name": "개혁신당",
-                "votes": 249583,
+                "votes": 249585,
                 "rate": 3.65
               },
               {
@@ -5066,13 +5066,13 @@
               },
               {
                 "name": "계",
-                "votes": 6830238,
+                "votes": 6830252,
                 "rate": null
               }
             ],
-            "validVotes": 6830238,
-            "invalidVotes": 97302,
-            "abstentions": 4949382,
+            "validVotes": 6830252,
+            "invalidVotes": 97303,
+            "abstentions": 4949367,
             "progressRate": 99.92
           },
           {
@@ -9713,16 +9713,16 @@
             "groupArea": null,
             "fullArea": "김포시",
             "electors": 402400,
-            "votes": 231064,
+            "votes": 231079,
             "candidateVotes": [
               {
                 "name": "더불어민주당",
-                "votes": 117142,
-                "rate": 51.31
+                "votes": 117147,
+                "rate": 51.3
               },
               {
                 "name": "국민의힘",
-                "votes": 85892,
+                "votes": 85899,
                 "rate": 37.62
               },
               {
@@ -9732,7 +9732,7 @@
               },
               {
                 "name": "개혁신당",
-                "votes": 6772,
+                "votes": 6774,
                 "rate": 2.96
               },
               {
@@ -9812,13 +9812,13 @@
               },
               {
                 "name": "계",
-                "votes": 228301,
+                "votes": 228315,
                 "rate": null
               }
             ],
-            "validVotes": 228301,
-            "invalidVotes": 2763,
-            "abstentions": 171336,
+            "validVotes": 228315,
+            "invalidVotes": 2764,
+            "abstentions": 171321,
             "progressRate": 99.96
           },
           {
@@ -10392,16 +10392,16 @@
           "groupArea": null,
           "fullArea": "합계",
           "electors": 11876922,
-          "votes": 6927540,
+          "votes": 6927555,
           "candidateVotes": [
             {
               "name": "더불어민주당",
-              "votes": 3348628,
+              "votes": 3348633,
               "rate": 49.02
             },
             {
               "name": "국민의힘",
-              "votes": 2627542,
+              "votes": 2627549,
               "rate": 38.46
             },
             {
@@ -10411,7 +10411,7 @@
             },
             {
               "name": "개혁신당",
-              "votes": 249583,
+              "votes": 249585,
               "rate": 3.65
             },
             {
@@ -10491,13 +10491,13 @@
             },
             {
               "name": "계",
-              "votes": 6830238,
+              "votes": 6830252,
               "rate": null
             }
           ],
-          "validVotes": 6830238,
-          "invalidVotes": 97302,
-          "abstentions": 4949382,
+          "validVotes": 6830252,
+          "invalidVotes": 97303,
+          "abstentions": 4949367,
           "progressRate": 99.92
         }
       },
@@ -61032,5 +61032,5 @@
     }
   ],
   "errorCount": 0,
-  "durationSeconds": 28.15
+  "durationSeconds": 33.37
 }
