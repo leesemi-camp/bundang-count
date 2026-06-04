@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T10:22:00+09:00",
+  "generatedAt": "2026-06-04T10:24:42+09:00",
   "electionId": "0020260603",
   "source": {
     "name": "중앙선거관리위원회 선거통계시스템",
@@ -9934,7 +9934,7 @@
             "validVotes": 228315,
             "invalidVotes": 2764,
             "abstentions": 171321,
-            "progressRate": 99.96
+            "progressRate": 100.0
           },
           {
             "area": "광주시",
@@ -16508,7 +16508,7 @@
             "validVotes": 225261,
             "invalidVotes": 5880,
             "abstentions": 171259,
-            "progressRate": 99.99
+            "progressRate": 100.0
           },
           {
             "area": "광주시",
@@ -32297,7 +32297,7 @@
             "validVotes": 226954,
             "invalidVotes": 4131,
             "abstentions": 171315,
-            "progressRate": 99.97
+            "progressRate": 100.0
           },
           {
             "area": "의정부시",
@@ -61921,5 +61921,5 @@
     }
   ],
   "errorCount": 0,
-  "durationSeconds": 33.35
+  "durationSeconds": 26.92
 }
