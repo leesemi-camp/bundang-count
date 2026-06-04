@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T09:30:20+09:00",
+  "generatedAt": "2026-06-04T09:32:49+09:00",
   "electionId": "0020260603",
   "source": {
     "name": "중앙선거관리위원회 선거통계시스템",
@@ -6090,7 +6090,7 @@
             "validVotes": 124754,
             "invalidVotes": 1896,
             "abstentions": 83162,
-            "progressRate": 99.96
+            "progressRate": 100.0
           },
           {
             "area": "안양시동안구",
@@ -15298,7 +15298,7 @@
             "validVotes": 123016,
             "invalidVotes": 3670,
             "abstentions": 83126,
-            "progressRate": 99.99
+            "progressRate": 100.0
           },
           {
             "area": "안양시동안구",
@@ -31336,7 +31336,7 @@
             "validVotes": 303799,
             "invalidVotes": 6363,
             "abstentions": 179962,
-            "progressRate": 99.96
+            "progressRate": 100.0
           },
           {
             "area": "안양시만안구",
@@ -31379,7 +31379,7 @@
             "validVotes": 123581,
             "invalidVotes": 3060,
             "abstentions": 83171,
-            "progressRate": 99.95
+            "progressRate": 100.0
           },
           {
             "area": "안양시동안구",
@@ -61032,5 +61032,5 @@
     }
   ],
   "errorCount": 0,
-  "durationSeconds": 26.73
+  "durationSeconds": 26.5
 }
