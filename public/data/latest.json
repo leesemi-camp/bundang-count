@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T09:14:46+09:00",
+  "generatedAt": "2026-06-04T09:17:16+09:00",
   "electionId": "0020260603",
   "source": {
     "name": "중앙선거관리위원회 선거통계시스템",
@@ -1413,7 +1413,7 @@
             "validVotes": 177716,
             "invalidVotes": 1756,
             "abstentions": 121094,
-            "progressRate": 99.96
+            "progressRate": 100.0
           },
           {
             "area": "시흥시",
@@ -8576,7 +8576,7 @@
             "validVotes": 177793,
             "invalidVotes": 1598,
             "abstentions": 121175,
-            "progressRate": 99.92
+            "progressRate": 100.0
           },
           {
             "area": "시흥시",
@@ -15914,7 +15914,7 @@
             "validVotes": 175832,
             "invalidVotes": 3627,
             "abstentions": 121107,
-            "progressRate": 99.95
+            "progressRate": 100.0
           },
           {
             "area": "시흥시",
@@ -30734,7 +30734,7 @@
             "validVotes": 450830,
             "invalidVotes": 7045,
             "abstentions": 357431,
-            "progressRate": 99.94
+            "progressRate": 100.0
           },
           {
             "area": "화성시만세구",
@@ -30906,7 +30906,7 @@
             "validVotes": 177281,
             "invalidVotes": 2110,
             "abstentions": 121175,
-            "progressRate": 99.92
+            "progressRate": 100.0
           },
           {
             "area": "소계",
@@ -61032,5 +61032,5 @@
     }
   ],
   "errorCount": 0,
-  "durationSeconds": 27.1
+  "durationSeconds": 33.14
 }
