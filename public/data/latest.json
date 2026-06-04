@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T11:08:04+09:00",
+  "generatedAt": "2026-06-04T11:10:40+09:00",
   "electionId": "0020260603",
   "source": {
     "name": "중앙선거관리위원회 선거통계시스템",
@@ -80,7 +80,7 @@
             "validVotes": 6831228,
             "invalidVotes": 100800,
             "abstentions": 4946969,
-            "progressRate": 99.98
+            "progressRate": 100.0
           },
           {
             "area": "수원시장안구",
@@ -725,7 +725,7 @@
             "validVotes": 271395,
             "invalidVotes": 5077,
             "abstentions": 249045,
-            "progressRate": 99.93
+            "progressRate": 100.0
           },
           {
             "area": "양주시",
@@ -2145,7 +2145,7 @@
           "validVotes": 6831228,
           "invalidVotes": 100800,
           "abstentions": 4946969,
-          "progressRate": 99.98
+          "progressRate": 100.0
         }
       },
       "resultSummary": {
@@ -5188,7 +5188,7 @@
             "validVotes": 6832325,
             "invalidVotes": 97329,
             "abstentions": 4949343,
-            "progressRate": 99.95
+            "progressRate": 100.0
           },
           {
             "area": "수원시장안구",
@@ -6883,7 +6883,7 @@
             "validVotes": 272066,
             "invalidVotes": 4303,
             "abstentions": 249148,
-            "progressRate": 99.89
+            "progressRate": 100.0
           },
           {
             "area": "양주시",
@@ -10613,7 +10613,7 @@
           "validVotes": 6832325,
           "invalidVotes": 97329,
           "abstentions": 4949343,
-          "progressRate": 99.95
+          "progressRate": 100.0
         }
       },
       "resultSummary": {
@@ -15332,7 +15332,7 @@
             "validVotes": 6735303,
             "invalidVotes": 195608,
             "abstentions": 4948077,
-            "progressRate": 99.97
+            "progressRate": 100.0
           },
           {
             "area": "수원시장안구",
@@ -15752,7 +15752,7 @@
             "validVotes": 267627,
             "invalidVotes": 8815,
             "abstentions": 249075,
-            "progressRate": 99.92
+            "progressRate": 100.0
           },
           {
             "area": "양주시",
@@ -16677,7 +16677,7 @@
           "validVotes": 6735303,
           "invalidVotes": 195608,
           "abstentions": 4948077,
-          "progressRate": 99.97
+          "progressRate": 100.0
         }
       },
       "resultSummary": {
@@ -32039,7 +32039,7 @@
             "validVotes": 270543,
             "invalidVotes": 5839,
             "abstentions": 249135,
-            "progressRate": 99.9
+            "progressRate": 100.0
           },
           {
             "area": "소계",
@@ -41423,7 +41423,7 @@
             "validVotes": 96284,
             "invalidVotes": 1500,
             "abstentions": 81243,
-            "progressRate": 99.88
+            "progressRate": 100.0
           },
           {
             "area": "안산시상록구",
@@ -42058,7 +42058,7 @@
           "validVotes": 1534918,
           "invalidVotes": 46398,
           "abstentions": 981260,
-          "progressRate": 99.99
+          "progressRate": 100.0
         }
       },
       "resultSummary": {
@@ -48757,7 +48757,7 @@
             "validVotes": 96284,
             "invalidVotes": 1500,
             "abstentions": 81243,
-            "progressRate": 99.88
+            "progressRate": 100.0
           }
         },
         {
@@ -61921,5 +61921,5 @@
     }
   ],
   "errorCount": 0,
-  "durationSeconds": 27.74
+  "durationSeconds": 30.34
 }
