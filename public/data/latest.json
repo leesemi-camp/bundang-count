@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T11:41:34+09:00",
+  "generatedAt": "2026-06-04T11:44:11+09:00",
   "electionId": "0020260603",
   "source": {
     "name": "중앙선거관리위원회 선거통계시스템",
@@ -80,7 +80,7 @@
             "validVotes": 6831228,
             "invalidVotes": 100800,
             "abstentions": 4946969,
-            "progressRate": 100.0
+            "progressRate": 99.98
           },
           {
             "area": "수원시장안구",
@@ -1929,7 +1929,7 @@
             "validVotes": 188336,
             "invalidVotes": 2389,
             "abstentions": 152620,
-            "progressRate": 100.0
+            "progressRate": 99.96
           },
           {
             "area": "포천시",
@@ -2145,7 +2145,7 @@
           "validVotes": 6831228,
           "invalidVotes": 100800,
           "abstentions": 4946969,
-          "progressRate": 100.0
+          "progressRate": 99.98
         }
       },
       "resultSummary": {
@@ -61921,5 +61921,5 @@
     }
   ],
   "errorCount": 0,
-  "durationSeconds": 35.14
+  "durationSeconds": 30.18
 }
