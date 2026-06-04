@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T12:12:29+09:00",
+  "generatedAt": "2026-06-04T12:15:08+09:00",
   "electionId": "0020260603",
   "source": {
     "name": "중앙선거관리위원회 선거통계시스템",
@@ -80,7 +80,7 @@
             "validVotes": 6831228,
             "invalidVotes": 100800,
             "abstentions": 4946969,
-            "progressRate": 99.98
+            "progressRate": 100.0
           },
           {
             "area": "수원시장안구",
@@ -1929,7 +1929,7 @@
             "validVotes": 188336,
             "invalidVotes": 2389,
             "abstentions": 152620,
-            "progressRate": 99.96
+            "progressRate": 100.0
           },
           {
             "area": "포천시",
@@ -2145,7 +2145,7 @@
           "validVotes": 6831228,
           "invalidVotes": 100800,
           "abstentions": 4946969,
-          "progressRate": 99.98
+          "progressRate": 100.0
         }
       },
       "resultSummary": {
@@ -5188,7 +5188,7 @@
             "validVotes": 6832325,
             "invalidVotes": 97329,
             "abstentions": 4949343,
-            "progressRate": 99.95
+            "progressRate": 100.0
           },
           {
             "area": "수원시장안구",
@@ -10047,7 +10047,7 @@
             "validVotes": 188323,
             "invalidVotes": 2323,
             "abstentions": 152699,
-            "progressRate": 99.92
+            "progressRate": 100.0
           },
           {
             "area": "포천시",
@@ -10613,7 +10613,7 @@
           "validVotes": 6832325,
           "invalidVotes": 97329,
           "abstentions": 4949343,
-          "progressRate": 99.95
+          "progressRate": 100.0
         }
       },
       "resultSummary": {
@@ -15332,7 +15332,7 @@
             "validVotes": 6735303,
             "invalidVotes": 195608,
             "abstentions": 4948077,
-            "progressRate": 99.97
+            "progressRate": 100.0
           },
           {
             "area": "수원시장안구",
@@ -16536,7 +16536,7 @@
             "validVotes": 185498,
             "invalidVotes": 4773,
             "abstentions": 153074,
-            "progressRate": 99.72
+            "progressRate": 100.0
           },
           {
             "area": "포천시",
@@ -16677,7 +16677,7 @@
           "validVotes": 6735303,
           "invalidVotes": 195608,
           "abstentions": 4948077,
-          "progressRate": 99.97
+          "progressRate": 100.0
         }
       },
       "resultSummary": {
@@ -32383,7 +32383,7 @@
             "validVotes": 187426,
             "invalidVotes": 3227,
             "abstentions": 152692,
-            "progressRate": 99.92
+            "progressRate": 100.0
           },
           {
             "area": "하남시",
@@ -61921,5 +61921,5 @@
     }
   ],
   "errorCount": 0,
-  "durationSeconds": 33.62
+  "durationSeconds": 28.03
 }
