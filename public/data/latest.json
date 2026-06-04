@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T11:59:48+09:00",
+  "generatedAt": "2026-06-04T12:02:24+09:00",
   "electionId": "0020260603",
   "source": {
     "name": "중앙선거관리위원회 선거통계시스템",
@@ -42062,28 +42062,27 @@
         }
       },
       "resultSummary": {
-        "electors": 2267121,
-        "votes": 1379574,
-        "validVotes": 1341466,
-        "invalidVotes": 38108,
-        "abstentions": 887547
+        "electors": 2081988,
+        "votes": 1283485,
+        "validVotes": 1246825,
+        "invalidVotes": 36660,
+        "abstentions": 798503
       },
       "ballotTypes": [
         {
           "type": "관내사전투표",
-          "electors": 382512,
-          "votes": 381704,
-          "validVotes": 370174,
-          "invalidVotes": 11530,
-          "abstentions": 808,
-          "rowCount": 175,
-          "unitCount": 18,
+          "electors": 354031,
+          "votes": 353250,
+          "validVotes": 342107,
+          "invalidVotes": 11143,
+          "abstentions": 781,
+          "rowCount": 167,
+          "unitCount": 17,
           "units": [
             "national-assembly-2600-2260802-2608",
             "national-assembly-2700-2270801-2708",
             "national-assembly-2800-2280402-2804",
             "national-assembly-2800-2280702-2807",
-            "national-assembly-2900-2290502-2905",
             "national-assembly-3100-2310201-3102",
             "national-assembly-4100-2411502-4115",
             "national-assembly-4100-2411803-4118",
@@ -42102,19 +42101,18 @@
         },
         {
           "type": "선거일투표",
-          "electors": 1716118,
-          "votes": 828250,
-          "validVotes": 806038,
-          "invalidVotes": 22212,
-          "abstentions": 887868,
-          "rowCount": 200,
-          "unitCount": 18,
+          "electors": 1574824,
+          "votes": 775988,
+          "validVotes": 754526,
+          "invalidVotes": 21462,
+          "abstentions": 798836,
+          "rowCount": 192,
+          "unitCount": 17,
           "units": [
             "national-assembly-2600-2260802-2608",
             "national-assembly-2700-2270801-2708",
             "national-assembly-2800-2280402-2804",
             "national-assembly-2800-2280702-2807",
-            "national-assembly-2900-2290502-2905",
             "national-assembly-3100-2310201-3102",
             "national-assembly-4100-2411502-4115",
             "national-assembly-4100-2411803-4118",
@@ -42133,19 +42131,18 @@
         },
         {
           "type": "관외사전투표",
-          "electors": 164245,
-          "votes": 163920,
-          "validVotes": 160114,
-          "invalidVotes": 3806,
-          "abstentions": 325,
-          "rowCount": 18,
-          "unitCount": 18,
+          "electors": 149114,
+          "votes": 148822,
+          "validVotes": 145310,
+          "invalidVotes": 3512,
+          "abstentions": 292,
+          "rowCount": 17,
+          "unitCount": 17,
           "units": [
             "national-assembly-2600-2260802-2608",
             "national-assembly-2700-2270801-2708",
             "national-assembly-2800-2280402-2804",
             "national-assembly-2800-2280702-2807",
-            "national-assembly-2900-2290502-2905",
             "national-assembly-3100-2310201-3102",
             "national-assembly-4100-2411502-4115",
             "national-assembly-4100-2411803-4118",
@@ -42164,19 +42161,18 @@
         },
         {
           "type": "거소투표",
-          "electors": 4246,
-          "votes": 3997,
-          "validVotes": 3541,
-          "invalidVotes": 456,
-          "abstentions": 249,
-          "rowCount": 18,
-          "unitCount": 18,
+          "electors": 4019,
+          "votes": 3783,
+          "validVotes": 3344,
+          "invalidVotes": 439,
+          "abstentions": 236,
+          "rowCount": 17,
+          "unitCount": 17,
           "units": [
             "national-assembly-2600-2260802-2608",
             "national-assembly-2700-2270801-2708",
             "national-assembly-2800-2280402-2804",
             "national-assembly-2800-2280702-2807",
-            "national-assembly-2900-2290502-2905",
             "national-assembly-3100-2310201-3102",
             "national-assembly-4100-2411502-4115",
             "national-assembly-4100-2411803-4118",
@@ -42196,18 +42192,17 @@
         {
           "type": "별도분류",
           "electors": 0,
-          "votes": 1703,
-          "validVotes": 1599,
+          "votes": 1642,
+          "validVotes": 1538,
           "invalidVotes": 104,
-          "abstentions": -1703,
-          "rowCount": 18,
-          "unitCount": 18,
+          "abstentions": -1642,
+          "rowCount": 17,
+          "unitCount": 17,
           "units": [
             "national-assembly-2600-2260802-2608",
             "national-assembly-2700-2270801-2708",
             "national-assembly-2800-2280402-2804",
             "national-assembly-2800-2280702-2807",
-            "national-assembly-2900-2290502-2905",
             "national-assembly-3100-2310201-3102",
             "national-assembly-4100-2411502-4115",
             "national-assembly-4100-2411803-4118",
@@ -42226,19 +42221,18 @@
         },
         {
           "type": "합계",
-          "electors": 2267121,
-          "votes": 1379574,
-          "validVotes": 1341466,
-          "invalidVotes": 38108,
-          "abstentions": 887547,
-          "rowCount": 18,
-          "unitCount": 18,
+          "electors": 2081988,
+          "votes": 1283485,
+          "validVotes": 1246825,
+          "invalidVotes": 36660,
+          "abstentions": 798503,
+          "rowCount": 17,
+          "unitCount": 17,
           "units": [
             "national-assembly-2600-2260802-2608",
             "national-assembly-2700-2270801-2708",
             "national-assembly-2800-2280402-2804",
             "national-assembly-2800-2280702-2807",
-            "national-assembly-2900-2290502-2905",
             "national-assembly-3100-2310201-3102",
             "national-assembly-4100-2411502-4115",
             "national-assembly-4100-2411803-4118",
@@ -42274,23 +42268,23 @@
         "statusByType": {
           "관내사전투표": {
             "started": true,
-            "votes": 381704,
-            "rows": 175
+            "votes": 353250,
+            "rows": 167
           },
           "선거일투표": {
             "started": true,
-            "votes": 828250,
-            "rows": 200
+            "votes": 775988,
+            "rows": 192
           },
           "관외사전투표": {
             "started": true,
-            "votes": 163920,
-            "rows": 18
+            "votes": 148822,
+            "rows": 17
           },
           "거소투표": {
             "started": true,
-            "votes": 3997,
-            "rows": 18
+            "votes": 3783,
+            "rows": 17
           }
         }
       },
@@ -45580,1178 +45574,6 @@
             "validVotes": 71075,
             "invalidVotes": 2186,
             "abstentions": 51110,
-            "progressRate": 100.0
-          }
-        },
-        {
-          "id": "national-assembly-2900-2290502-2905",
-          "name": "광산구을",
-          "query": {
-            "cityCode": "2900",
-            "sggCityCode": "2290502",
-            "townCodeFromSgg": "2905"
-          },
-          "candidates": [
-            "더불어민주당 임문영",
-            "국민의힘 안태욱",
-            "조국혁신당 배수진",
-            "진보당 전주연",
-            "기본소득당 신지혜",
-            "무소속 구본기"
-          ],
-          "rows": [
-            {
-              "area": "합계",
-              "ballotType": "합계",
-              "electors": 185133,
-              "votes": 96089,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당 임문영",
-                  "votes": 59483
-                },
-                {
-                  "name": "국민의힘 안태욱",
-                  "votes": 7535
-                },
-                {
-                  "name": "조국혁신당 배수진",
-                  "votes": 15372
-                },
-                {
-                  "name": "진보당 전주연",
-                  "votes": 6437
-                },
-                {
-                  "name": "기본소득당 신지혜",
-                  "votes": 3075
-                },
-                {
-                  "name": "무소속 구본기",
-                  "votes": 2739
-                },
-                {
-                  "name": "계",
-                  "votes": 94641
-                }
-              ],
-              "validVotes": 94641,
-              "invalidVotes": 1448,
-              "abstentions": 89044
-            },
-            {
-              "area": "거소투표",
-              "ballotType": "거소투표",
-              "electors": 227,
-              "votes": 214,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당 임문영",
-                  "votes": 121
-                },
-                {
-                  "name": "국민의힘 안태욱",
-                  "votes": 44
-                },
-                {
-                  "name": "조국혁신당 배수진",
-                  "votes": 19
-                },
-                {
-                  "name": "진보당 전주연",
-                  "votes": 7
-                },
-                {
-                  "name": "기본소득당 신지혜",
-                  "votes": 2
-                },
-                {
-                  "name": "무소속 구본기",
-                  "votes": 4
-                },
-                {
-                  "name": "계",
-                  "votes": 197
-                }
-              ],
-              "validVotes": 197,
-              "invalidVotes": 17,
-              "abstentions": 13
-            },
-            {
-              "area": "관외사전투표",
-              "ballotType": "관외사전투표",
-              "electors": 15131,
-              "votes": 15098,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당 임문영",
-                  "votes": 9500
-                },
-                {
-                  "name": "국민의힘 안태욱",
-                  "votes": 1315
-                },
-                {
-                  "name": "조국혁신당 배수진",
-                  "votes": 2204
-                },
-                {
-                  "name": "진보당 전주연",
-                  "votes": 1019
-                },
-                {
-                  "name": "기본소득당 신지혜",
-                  "votes": 422
-                },
-                {
-                  "name": "무소속 구본기",
-                  "votes": 344
-                },
-                {
-                  "name": "계",
-                  "votes": 14804
-                }
-              ],
-              "validVotes": 14804,
-              "invalidVotes": 294,
-              "abstentions": 33
-            },
-            {
-              "area": "비아동",
-              "ballotType": "계",
-              "electors": 5510,
-              "votes": 2441,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당 임문영",
-                  "votes": 1609
-                },
-                {
-                  "name": "국민의힘 안태욱",
-                  "votes": 164
-                },
-                {
-                  "name": "조국혁신당 배수진",
-                  "votes": 295
-                },
-                {
-                  "name": "진보당 전주연",
-                  "votes": 182
-                },
-                {
-                  "name": "기본소득당 신지혜",
-                  "votes": 74
-                },
-                {
-                  "name": "무소속 구본기",
-                  "votes": 57
-                },
-                {
-                  "name": "계",
-                  "votes": 2381
-                }
-              ],
-              "validVotes": 2381,
-              "invalidVotes": 60,
-              "abstentions": 3069
-            },
-            {
-              "area": "비아동",
-              "ballotType": "관내사전투표",
-              "electors": 1234,
-              "votes": 1234,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당 임문영",
-                  "votes": 840
-                },
-                {
-                  "name": "국민의힘 안태욱",
-                  "votes": 46
-                },
-                {
-                  "name": "조국혁신당 배수진",
-                  "votes": 152
-                },
-                {
-                  "name": "진보당 전주연",
-                  "votes": 108
-                },
-                {
-                  "name": "기본소득당 신지혜",
-                  "votes": 37
-                },
-                {
-                  "name": "무소속 구본기",
-                  "votes": 18
-                },
-                {
-                  "name": "계",
-                  "votes": 1201
-                }
-              ],
-              "validVotes": 1201,
-              "invalidVotes": 33,
-              "abstentions": 0
-            },
-            {
-              "area": "비아동",
-              "ballotType": "선거일투표",
-              "electors": 4276,
-              "votes": 1207,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당 임문영",
-                  "votes": 769
-                },
-                {
-                  "name": "국민의힘 안태욱",
-                  "votes": 118
-                },
-                {
-                  "name": "조국혁신당 배수진",
-                  "votes": 143
-                },
-                {
-                  "name": "진보당 전주연",
-                  "votes": 74
-                },
-                {
-                  "name": "기본소득당 신지혜",
-                  "votes": 37
-                },
-                {
-                  "name": "무소속 구본기",
-                  "votes": 39
-                },
-                {
-                  "name": "계",
-                  "votes": 1180
-                }
-              ],
-              "validVotes": 1180,
-              "invalidVotes": 27,
-              "abstentions": 3069
-            },
-            {
-              "area": "첨단1동",
-              "ballotType": "계",
-              "electors": 21565,
-              "votes": 11060,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당 임문영",
-                  "votes": 6646
-                },
-                {
-                  "name": "국민의힘 안태욱",
-                  "votes": 926
-                },
-                {
-                  "name": "조국혁신당 배수진",
-                  "votes": 1810
-                },
-                {
-                  "name": "진보당 전주연",
-                  "votes": 715
-                },
-                {
-                  "name": "기본소득당 신지혜",
-                  "votes": 371
-                },
-                {
-                  "name": "무소속 구본기",
-                  "votes": 413
-                },
-                {
-                  "name": "계",
-                  "votes": 10881
-                }
-              ],
-              "validVotes": 10881,
-              "invalidVotes": 179,
-              "abstentions": 10505
-            },
-            {
-              "area": "첨단1동",
-              "ballotType": "관내사전투표",
-              "electors": 4791,
-              "votes": 4785,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당 임문영",
-                  "votes": 3112
-                },
-                {
-                  "name": "국민의힘 안태욱",
-                  "votes": 241
-                },
-                {
-                  "name": "조국혁신당 배수진",
-                  "votes": 734
-                },
-                {
-                  "name": "진보당 전주연",
-                  "votes": 322
-                },
-                {
-                  "name": "기본소득당 신지혜",
-                  "votes": 160
-                },
-                {
-                  "name": "무소속 구본기",
-                  "votes": 146
-                },
-                {
-                  "name": "계",
-                  "votes": 4715
-                }
-              ],
-              "validVotes": 4715,
-              "invalidVotes": 70,
-              "abstentions": 6
-            },
-            {
-              "area": "첨단1동",
-              "ballotType": "선거일투표",
-              "electors": 16774,
-              "votes": 6275,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당 임문영",
-                  "votes": 3534
-                },
-                {
-                  "name": "국민의힘 안태욱",
-                  "votes": 685
-                },
-                {
-                  "name": "조국혁신당 배수진",
-                  "votes": 1076
-                },
-                {
-                  "name": "진보당 전주연",
-                  "votes": 393
-                },
-                {
-                  "name": "기본소득당 신지혜",
-                  "votes": 211
-                },
-                {
-                  "name": "무소속 구본기",
-                  "votes": 267
-                },
-                {
-                  "name": "계",
-                  "votes": 6166
-                }
-              ],
-              "validVotes": 6166,
-              "invalidVotes": 109,
-              "abstentions": 10499
-            },
-            {
-              "area": "첨단2동",
-              "ballotType": "계",
-              "electors": 31065,
-              "votes": 14125,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당 임문영",
-                  "votes": 8898
-                },
-                {
-                  "name": "국민의힘 안태욱",
-                  "votes": 1144
-                },
-                {
-                  "name": "조국혁신당 배수진",
-                  "votes": 2050
-                },
-                {
-                  "name": "진보당 전주연",
-                  "votes": 929
-                },
-                {
-                  "name": "기본소득당 신지혜",
-                  "votes": 418
-                },
-                {
-                  "name": "무소속 구본기",
-                  "votes": 470
-                },
-                {
-                  "name": "계",
-                  "votes": 13909
-                }
-              ],
-              "validVotes": 13909,
-              "invalidVotes": 216,
-              "abstentions": 16940
-            },
-            {
-              "area": "첨단2동",
-              "ballotType": "관내사전투표",
-              "electors": 4000,
-              "votes": 3999,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당 임문영",
-                  "votes": 2694
-                },
-                {
-                  "name": "국민의힘 안태욱",
-                  "votes": 180
-                },
-                {
-                  "name": "조국혁신당 배수진",
-                  "votes": 571
-                },
-                {
-                  "name": "진보당 전주연",
-                  "votes": 255
-                },
-                {
-                  "name": "기본소득당 신지혜",
-                  "votes": 108
-                },
-                {
-                  "name": "무소속 구본기",
-                  "votes": 131
-                },
-                {
-                  "name": "계",
-                  "votes": 3939
-                }
-              ],
-              "validVotes": 3939,
-              "invalidVotes": 60,
-              "abstentions": 1
-            },
-            {
-              "area": "첨단2동",
-              "ballotType": "선거일투표",
-              "electors": 27065,
-              "votes": 10126,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당 임문영",
-                  "votes": 6204
-                },
-                {
-                  "name": "국민의힘 안태욱",
-                  "votes": 964
-                },
-                {
-                  "name": "조국혁신당 배수진",
-                  "votes": 1479
-                },
-                {
-                  "name": "진보당 전주연",
-                  "votes": 674
-                },
-                {
-                  "name": "기본소득당 신지혜",
-                  "votes": 310
-                },
-                {
-                  "name": "무소속 구본기",
-                  "votes": 339
-                },
-                {
-                  "name": "계",
-                  "votes": 9970
-                }
-              ],
-              "validVotes": 9970,
-              "invalidVotes": 156,
-              "abstentions": 16939
-            },
-            {
-              "area": "신가동",
-              "ballotType": "계",
-              "electors": 13687,
-              "votes": 6640,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당 임문영",
-                  "votes": 4260
-                },
-                {
-                  "name": "국민의힘 안태욱",
-                  "votes": 455
-                },
-                {
-                  "name": "조국혁신당 배수진",
-                  "votes": 980
-                },
-                {
-                  "name": "진보당 전주연",
-                  "votes": 445
-                },
-                {
-                  "name": "기본소득당 신지혜",
-                  "votes": 245
-                },
-                {
-                  "name": "무소속 구본기",
-                  "votes": 170
-                },
-                {
-                  "name": "계",
-                  "votes": 6555
-                }
-              ],
-              "validVotes": 6555,
-              "invalidVotes": 85,
-              "abstentions": 7047
-            },
-            {
-              "area": "신가동",
-              "ballotType": "관내사전투표",
-              "electors": 2260,
-              "votes": 2260,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당 임문영",
-                  "votes": 1598
-                },
-                {
-                  "name": "국민의힘 안태욱",
-                  "votes": 64
-                },
-                {
-                  "name": "조국혁신당 배수진",
-                  "votes": 293
-                },
-                {
-                  "name": "진보당 전주연",
-                  "votes": 165
-                },
-                {
-                  "name": "기본소득당 신지혜",
-                  "votes": 71
-                },
-                {
-                  "name": "무소속 구본기",
-                  "votes": 46
-                },
-                {
-                  "name": "계",
-                  "votes": 2237
-                }
-              ],
-              "validVotes": 2237,
-              "invalidVotes": 23,
-              "abstentions": 0
-            },
-            {
-              "area": "신가동",
-              "ballotType": "선거일투표",
-              "electors": 11427,
-              "votes": 4380,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당 임문영",
-                  "votes": 2662
-                },
-                {
-                  "name": "국민의힘 안태욱",
-                  "votes": 391
-                },
-                {
-                  "name": "조국혁신당 배수진",
-                  "votes": 687
-                },
-                {
-                  "name": "진보당 전주연",
-                  "votes": 280
-                },
-                {
-                  "name": "기본소득당 신지혜",
-                  "votes": 174
-                },
-                {
-                  "name": "무소속 구본기",
-                  "votes": 124
-                },
-                {
-                  "name": "계",
-                  "votes": 4318
-                }
-              ],
-              "validVotes": 4318,
-              "invalidVotes": 62,
-              "abstentions": 7047
-            },
-            {
-              "area": "신창동",
-              "ballotType": "계",
-              "electors": 25185,
-              "votes": 11902,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당 임문영",
-                  "votes": 7385
-                },
-                {
-                  "name": "국민의힘 안태욱",
-                  "votes": 797
-                },
-                {
-                  "name": "조국혁신당 배수진",
-                  "votes": 2013
-                },
-                {
-                  "name": "진보당 전주연",
-                  "votes": 860
-                },
-                {
-                  "name": "기본소득당 신지혜",
-                  "votes": 372
-                },
-                {
-                  "name": "무소속 구본기",
-                  "votes": 342
-                },
-                {
-                  "name": "계",
-                  "votes": 11769
-                }
-              ],
-              "validVotes": 11769,
-              "invalidVotes": 133,
-              "abstentions": 13283
-            },
-            {
-              "area": "신창동",
-              "ballotType": "관내사전투표",
-              "electors": 5002,
-              "votes": 5000,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당 임문영",
-                  "votes": 3327
-                },
-                {
-                  "name": "국민의힘 안태욱",
-                  "votes": 191
-                },
-                {
-                  "name": "조국혁신당 배수진",
-                  "votes": 807
-                },
-                {
-                  "name": "진보당 전주연",
-                  "votes": 359
-                },
-                {
-                  "name": "기본소득당 신지혜",
-                  "votes": 123
-                },
-                {
-                  "name": "무소속 구본기",
-                  "votes": 145
-                },
-                {
-                  "name": "계",
-                  "votes": 4952
-                }
-              ],
-              "validVotes": 4952,
-              "invalidVotes": 48,
-              "abstentions": 2
-            },
-            {
-              "area": "신창동",
-              "ballotType": "선거일투표",
-              "electors": 20183,
-              "votes": 6902,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당 임문영",
-                  "votes": 4058
-                },
-                {
-                  "name": "국민의힘 안태욱",
-                  "votes": 606
-                },
-                {
-                  "name": "조국혁신당 배수진",
-                  "votes": 1206
-                },
-                {
-                  "name": "진보당 전주연",
-                  "votes": 501
-                },
-                {
-                  "name": "기본소득당 신지혜",
-                  "votes": 249
-                },
-                {
-                  "name": "무소속 구본기",
-                  "votes": 197
-                },
-                {
-                  "name": "계",
-                  "votes": 6817
-                }
-              ],
-              "validVotes": 6817,
-              "invalidVotes": 85,
-              "abstentions": 13281
-            },
-            {
-              "area": "수완동",
-              "ballotType": "계",
-              "electors": 51032,
-              "votes": 24700,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당 임문영",
-                  "votes": 14549
-                },
-                {
-                  "name": "국민의힘 안태욱",
-                  "votes": 2011
-                },
-                {
-                  "name": "조국혁신당 배수진",
-                  "votes": 4662
-                },
-                {
-                  "name": "진보당 전주연",
-                  "votes": 1548
-                },
-                {
-                  "name": "기본소득당 신지혜",
-                  "votes": 869
-                },
-                {
-                  "name": "무소속 구본기",
-                  "votes": 743
-                },
-                {
-                  "name": "계",
-                  "votes": 24382
-                }
-              ],
-              "validVotes": 24382,
-              "invalidVotes": 318,
-              "abstentions": 26332
-            },
-            {
-              "area": "수완동",
-              "ballotType": "관내사전투표",
-              "electors": 6731,
-              "votes": 6717,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당 임문영",
-                  "votes": 4291
-                },
-                {
-                  "name": "국민의힘 안태욱",
-                  "votes": 304
-                },
-                {
-                  "name": "조국혁신당 배수진",
-                  "votes": 1197
-                },
-                {
-                  "name": "진보당 전주연",
-                  "votes": 400
-                },
-                {
-                  "name": "기본소득당 신지혜",
-                  "votes": 225
-                },
-                {
-                  "name": "무소속 구본기",
-                  "votes": 216
-                },
-                {
-                  "name": "계",
-                  "votes": 6633
-                }
-              ],
-              "validVotes": 6633,
-              "invalidVotes": 84,
-              "abstentions": 14
-            },
-            {
-              "area": "수완동",
-              "ballotType": "선거일투표",
-              "electors": 44301,
-              "votes": 17983,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당 임문영",
-                  "votes": 10258
-                },
-                {
-                  "name": "국민의힘 안태욱",
-                  "votes": 1707
-                },
-                {
-                  "name": "조국혁신당 배수진",
-                  "votes": 3465
-                },
-                {
-                  "name": "진보당 전주연",
-                  "votes": 1148
-                },
-                {
-                  "name": "기본소득당 신지혜",
-                  "votes": 644
-                },
-                {
-                  "name": "무소속 구본기",
-                  "votes": 527
-                },
-                {
-                  "name": "계",
-                  "votes": 17749
-                }
-              ],
-              "validVotes": 17749,
-              "invalidVotes": 234,
-              "abstentions": 26318
-            },
-            {
-              "area": "하남동",
-              "ballotType": "계",
-              "electors": 20118,
-              "votes": 8963,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당 임문영",
-                  "votes": 5878
-                },
-                {
-                  "name": "국민의힘 안태욱",
-                  "votes": 628
-                },
-                {
-                  "name": "조국혁신당 배수진",
-                  "votes": 1224
-                },
-                {
-                  "name": "진보당 전주연",
-                  "votes": 657
-                },
-                {
-                  "name": "기본소득당 신지혜",
-                  "votes": 278
-                },
-                {
-                  "name": "무소속 구본기",
-                  "votes": 177
-                },
-                {
-                  "name": "계",
-                  "votes": 8842
-                }
-              ],
-              "validVotes": 8842,
-              "invalidVotes": 121,
-              "abstentions": 11155
-            },
-            {
-              "area": "하남동",
-              "ballotType": "관내사전투표",
-              "electors": 3929,
-              "votes": 3928,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당 임문영",
-                  "votes": 2741
-                },
-                {
-                  "name": "국민의힘 안태욱",
-                  "votes": 145
-                },
-                {
-                  "name": "조국혁신당 배수진",
-                  "votes": 530
-                },
-                {
-                  "name": "진보당 전주연",
-                  "votes": 287
-                },
-                {
-                  "name": "기본소득당 신지혜",
-                  "votes": 109
-                },
-                {
-                  "name": "무소속 구본기",
-                  "votes": 65
-                },
-                {
-                  "name": "계",
-                  "votes": 3877
-                }
-              ],
-              "validVotes": 3877,
-              "invalidVotes": 51,
-              "abstentions": 1
-            },
-            {
-              "area": "하남동",
-              "ballotType": "선거일투표",
-              "electors": 16189,
-              "votes": 5035,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당 임문영",
-                  "votes": 3137
-                },
-                {
-                  "name": "국민의힘 안태욱",
-                  "votes": 483
-                },
-                {
-                  "name": "조국혁신당 배수진",
-                  "votes": 694
-                },
-                {
-                  "name": "진보당 전주연",
-                  "votes": 370
-                },
-                {
-                  "name": "기본소득당 신지혜",
-                  "votes": 169
-                },
-                {
-                  "name": "무소속 구본기",
-                  "votes": 112
-                },
-                {
-                  "name": "계",
-                  "votes": 4965
-                }
-              ],
-              "validVotes": 4965,
-              "invalidVotes": 70,
-              "abstentions": 11154
-            },
-            {
-              "area": "임곡동",
-              "ballotType": "계",
-              "electors": 1613,
-              "votes": 885,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당 임문영",
-                  "votes": 594
-                },
-                {
-                  "name": "국민의힘 안태욱",
-                  "votes": 46
-                },
-                {
-                  "name": "조국혁신당 배수진",
-                  "votes": 108
-                },
-                {
-                  "name": "진보당 전주연",
-                  "votes": 72
-                },
-                {
-                  "name": "기본소득당 신지혜",
-                  "votes": 22
-                },
-                {
-                  "name": "무소속 구본기",
-                  "votes": 18
-                },
-                {
-                  "name": "계",
-                  "votes": 860
-                }
-              ],
-              "validVotes": 860,
-              "invalidVotes": 25,
-              "abstentions": 728
-            },
-            {
-              "area": "임곡동",
-              "ballotType": "관내사전투표",
-              "electors": 534,
-              "votes": 531,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당 임문영",
-                  "votes": 371
-                },
-                {
-                  "name": "국민의힘 안태욱",
-                  "votes": 21
-                },
-                {
-                  "name": "조국혁신당 배수진",
-                  "votes": 66
-                },
-                {
-                  "name": "진보당 전주연",
-                  "votes": 44
-                },
-                {
-                  "name": "기본소득당 신지혜",
-                  "votes": 6
-                },
-                {
-                  "name": "무소속 구본기",
-                  "votes": 5
-                },
-                {
-                  "name": "계",
-                  "votes": 513
-                }
-              ],
-              "validVotes": 513,
-              "invalidVotes": 18,
-              "abstentions": 3
-            },
-            {
-              "area": "임곡동",
-              "ballotType": "선거일투표",
-              "electors": 1079,
-              "votes": 354,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당 임문영",
-                  "votes": 223
-                },
-                {
-                  "name": "국민의힘 안태욱",
-                  "votes": 25
-                },
-                {
-                  "name": "조국혁신당 배수진",
-                  "votes": 42
-                },
-                {
-                  "name": "진보당 전주연",
-                  "votes": 28
-                },
-                {
-                  "name": "기본소득당 신지혜",
-                  "votes": 16
-                },
-                {
-                  "name": "무소속 구본기",
-                  "votes": 13
-                },
-                {
-                  "name": "계",
-                  "votes": 347
-                }
-              ],
-              "validVotes": 347,
-              "invalidVotes": 7,
-              "abstentions": 725
-            },
-            {
-              "area": "잘못 투입·구분된 투표지",
-              "ballotType": "별도분류",
-              "electors": 0,
-              "votes": 61,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당 임문영",
-                  "votes": 43
-                },
-                {
-                  "name": "국민의힘 안태욱",
-                  "votes": 5
-                },
-                {
-                  "name": "조국혁신당 배수진",
-                  "votes": 7
-                },
-                {
-                  "name": "진보당 전주연",
-                  "votes": 3
-                },
-                {
-                  "name": "기본소득당 신지혜",
-                  "votes": 2
-                },
-                {
-                  "name": "무소속 구본기",
-                  "votes": 1
-                },
-                {
-                  "name": "계",
-                  "votes": 61
-                }
-              ],
-              "validVotes": 61,
-              "invalidVotes": 0,
-              "abstentions": -61
-            }
-          ],
-          "summary": {
-            "electors": 185133,
-            "votes": 96089,
-            "validVotes": 94641,
-            "invalidVotes": 1448,
-            "abstentions": 89044
-          },
-          "cityName": "광주광역시",
-          "progressNames": [
-            "광산구을",
-            "광산구",
-            "광산구을"
-          ],
-          "progress": {
-            "area": "광산구",
-            "groupArea": null,
-            "fullArea": "광산구",
-            "electors": 185133,
-            "votes": 96089,
-            "candidateVotes": [
-              {
-                "name": "더불어민주당 하정우",
-                "votes": 59483,
-                "rate": 62.85
-              },
-              {
-                "name": "국민의힘 박민식",
-                "votes": 7535,
-                "rate": 7.96
-              },
-              {
-                "name": "무소속 한동훈",
-                "votes": 15372,
-                "rate": 16.24
-              },
-              {
-                "name": "",
-                "votes": 6437,
-                "rate": 6.8
-              },
-              {
-                "name": "",
-                "votes": 3075,
-                "rate": 3.24
-              },
-              {
-                "name": "",
-                "votes": 2739,
-                "rate": 2.89
-              },
-              {
-                "name": "계",
-                "votes": 94641,
-                "rate": null
-              }
-            ],
-            "validVotes": 94641,
-            "invalidVotes": 1448,
-            "abstentions": 89044,
             "progressRate": 100.0
           }
         },
@@ -61917,9 +60739,14 @@
           }
         }
       ],
-      "errors": []
+      "errors": [
+        {
+          "unit": "광산구을",
+          "message": "IncompleteRead(0 bytes read)"
+        }
+      ]
     }
   ],
-  "errorCount": 0,
-  "durationSeconds": 27.96
+  "errorCount": 1,
+  "durationSeconds": 164.55
 }
