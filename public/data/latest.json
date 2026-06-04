@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T11:54:43+09:00",
+  "generatedAt": "2026-06-04T11:57:17+09:00",
   "electionId": "0020260603",
   "source": {
     "name": "중앙선거관리위원회 선거통계시스템",
@@ -5188,7 +5188,7 @@
             "validVotes": 6832325,
             "invalidVotes": 97329,
             "abstentions": 4949343,
-            "progressRate": 100.0
+            "progressRate": 99.95
           },
           {
             "area": "수원시장안구",
@@ -10047,7 +10047,7 @@
             "validVotes": 188323,
             "invalidVotes": 2323,
             "abstentions": 152699,
-            "progressRate": 100.0
+            "progressRate": 99.92
           },
           {
             "area": "포천시",
@@ -10613,7 +10613,7 @@
           "validVotes": 6832325,
           "invalidVotes": 97329,
           "abstentions": 4949343,
-          "progressRate": 100.0
+          "progressRate": 99.95
         }
       },
       "resultSummary": {
@@ -15332,7 +15332,7 @@
             "validVotes": 6735303,
             "invalidVotes": 195608,
             "abstentions": 4948077,
-            "progressRate": 100.0
+            "progressRate": 99.97
           },
           {
             "area": "수원시장안구",
@@ -16536,7 +16536,7 @@
             "validVotes": 185498,
             "invalidVotes": 4773,
             "abstentions": 153074,
-            "progressRate": 100.0
+            "progressRate": 99.72
           },
           {
             "area": "포천시",
@@ -16677,7 +16677,7 @@
           "validVotes": 6735303,
           "invalidVotes": 195608,
           "abstentions": 4948077,
-          "progressRate": 100.0
+          "progressRate": 99.97
         }
       },
       "resultSummary": {
@@ -32383,7 +32383,7 @@
             "validVotes": 187426,
             "invalidVotes": 3227,
             "abstentions": 152692,
-            "progressRate": 100.0
+            "progressRate": 99.92
           },
           {
             "area": "하남시",
@@ -61921,5 +61921,5 @@
     }
   ],
   "errorCount": 0,
-  "durationSeconds": 31.62
+  "durationSeconds": 28.04
 }
