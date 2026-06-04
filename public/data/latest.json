@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T09:50:31+09:00",
+  "generatedAt": "2026-06-04T09:53:11+09:00",
   "electionId": "0020260603",
   "source": {
     "name": "중앙선거관리위원회 선거통계시스템",
@@ -682,7 +682,7 @@
             "validVotes": 167104,
             "invalidVotes": 2483,
             "abstentions": 93376,
-            "progressRate": 99.98
+            "progressRate": 100.0
           },
           {
             "area": "평택시",
@@ -61032,5 +61032,5 @@
     }
   ],
   "errorCount": 0,
-  "durationSeconds": 33.37
+  "durationSeconds": 27.95
 }
