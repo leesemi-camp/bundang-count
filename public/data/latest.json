@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T09:02:07+09:00",
+  "generatedAt": "2026-06-04T09:04:37+09:00",
   "electionId": "0020260603",
   "source": {
     "name": "중앙선거관리위원회 선거통계시스템",
@@ -32287,24 +32287,23 @@
         }
       },
       "resultSummary": {
-        "electors": 788544,
-        "votes": 501585,
-        "validVotes": 492698,
-        "invalidVotes": 8887,
-        "abstentions": 286959
+        "electors": 578175,
+        "votes": 375023,
+        "validVotes": 368557,
+        "invalidVotes": 6466,
+        "abstentions": 203152
       },
       "ballotTypes": [
         {
           "type": "관내사전투표",
-          "electors": 127621,
-          "votes": 127544,
-          "validVotes": 125933,
-          "invalidVotes": 1611,
-          "abstentions": 77,
-          "rowCount": 50,
-          "unitCount": 3,
+          "electors": 91908,
+          "votes": 91850,
+          "validVotes": 90781,
+          "invalidVotes": 1069,
+          "abstentions": 58,
+          "rowCount": 33,
+          "unitCount": 2,
           "units": [
-            "basic-pr-seongnam-4105",
             "basic-pr-seongnam-4106",
             "basic-pr-seongnam-4107"
           ],
@@ -32312,15 +32311,14 @@
         },
         {
           "type": "선거일투표",
-          "electors": 606243,
-          "votes": 319411,
-          "validVotes": 312966,
-          "invalidVotes": 6445,
-          "abstentions": 286832,
-          "rowCount": 50,
-          "unitCount": 3,
+          "electors": 447154,
+          "votes": 244136,
+          "validVotes": 239336,
+          "invalidVotes": 4800,
+          "abstentions": 203018,
+          "rowCount": 33,
+          "unitCount": 2,
           "units": [
-            "basic-pr-seongnam-4105",
             "basic-pr-seongnam-4106",
             "basic-pr-seongnam-4107"
           ],
@@ -32328,15 +32326,14 @@
         },
         {
           "type": "관외사전투표",
-          "electors": 53978,
-          "votes": 53894,
-          "validVotes": 53107,
-          "invalidVotes": 787,
-          "abstentions": 84,
-          "rowCount": 3,
-          "unitCount": 3,
+          "electors": 38581,
+          "votes": 38504,
+          "validVotes": 37946,
+          "invalidVotes": 558,
+          "abstentions": 77,
+          "rowCount": 2,
+          "unitCount": 2,
           "units": [
-            "basic-pr-seongnam-4105",
             "basic-pr-seongnam-4106",
             "basic-pr-seongnam-4107"
           ],
@@ -32344,15 +32341,14 @@
         },
         {
           "type": "거소투표",
-          "electors": 702,
-          "votes": 638,
-          "validVotes": 604,
-          "invalidVotes": 34,
-          "abstentions": 64,
-          "rowCount": 3,
-          "unitCount": 3,
+          "electors": 532,
+          "votes": 477,
+          "validVotes": 447,
+          "invalidVotes": 30,
+          "abstentions": 55,
+          "rowCount": 2,
+          "unitCount": 2,
           "units": [
-            "basic-pr-seongnam-4105",
             "basic-pr-seongnam-4106",
             "basic-pr-seongnam-4107"
           ],
@@ -32361,29 +32357,27 @@
         {
           "type": "별도분류",
           "electors": 0,
-          "votes": 98,
-          "validVotes": 88,
-          "invalidVotes": 10,
-          "abstentions": -98,
-          "rowCount": 2,
-          "unitCount": 2,
+          "votes": 56,
+          "validVotes": 47,
+          "invalidVotes": 9,
+          "abstentions": -56,
+          "rowCount": 1,
+          "unitCount": 1,
           "units": [
-            "basic-pr-seongnam-4105",
             "basic-pr-seongnam-4106"
           ],
           "started": true
         },
         {
           "type": "합계",
-          "electors": 788544,
-          "votes": 501585,
-          "validVotes": 492698,
-          "invalidVotes": 8887,
-          "abstentions": 286959,
-          "rowCount": 3,
-          "unitCount": 3,
+          "electors": 578175,
+          "votes": 375023,
+          "validVotes": 368557,
+          "invalidVotes": 6466,
+          "abstentions": 203152,
+          "rowCount": 2,
+          "unitCount": 2,
           "units": [
-            "basic-pr-seongnam-4105",
             "basic-pr-seongnam-4106",
             "basic-pr-seongnam-4107"
           ],
@@ -32408,1799 +32402,27 @@
         "statusByType": {
           "관내사전투표": {
             "started": true,
-            "votes": 127544,
-            "rows": 50
+            "votes": 91850,
+            "rows": 33
           },
           "선거일투표": {
             "started": true,
-            "votes": 319411,
-            "rows": 50
+            "votes": 244136,
+            "rows": 33
           },
           "관외사전투표": {
             "started": true,
-            "votes": 53894,
-            "rows": 3
+            "votes": 38504,
+            "rows": 2
           },
           "거소투표": {
             "started": true,
-            "votes": 638,
-            "rows": 3
+            "votes": 477,
+            "rows": 2
           }
         }
       },
       "units": [
-        {
-          "id": "basic-pr-seongnam-4105",
-          "name": "성남시수정구",
-          "query": {
-            "cityCode": "4100",
-            "sggCityCode": "9410600",
-            "townCodeFromSgg": "4105"
-          },
-          "candidates": [
-            "더불어민주당",
-            "국민의힘",
-            "조국혁신당",
-            "진보당"
-          ],
-          "rows": [
-            {
-              "area": "합계",
-              "ballotType": "합계",
-              "electors": 210369,
-              "votes": 126562,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 64682
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 50851
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 5631
-                },
-                {
-                  "name": "진보당",
-                  "votes": 2977
-                },
-                {
-                  "name": "계",
-                  "votes": 124141
-                }
-              ],
-              "validVotes": 124141,
-              "invalidVotes": 2421,
-              "abstentions": 83807
-            },
-            {
-              "area": "거소투표",
-              "ballotType": "거소투표",
-              "electors": 170,
-              "votes": 161,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 71
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 78
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 7
-                },
-                {
-                  "name": "진보당",
-                  "votes": 1
-                },
-                {
-                  "name": "계",
-                  "votes": 157
-                }
-              ],
-              "validVotes": 157,
-              "invalidVotes": 4,
-              "abstentions": 9
-            },
-            {
-              "area": "관외사전투표",
-              "ballotType": "관외사전투표",
-              "electors": 15397,
-              "votes": 15390,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 9321
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 4496
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 875
-                },
-                {
-                  "name": "진보당",
-                  "votes": 469
-                },
-                {
-                  "name": "계",
-                  "votes": 15161
-                }
-              ],
-              "validVotes": 15161,
-              "invalidVotes": 229,
-              "abstentions": 7
-            },
-            {
-              "area": "신흥1동",
-              "ballotType": "계",
-              "electors": 10750,
-              "votes": 5202,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 2879
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 1913
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 157
-                },
-                {
-                  "name": "진보당",
-                  "votes": 120
-                },
-                {
-                  "name": "계",
-                  "votes": 5069
-                }
-              ],
-              "validVotes": 5069,
-              "invalidVotes": 133,
-              "abstentions": 5548
-            },
-            {
-              "area": "신흥1동",
-              "ballotType": "관내사전투표",
-              "electors": 1993,
-              "votes": 1993,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 1365
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 451
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 81
-                },
-                {
-                  "name": "진보당",
-                  "votes": 61
-                },
-                {
-                  "name": "계",
-                  "votes": 1958
-                }
-              ],
-              "validVotes": 1958,
-              "invalidVotes": 35,
-              "abstentions": 0
-            },
-            {
-              "area": "신흥1동",
-              "ballotType": "선거일투표",
-              "electors": 8757,
-              "votes": 3209,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 1514
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 1462
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 76
-                },
-                {
-                  "name": "진보당",
-                  "votes": 59
-                },
-                {
-                  "name": "계",
-                  "votes": 3111
-                }
-              ],
-              "validVotes": 3111,
-              "invalidVotes": 98,
-              "abstentions": 5548
-            },
-            {
-              "area": "신흥2동",
-              "ballotType": "계",
-              "electors": 23646,
-              "votes": 14880,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 6935
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 6699
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 714
-                },
-                {
-                  "name": "진보당",
-                  "votes": 360
-                },
-                {
-                  "name": "계",
-                  "votes": 14708
-                }
-              ],
-              "validVotes": 14708,
-              "invalidVotes": 172,
-              "abstentions": 8766
-            },
-            {
-              "area": "신흥2동",
-              "ballotType": "관내사전투표",
-              "electors": 3750,
-              "votes": 3748,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 2361
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 996
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 247
-                },
-                {
-                  "name": "진보당",
-                  "votes": 116
-                },
-                {
-                  "name": "계",
-                  "votes": 3720
-                }
-              ],
-              "validVotes": 3720,
-              "invalidVotes": 28,
-              "abstentions": 2
-            },
-            {
-              "area": "신흥2동",
-              "ballotType": "선거일투표",
-              "electors": 19896,
-              "votes": 11132,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 4574
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 5703
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 467
-                },
-                {
-                  "name": "진보당",
-                  "votes": 244
-                },
-                {
-                  "name": "계",
-                  "votes": 10988
-                }
-              ],
-              "validVotes": 10988,
-              "invalidVotes": 144,
-              "abstentions": 8764
-            },
-            {
-              "area": "신흥3동",
-              "ballotType": "계",
-              "electors": 10339,
-              "votes": 5520,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 2932
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 2128
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 203
-                },
-                {
-                  "name": "진보당",
-                  "votes": 124
-                },
-                {
-                  "name": "계",
-                  "votes": 5387
-                }
-              ],
-              "validVotes": 5387,
-              "invalidVotes": 133,
-              "abstentions": 4819
-            },
-            {
-              "area": "신흥3동",
-              "ballotType": "관내사전투표",
-              "electors": 2606,
-              "votes": 2604,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 1652
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 721
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 124
-                },
-                {
-                  "name": "진보당",
-                  "votes": 70
-                },
-                {
-                  "name": "계",
-                  "votes": 2567
-                }
-              ],
-              "validVotes": 2567,
-              "invalidVotes": 37,
-              "abstentions": 2
-            },
-            {
-              "area": "신흥3동",
-              "ballotType": "선거일투표",
-              "electors": 7733,
-              "votes": 2916,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 1280
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 1407
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 79
-                },
-                {
-                  "name": "진보당",
-                  "votes": 54
-                },
-                {
-                  "name": "계",
-                  "votes": 2820
-                }
-              ],
-              "validVotes": 2820,
-              "invalidVotes": 96,
-              "abstentions": 4817
-            },
-            {
-              "area": "태평1동",
-              "ballotType": "계",
-              "electors": 12158,
-              "votes": 6478,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 3458
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 2529
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 223
-                },
-                {
-                  "name": "진보당",
-                  "votes": 136
-                },
-                {
-                  "name": "계",
-                  "votes": 6346
-                }
-              ],
-              "validVotes": 6346,
-              "invalidVotes": 132,
-              "abstentions": 5680
-            },
-            {
-              "area": "태평1동",
-              "ballotType": "관내사전투표",
-              "electors": 2280,
-              "votes": 2280,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 1547
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 556
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 99
-                },
-                {
-                  "name": "진보당",
-                  "votes": 49
-                },
-                {
-                  "name": "계",
-                  "votes": 2251
-                }
-              ],
-              "validVotes": 2251,
-              "invalidVotes": 29,
-              "abstentions": 0
-            },
-            {
-              "area": "태평1동",
-              "ballotType": "선거일투표",
-              "electors": 9878,
-              "votes": 4198,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 1911
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 1973
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 124
-                },
-                {
-                  "name": "진보당",
-                  "votes": 87
-                },
-                {
-                  "name": "계",
-                  "votes": 4095
-                }
-              ],
-              "validVotes": 4095,
-              "invalidVotes": 103,
-              "abstentions": 5680
-            },
-            {
-              "area": "태평2동",
-              "ballotType": "계",
-              "electors": 11500,
-              "votes": 6050,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 3257
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 2255
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 182
-                },
-                {
-                  "name": "진보당",
-                  "votes": 138
-                },
-                {
-                  "name": "계",
-                  "votes": 5832
-                }
-              ],
-              "validVotes": 5832,
-              "invalidVotes": 218,
-              "abstentions": 5450
-            },
-            {
-              "area": "태평2동",
-              "ballotType": "관내사전투표",
-              "electors": 1673,
-              "votes": 1673,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 1138
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 360
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 66
-                },
-                {
-                  "name": "진보당",
-                  "votes": 48
-                },
-                {
-                  "name": "계",
-                  "votes": 1612
-                }
-              ],
-              "validVotes": 1612,
-              "invalidVotes": 61,
-              "abstentions": 0
-            },
-            {
-              "area": "태평2동",
-              "ballotType": "선거일투표",
-              "electors": 9827,
-              "votes": 4377,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 2119
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 1895
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 116
-                },
-                {
-                  "name": "진보당",
-                  "votes": 90
-                },
-                {
-                  "name": "계",
-                  "votes": 4220
-                }
-              ],
-              "validVotes": 4220,
-              "invalidVotes": 157,
-              "abstentions": 5450
-            },
-            {
-              "area": "태평3동",
-              "ballotType": "계",
-              "electors": 10525,
-              "votes": 5864,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 3220
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 2157
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 213
-                },
-                {
-                  "name": "진보당",
-                  "votes": 147
-                },
-                {
-                  "name": "계",
-                  "votes": 5737
-                }
-              ],
-              "validVotes": 5737,
-              "invalidVotes": 127,
-              "abstentions": 4661
-            },
-            {
-              "area": "태평3동",
-              "ballotType": "관내사전투표",
-              "electors": 2356,
-              "votes": 2355,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 1586
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 542
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 104
-                },
-                {
-                  "name": "진보당",
-                  "votes": 80
-                },
-                {
-                  "name": "계",
-                  "votes": 2312
-                }
-              ],
-              "validVotes": 2312,
-              "invalidVotes": 43,
-              "abstentions": 1
-            },
-            {
-              "area": "태평3동",
-              "ballotType": "선거일투표",
-              "electors": 8169,
-              "votes": 3509,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 1634
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 1615
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 109
-                },
-                {
-                  "name": "진보당",
-                  "votes": 67
-                },
-                {
-                  "name": "계",
-                  "votes": 3425
-                }
-              ],
-              "validVotes": 3425,
-              "invalidVotes": 84,
-              "abstentions": 4660
-            },
-            {
-              "area": "태평4동",
-              "ballotType": "계",
-              "electors": 9021,
-              "votes": 4697,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 2522
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 1771
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 164
-                },
-                {
-                  "name": "진보당",
-                  "votes": 115
-                },
-                {
-                  "name": "계",
-                  "votes": 4572
-                }
-              ],
-              "validVotes": 4572,
-              "invalidVotes": 125,
-              "abstentions": 4324
-            },
-            {
-              "area": "태평4동",
-              "ballotType": "관내사전투표",
-              "electors": 1794,
-              "votes": 1793,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 1193
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 429
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 76
-                },
-                {
-                  "name": "진보당",
-                  "votes": 43
-                },
-                {
-                  "name": "계",
-                  "votes": 1741
-                }
-              ],
-              "validVotes": 1741,
-              "invalidVotes": 52,
-              "abstentions": 1
-            },
-            {
-              "area": "태평4동",
-              "ballotType": "선거일투표",
-              "electors": 7227,
-              "votes": 2904,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 1329
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 1342
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 88
-                },
-                {
-                  "name": "진보당",
-                  "votes": 72
-                },
-                {
-                  "name": "계",
-                  "votes": 2831
-                }
-              ],
-              "validVotes": 2831,
-              "invalidVotes": 73,
-              "abstentions": 4323
-            },
-            {
-              "area": "수진1동",
-              "ballotType": "계",
-              "electors": 10047,
-              "votes": 5067,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 2827
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 1913
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 125
-                },
-                {
-                  "name": "진보당",
-                  "votes": 94
-                },
-                {
-                  "name": "계",
-                  "votes": 4959
-                }
-              ],
-              "validVotes": 4959,
-              "invalidVotes": 108,
-              "abstentions": 4980
-            },
-            {
-              "area": "수진1동",
-              "ballotType": "관내사전투표",
-              "electors": 1828,
-              "votes": 1828,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 1271
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 419
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 64
-                },
-                {
-                  "name": "진보당",
-                  "votes": 41
-                },
-                {
-                  "name": "계",
-                  "votes": 1795
-                }
-              ],
-              "validVotes": 1795,
-              "invalidVotes": 33,
-              "abstentions": 0
-            },
-            {
-              "area": "수진1동",
-              "ballotType": "선거일투표",
-              "electors": 8219,
-              "votes": 3239,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 1556
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 1494
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 61
-                },
-                {
-                  "name": "진보당",
-                  "votes": 53
-                },
-                {
-                  "name": "계",
-                  "votes": 3164
-                }
-              ],
-              "validVotes": 3164,
-              "invalidVotes": 75,
-              "abstentions": 4980
-            },
-            {
-              "area": "수진2동",
-              "ballotType": "계",
-              "electors": 12568,
-              "votes": 7020,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 3645
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 2844
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 224
-                },
-                {
-                  "name": "진보당",
-                  "votes": 163
-                },
-                {
-                  "name": "계",
-                  "votes": 6876
-                }
-              ],
-              "validVotes": 6876,
-              "invalidVotes": 144,
-              "abstentions": 5548
-            },
-            {
-              "area": "수진2동",
-              "ballotType": "관내사전투표",
-              "electors": 2475,
-              "votes": 2475,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 1684
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 596
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 99
-                },
-                {
-                  "name": "진보당",
-                  "votes": 66
-                },
-                {
-                  "name": "계",
-                  "votes": 2445
-                }
-              ],
-              "validVotes": 2445,
-              "invalidVotes": 30,
-              "abstentions": 0
-            },
-            {
-              "area": "수진2동",
-              "ballotType": "선거일투표",
-              "electors": 10093,
-              "votes": 4545,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 1961
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 2248
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 125
-                },
-                {
-                  "name": "진보당",
-                  "votes": 97
-                },
-                {
-                  "name": "계",
-                  "votes": 4431
-                }
-              ],
-              "validVotes": 4431,
-              "invalidVotes": 114,
-              "abstentions": 5548
-            },
-            {
-              "area": "단대동",
-              "ballotType": "계",
-              "electors": 11350,
-              "votes": 6752,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 3321
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 2847
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 302
-                },
-                {
-                  "name": "진보당",
-                  "votes": 154
-                },
-                {
-                  "name": "계",
-                  "votes": 6624
-                }
-              ],
-              "validVotes": 6624,
-              "invalidVotes": 128,
-              "abstentions": 4598
-            },
-            {
-              "area": "단대동",
-              "ballotType": "관내사전투표",
-              "electors": 1953,
-              "votes": 1950,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 1263
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 483
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 117
-                },
-                {
-                  "name": "진보당",
-                  "votes": 60
-                },
-                {
-                  "name": "계",
-                  "votes": 1923
-                }
-              ],
-              "validVotes": 1923,
-              "invalidVotes": 27,
-              "abstentions": 3
-            },
-            {
-              "area": "단대동",
-              "ballotType": "선거일투표",
-              "electors": 9397,
-              "votes": 4802,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 2058
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 2364
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 185
-                },
-                {
-                  "name": "진보당",
-                  "votes": 94
-                },
-                {
-                  "name": "계",
-                  "votes": 4701
-                }
-              ],
-              "validVotes": 4701,
-              "invalidVotes": 101,
-              "abstentions": 4595
-            },
-            {
-              "area": "산성동",
-              "ballotType": "계",
-              "electors": 3737,
-              "votes": 2270,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 1268
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 821
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 67
-                },
-                {
-                  "name": "진보당",
-                  "votes": 60
-                },
-                {
-                  "name": "계",
-                  "votes": 2216
-                }
-              ],
-              "validVotes": 2216,
-              "invalidVotes": 54,
-              "abstentions": 1467
-            },
-            {
-              "area": "산성동",
-              "ballotType": "관내사전투표",
-              "electors": 708,
-              "votes": 707,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 454
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 191
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 27
-                },
-                {
-                  "name": "진보당",
-                  "votes": 16
-                },
-                {
-                  "name": "계",
-                  "votes": 688
-                }
-              ],
-              "validVotes": 688,
-              "invalidVotes": 19,
-              "abstentions": 1
-            },
-            {
-              "area": "산성동",
-              "ballotType": "선거일투표",
-              "electors": 3029,
-              "votes": 1563,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 814
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 630
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 40
-                },
-                {
-                  "name": "진보당",
-                  "votes": 44
-                },
-                {
-                  "name": "계",
-                  "votes": 1528
-                }
-              ],
-              "validVotes": 1528,
-              "invalidVotes": 35,
-              "abstentions": 1466
-            },
-            {
-              "area": "양지동",
-              "ballotType": "계",
-              "electors": 7616,
-              "votes": 4356,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 2366
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 1514
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 180
-                },
-                {
-                  "name": "진보당",
-                  "votes": 123
-                },
-                {
-                  "name": "계",
-                  "votes": 4183
-                }
-              ],
-              "validVotes": 4183,
-              "invalidVotes": 173,
-              "abstentions": 3260
-            },
-            {
-              "area": "양지동",
-              "ballotType": "관내사전투표",
-              "electors": 1668,
-              "votes": 1668,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 1078
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 401
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 81
-                },
-                {
-                  "name": "진보당",
-                  "votes": 65
-                },
-                {
-                  "name": "계",
-                  "votes": 1625
-                }
-              ],
-              "validVotes": 1625,
-              "invalidVotes": 43,
-              "abstentions": 0
-            },
-            {
-              "area": "양지동",
-              "ballotType": "선거일투표",
-              "electors": 5948,
-              "votes": 2688,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 1288
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 1113
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 99
-                },
-                {
-                  "name": "진보당",
-                  "votes": 58
-                },
-                {
-                  "name": "계",
-                  "votes": 2558
-                }
-              ],
-              "validVotes": 2558,
-              "invalidVotes": 130,
-              "abstentions": 3260
-            },
-            {
-              "area": "복정동",
-              "ballotType": "계",
-              "electors": 11207,
-              "votes": 6030,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 2990
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 2499
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 308
-                },
-                {
-                  "name": "진보당",
-                  "votes": 133
-                },
-                {
-                  "name": "계",
-                  "votes": 5930
-                }
-              ],
-              "validVotes": 5930,
-              "invalidVotes": 100,
-              "abstentions": 5177
-            },
-            {
-              "area": "복정동",
-              "ballotType": "관내사전투표",
-              "electors": 1667,
-              "votes": 1663,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 1089
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 399
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 113
-                },
-                {
-                  "name": "진보당",
-                  "votes": 43
-                },
-                {
-                  "name": "계",
-                  "votes": 1644
-                }
-              ],
-              "validVotes": 1644,
-              "invalidVotes": 19,
-              "abstentions": 4
-            },
-            {
-              "area": "복정동",
-              "ballotType": "선거일투표",
-              "electors": 9540,
-              "votes": 4367,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 1901
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 2100
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 195
-                },
-                {
-                  "name": "진보당",
-                  "votes": 90
-                },
-                {
-                  "name": "계",
-                  "votes": 4286
-                }
-              ],
-              "validVotes": 4286,
-              "invalidVotes": 81,
-              "abstentions": 5173
-            },
-            {
-              "area": "위례동",
-              "ballotType": "계",
-              "electors": 34441,
-              "votes": 21349,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 9552
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 9906
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 1156
-                },
-                {
-                  "name": "진보당",
-                  "votes": 436
-                },
-                {
-                  "name": "계",
-                  "votes": 21050
-                }
-              ],
-              "validVotes": 21050,
-              "invalidVotes": 299,
-              "abstentions": 13092
-            },
-            {
-              "area": "위례동",
-              "ballotType": "관내사전투표",
-              "electors": 5954,
-              "votes": 5952,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 3678
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 1690
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 388
-                },
-                {
-                  "name": "진보당",
-                  "votes": 143
-                },
-                {
-                  "name": "계",
-                  "votes": 5899
-                }
-              ],
-              "validVotes": 5899,
-              "invalidVotes": 53,
-              "abstentions": 2
-            },
-            {
-              "area": "위례동",
-              "ballotType": "선거일투표",
-              "electors": 28487,
-              "votes": 15397,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 5874
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 8216
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 768
-                },
-                {
-                  "name": "진보당",
-                  "votes": 293
-                },
-                {
-                  "name": "계",
-                  "votes": 15151
-                }
-              ],
-              "validVotes": 15151,
-              "invalidVotes": 246,
-              "abstentions": 13090
-            },
-            {
-              "area": "신촌동",
-              "ballotType": "계",
-              "electors": 3488,
-              "votes": 1774,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 729
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 898
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 85
-                },
-                {
-                  "name": "진보당",
-                  "votes": 39
-                },
-                {
-                  "name": "계",
-                  "votes": 1751
-                }
-              ],
-              "validVotes": 1751,
-              "invalidVotes": 23,
-              "abstentions": 1714
-            },
-            {
-              "area": "신촌동",
-              "ballotType": "관내사전투표",
-              "electors": 498,
-              "votes": 498,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 275
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 154
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 41
-                },
-                {
-                  "name": "진보당",
-                  "votes": 20
-                },
-                {
-                  "name": "계",
-                  "votes": 490
-                }
-              ],
-              "validVotes": 490,
-              "invalidVotes": 8,
-              "abstentions": 0
-            },
-            {
-              "area": "신촌동",
-              "ballotType": "선거일투표",
-              "electors": 2990,
-              "votes": 1276,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 454
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 744
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 44
-                },
-                {
-                  "name": "진보당",
-                  "votes": 19
-                },
-                {
-                  "name": "계",
-                  "votes": 1261
-                }
-              ],
-              "validVotes": 1261,
-              "invalidVotes": 15,
-              "abstentions": 1714
-            },
-            {
-              "area": "고등동",
-              "ballotType": "계",
-              "electors": 9371,
-              "votes": 6039,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 2779
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 2658
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 370
-                },
-                {
-                  "name": "진보당",
-                  "votes": 138
-                },
-                {
-                  "name": "계",
-                  "votes": 5945
-                }
-              ],
-              "validVotes": 5945,
-              "invalidVotes": 94,
-              "abstentions": 3332
-            },
-            {
-              "area": "고등동",
-              "ballotType": "관내사전투표",
-              "electors": 2053,
-              "votes": 2050,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 1255
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 545
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 171
-                },
-                {
-                  "name": "진보당",
-                  "votes": 64
-                },
-                {
-                  "name": "계",
-                  "votes": 2035
-                }
-              ],
-              "validVotes": 2035,
-              "invalidVotes": 15,
-              "abstentions": 3
-            },
-            {
-              "area": "고등동",
-              "ballotType": "선거일투표",
-              "electors": 7318,
-              "votes": 3989,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 1524
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 2113
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 199
-                },
-                {
-                  "name": "진보당",
-                  "votes": 74
-                },
-                {
-                  "name": "계",
-                  "votes": 3910
-                }
-              ],
-              "validVotes": 3910,
-              "invalidVotes": 79,
-              "abstentions": 3329
-            },
-            {
-              "area": "시흥동",
-              "ballotType": "계",
-              "electors": 3038,
-              "votes": 1621,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 590
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 906
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 75
-                },
-                {
-                  "name": "진보당",
-                  "votes": 26
-                },
-                {
-                  "name": "계",
-                  "votes": 1597
-                }
-              ],
-              "validVotes": 1597,
-              "invalidVotes": 24,
-              "abstentions": 1417
-            },
-            {
-              "area": "시흥동",
-              "ballotType": "관내사전투표",
-              "electors": 457,
-              "votes": 457,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 244
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 155
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 37
-                },
-                {
-                  "name": "진보당",
-                  "votes": 11
-                },
-                {
-                  "name": "계",
-                  "votes": 447
-                }
-              ],
-              "validVotes": 447,
-              "invalidVotes": 10,
-              "abstentions": 0
-            },
-            {
-              "area": "시흥동",
-              "ballotType": "선거일투표",
-              "electors": 2581,
-              "votes": 1164,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 346
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 751
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 38
-                },
-                {
-                  "name": "진보당",
-                  "votes": 15
-                },
-                {
-                  "name": "계",
-                  "votes": 1150
-                }
-              ],
-              "validVotes": 1150,
-              "invalidVotes": 14,
-              "abstentions": 1417
-            },
-            {
-              "area": "잘못 투입·구분된 투표지",
-              "ballotType": "별도분류",
-              "electors": 0,
-              "votes": 42,
-              "candidateVotes": [
-                {
-                  "name": "더불어민주당",
-                  "votes": 20
-                },
-                {
-                  "name": "국민의힘",
-                  "votes": 19
-                },
-                {
-                  "name": "조국혁신당",
-                  "votes": 1
-                },
-                {
-                  "name": "진보당",
-                  "votes": 1
-                },
-                {
-                  "name": "계",
-                  "votes": 41
-                }
-              ],
-              "validVotes": 41,
-              "invalidVotes": 1,
-              "abstentions": -42
-            }
-          ],
-          "summary": {
-            "electors": 210369,
-            "votes": 126562,
-            "validVotes": 124141,
-            "invalidVotes": 2421,
-            "abstentions": 83807
-          },
-          "progress": {
-            "area": "성남시수정구",
-            "groupArea": null,
-            "fullArea": "성남시수정구",
-            "electors": 210369,
-            "votes": 126562,
-            "candidateVotes": [
-              {
-                "name": "더불어민주당",
-                "votes": 64682,
-                "rate": 52.1
-              },
-              {
-                "name": "국민의힘",
-                "votes": 50851,
-                "rate": 40.96
-              },
-              {
-                "name": "조국혁신당",
-                "votes": 5631,
-                "rate": 4.53
-              },
-              {
-                "name": "개혁신당",
-                "votes": 2977,
-                "rate": 2.39
-              },
-              {
-                "name": "진보당",
-                "votes": null,
-                "rate": null
-              },
-              {
-                "name": "계",
-                "votes": 124141,
-                "rate": null
-              }
-            ],
-            "validVotes": 124141,
-            "invalidVotes": 2421,
-            "abstentions": 83807,
-            "progressRate": 100.0
-          }
-        },
         {
           "id": "basic-pr-seongnam-4106",
           "name": "성남시중원구",
@@ -37622,7 +35844,12 @@
           }
         }
       ],
-      "errors": [],
+      "errors": [
+        {
+          "unit": "성남시수정구",
+          "message": "IncompleteRead(0 bytes read)"
+        }
+      ],
       "localBreakdown": {
         "summaryRegions": [
           {
@@ -37680,109 +35907,83 @@
             "candidateVotes": [
               {
                 "name": "더불어민주당",
-                "votes": 64682
+                "votes": 64682,
+                "rate": 52.1
               },
               {
                 "name": "국민의힘",
-                "votes": 50851
+                "votes": 50851,
+                "rate": 40.96
               },
               {
                 "name": "조국혁신당",
-                "votes": 5631
+                "votes": 5631,
+                "rate": 4.53
+              },
+              {
+                "name": "개혁신당",
+                "votes": 2977,
+                "rate": 2.39
               },
               {
                 "name": "진보당",
-                "votes": 2977
+                "votes": null,
+                "rate": null
               },
               {
                 "name": "계",
-                "votes": 124141
+                "votes": 124141,
+                "rate": null
               }
             ],
             "ballotTypes": [
               {
                 "type": "관내사전투표",
-                "electors": 35713,
-                "votes": 35694,
-                "validVotes": 35152,
-                "invalidVotes": 542,
-                "abstentions": 19,
-                "rowCount": 17,
-                "unitCount": 1,
-                "units": [
-                  "rows"
-                ],
-                "started": true
+                "electors": null,
+                "votes": 0,
+                "validVotes": null,
+                "invalidVotes": null,
+                "abstentions": null,
+                "rowCount": 0,
+                "unitCount": 0,
+                "units": [],
+                "started": false
               },
               {
                 "type": "선거일투표",
-                "electors": 159089,
-                "votes": 75275,
-                "validVotes": 73630,
-                "invalidVotes": 1645,
-                "abstentions": 83814,
-                "rowCount": 17,
-                "unitCount": 1,
-                "units": [
-                  "rows"
-                ],
-                "started": true
+                "electors": null,
+                "votes": 0,
+                "validVotes": null,
+                "invalidVotes": null,
+                "abstentions": null,
+                "rowCount": 0,
+                "unitCount": 0,
+                "units": [],
+                "started": false
               },
               {
                 "type": "관외사전투표",
-                "electors": 15397,
-                "votes": 15390,
-                "validVotes": 15161,
-                "invalidVotes": 229,
-                "abstentions": 7,
-                "rowCount": 1,
-                "unitCount": 1,
-                "units": [
-                  "rows"
-                ],
-                "started": true
+                "electors": null,
+                "votes": 0,
+                "validVotes": null,
+                "invalidVotes": null,
+                "abstentions": null,
+                "rowCount": 0,
+                "unitCount": 0,
+                "units": [],
+                "started": false
               },
               {
                 "type": "거소투표",
-                "electors": 170,
-                "votes": 161,
-                "validVotes": 157,
-                "invalidVotes": 4,
-                "abstentions": 9,
-                "rowCount": 1,
-                "unitCount": 1,
-                "units": [
-                  "rows"
-                ],
-                "started": true
-              },
-              {
-                "type": "별도분류",
-                "electors": 0,
-                "votes": 42,
-                "validVotes": 41,
-                "invalidVotes": 1,
-                "abstentions": -42,
-                "rowCount": 1,
-                "unitCount": 1,
-                "units": [
-                  "rows"
-                ],
-                "started": true
-              },
-              {
-                "type": "합계",
-                "electors": 210369,
-                "votes": 126562,
-                "validVotes": 124141,
-                "invalidVotes": 2421,
-                "abstentions": 83807,
-                "rowCount": 1,
-                "unitCount": 1,
-                "units": [
-                  "rows"
-                ],
-                "started": true
+                "electors": null,
+                "votes": 0,
+                "validVotes": null,
+                "invalidVotes": null,
+                "abstentions": null,
+                "rowCount": 0,
+                "unitCount": 0,
+                "units": [],
+                "started": false
               }
             ]
           },
@@ -40342,7 +38543,7 @@
             "validVotes": 100174,
             "invalidVotes": 2879,
             "abstentions": 60451,
-            "progressRate": 99.9
+            "progressRate": 100.0
           },
           {
             "area": "계양구",
@@ -44020,7 +42221,7 @@
             "validVotes": 100174,
             "invalidVotes": 2879,
             "abstentions": 60451,
-            "progressRate": 99.9
+            "progressRate": 100.0
           }
         },
         {
@@ -61031,6 +59232,6 @@
       "errors": []
     }
   ],
-  "errorCount": 0,
-  "durationSeconds": 27.87
+  "errorCount": 1,
+  "durationSeconds": 60.73
 }
