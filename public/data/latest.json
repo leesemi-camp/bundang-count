@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T10:57:44+09:00",
+  "generatedAt": "2026-06-04T11:00:13+09:00",
   "electionId": "0020260603",
   "source": {
     "name": "중앙선거관리위원회 선거통계시스템",
@@ -10726,7 +10726,12 @@
           "progress": null
         }
       ],
-      "errors": [],
+      "errors": [
+        {
+          "unit": "성남시중원구",
+          "message": "IncompleteRead(0 bytes read)"
+        }
+      ],
       "localBreakdown": {
         "summaryRegions": [
           {
@@ -11145,169 +11150,153 @@
             "candidateVotes": [
               {
                 "name": "더불어민주당",
-                "votes": 57605
+                "votes": 57605,
+                "rate": 53.18
               },
               {
                 "name": "국민의힘",
-                "votes": 39112
+                "votes": 39112,
+                "rate": 36.11
               },
               {
                 "name": "조국혁신당",
-                "votes": 4211
+                "votes": 4211,
+                "rate": 3.88
               },
               {
                 "name": "개혁신당",
-                "votes": 2964
+                "votes": 2964,
+                "rate": 2.73
               },
               {
                 "name": "진보당",
-                "votes": 2145
+                "votes": 2145,
+                "rate": 1.98
               },
               {
                 "name": "기본소득당",
-                "votes": 686
+                "votes": 686,
+                "rate": 0.63
               },
               {
                 "name": "사회민주당",
-                "votes": 59
+                "votes": 59,
+                "rate": 0.05
               },
               {
                 "name": "거지당",
-                "votes": 103
+                "votes": 103,
+                "rate": 0.09
               },
               {
                 "name": "공화당",
-                "votes": 16
+                "votes": 16,
+                "rate": 0.01
               },
               {
                 "name": "국민대통합당",
-                "votes": 40
+                "votes": 40,
+                "rate": 0.03
               },
               {
                 "name": "국민연합",
-                "votes": 61
+                "votes": 61,
+                "rate": 0.05
               },
               {
                 "name": "기독당",
-                "votes": 103
+                "votes": 103,
+                "rate": 0.09
               },
               {
                 "name": "대한국민당",
-                "votes": 53
+                "votes": 53,
+                "rate": 0.04
               },
               {
                 "name": "새미래민주당",
-                "votes": 114
+                "votes": 114,
+                "rate": 0.1
               },
               {
                 "name": "자유와혁신",
-                "votes": 507
+                "votes": 507,
+                "rate": 0.46
               },
               {
                 "name": "정의당",
-                "votes": 339
+                "votes": 339,
+                "rate": 0.31
               },
               {
                 "name": "친미연합",
-                "votes": 18
+                "votes": 18,
+                "rate": 0.01
               },
               {
                 "name": "국민당",
-                "votes": 67
+                "votes": 67,
+                "rate": 0.06
               },
               {
                 "name": "한나라당",
-                "votes": 105
+                "votes": 105,
+                "rate": 0.09
               },
               {
                 "name": "계",
-                "votes": 108308
+                "votes": 108308,
+                "rate": null
               }
             ],
             "ballotTypes": [
               {
                 "type": "관내사전투표",
-                "electors": 31082,
-                "votes": 31083,
-                "validVotes": 30631,
-                "invalidVotes": 452,
-                "abstentions": -1,
-                "rowCount": 11,
-                "unitCount": 1,
-                "units": [
-                  "rows"
-                ],
-                "started": true
+                "electors": null,
+                "votes": 0,
+                "validVotes": null,
+                "invalidVotes": null,
+                "abstentions": null,
+                "rowCount": 0,
+                "unitCount": 0,
+                "units": [],
+                "started": false
               },
               {
                 "type": "선거일투표",
-                "electors": 136717,
-                "votes": 65566,
-                "validVotes": 64337,
-                "invalidVotes": 1229,
-                "abstentions": 71151,
-                "rowCount": 11,
-                "unitCount": 1,
-                "units": [
-                  "rows"
-                ],
-                "started": true
+                "electors": null,
+                "votes": 0,
+                "validVotes": null,
+                "invalidVotes": null,
+                "abstentions": null,
+                "rowCount": 0,
+                "unitCount": 0,
+                "units": [],
+                "started": false
               },
               {
                 "type": "관외사전투표",
-                "electors": 13364,
-                "votes": 13356,
-                "validVotes": 13167,
-                "invalidVotes": 189,
-                "abstentions": 8,
-                "rowCount": 1,
-                "unitCount": 1,
-                "units": [
-                  "rows"
-                ],
-                "started": true
+                "electors": null,
+                "votes": 0,
+                "validVotes": null,
+                "invalidVotes": null,
+                "abstentions": null,
+                "rowCount": 0,
+                "unitCount": 0,
+                "units": [],
+                "started": false
               },
               {
                 "type": "거소투표",
-                "electors": 198,
-                "votes": 178,
-                "validVotes": 166,
-                "invalidVotes": 12,
-                "abstentions": 20,
-                "rowCount": 1,
-                "unitCount": 1,
-                "units": [
-                  "rows"
-                ],
-                "started": true
-              },
-              {
-                "type": "별도분류",
-                "electors": 0,
-                "votes": 9,
-                "validVotes": 7,
-                "invalidVotes": 2,
-                "abstentions": -9,
-                "rowCount": 1,
-                "unitCount": 1,
-                "units": [
-                  "rows"
-                ],
-                "started": true
-              },
-              {
-                "type": "합계",
-                "electors": 181361,
-                "votes": 110192,
-                "validVotes": 108308,
-                "invalidVotes": 1884,
-                "abstentions": 71169,
-                "rowCount": 1,
-                "unitCount": 1,
-                "units": [
-                  "rows"
-                ],
-                "started": true
+                "electors": null,
+                "votes": 0,
+                "validVotes": null,
+                "invalidVotes": null,
+                "abstentions": null,
+                "rowCount": 0,
+                "unitCount": 0,
+                "units": [],
+                "started": false
               }
             ]
           }
@@ -61920,6 +61909,6 @@
       "errors": []
     }
   ],
-  "errorCount": 0,
-  "durationSeconds": 27.01
+  "errorCount": 1,
+  "durationSeconds": 42.35
 }
