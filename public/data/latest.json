@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T10:06:22+09:00",
+  "generatedAt": "2026-06-04T10:08:51+09:00",
   "electionId": "0020260603",
   "source": {
     "name": "중앙선거관리위원회 선거통계시스템",
@@ -15025,7 +15025,7 @@
             "groupArea": null,
             "fullArea": "합계",
             "electors": 11878988,
-            "votes": 6930813,
+            "votes": 6930818,
             "candidateVotes": [
               {
                 "name": "임태희",
@@ -15034,18 +15034,18 @@
               },
               {
                 "name": "안민석",
-                "votes": 3557126,
+                "votes": 3557131,
                 "rate": 52.81
               },
               {
                 "name": "계",
-                "votes": 6735216,
+                "votes": 6735221,
                 "rate": null
               }
             ],
-            "validVotes": 6735216,
+            "validVotes": 6735221,
             "invalidVotes": 195597,
-            "abstentions": 4948175,
+            "abstentions": 4948170,
             "progressRate": 99.97
           },
           {
@@ -15921,7 +15921,7 @@
             "groupArea": null,
             "fullArea": "시흥시",
             "electors": 443131,
-            "votes": 226133,
+            "votes": 226138,
             "candidateVotes": [
               {
                 "name": "임태희",
@@ -15930,19 +15930,19 @@
               },
               {
                 "name": "안민석",
-                "votes": 125413,
+                "votes": 125418,
                 "rate": 57.09
               },
               {
                 "name": "계",
-                "votes": 219657,
+                "votes": 219662,
                 "rate": null
               }
             ],
-            "validVotes": 219657,
+            "validVotes": 219662,
             "invalidVotes": 6476,
-            "abstentions": 216998,
-            "progressRate": 99.97
+            "abstentions": 216993,
+            "progressRate": 99.98
           },
           {
             "area": "군포시",
@@ -16370,7 +16370,7 @@
           "groupArea": null,
           "fullArea": "합계",
           "electors": 11878988,
-          "votes": 6930813,
+          "votes": 6930818,
           "candidateVotes": [
             {
               "name": "임태희",
@@ -16379,18 +16379,18 @@
             },
             {
               "name": "안민석",
-              "votes": 3557126,
+              "votes": 3557131,
               "rate": 52.81
             },
             {
               "name": "계",
-              "votes": 6735216,
+              "votes": 6735221,
               "rate": null
             }
           ],
-          "validVotes": 6735216,
+          "validVotes": 6735221,
           "invalidVotes": 195597,
-          "abstentions": 4948175,
+          "abstentions": 4948170,
           "progressRate": 99.97
         }
       },
@@ -61032,5 +61032,5 @@
     }
   ],
   "errorCount": 0,
-  "durationSeconds": 26.87
+  "durationSeconds": 26.56
 }
