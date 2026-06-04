@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T09:17:16+09:00",
+  "generatedAt": "2026-06-04T09:19:53+09:00",
   "electionId": "0020260603",
   "source": {
     "name": "중앙선거관리위원회 선거통계시스템",
@@ -1929,7 +1929,7 @@
             "validVotes": 188336,
             "invalidVotes": 2389,
             "abstentions": 152620,
-            "progressRate": 99.96
+            "progressRate": 100.0
           },
           {
             "area": "포천시",
@@ -61032,5 +61032,5 @@
     }
   ],
   "errorCount": 0,
-  "durationSeconds": 33.14
+  "durationSeconds": 37.26
 }
